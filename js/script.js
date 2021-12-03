@@ -87,11 +87,11 @@ function commandHelp() {
 }
 
 function commandResume() {
-    terminalBody.innerHTML += `<br><a href=assets/${data.resume}>Resume</a><br>`;
+    terminalBody.innerHTML += `<br><a target="_blank" href=assets/${data.resume}>Resume</a><br>`;
 }
 
 function commandAwards() {
-    terminalBody.innerHTML += `<br><a href=assets/${data.awards}>Awards</a><br>`;
+    terminalBody.innerHTML += `<br><a target="_blank href=assets/${data.awards}>Awards</a><br>`;
 }
 
 function commandEcho(inputCommand) {
