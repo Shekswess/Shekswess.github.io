@@ -91,7 +91,7 @@ function commandResume() {
 }
 
 function commandAwards() {
-    terminalBody.innerHTML += `<br><a target="_blank href=assets/${data.awards}>Awards</a><br>`;
+    terminalBody.innerHTML += `<br><a target="_blank" href=assets/${data.awards}>Awards</a><br>`;
 }
 
 function commandEcho(inputCommand) {
