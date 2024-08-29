@@ -16,7 +16,7 @@ As AI continues to permeate various industries and applications, there's a growi
 We will explore the following topics in our analysis:
 
 - The competitive performance of smaller language models in RAG systems
-- The effectiveness of mixture RAG pipelines inspired by the Mixture of Agents (MoA) technique
+- The effectiveness of innovative techniques like Mixture RAG pipelines inspired by the Mixture of Agents (MoA) technique
 - The importance of model architecture and training strategies over sheer size
 - The particular strengths of smaller models in context utilization
 - The additional benefits of using smaller language models, including self-hosting capabilities, improved efficiency, and democratization of AI
@@ -25,7 +25,7 @@ By examining these aspects, we aim to shed light on the potential of smaller lan
 
 ## Setup
 
-In this section, we will provide an overview of the dataset used for the experiments and the RAG pipeline setup. In total there were 28 experiments both with Simple RAG and Mixture RAG pipelines.
+In this section, we will provide an overview of the dataset used for the experiments and the RAG pipeline setup. In total there were 28 experiments conducted in total.
 
 ### Dataset
 
