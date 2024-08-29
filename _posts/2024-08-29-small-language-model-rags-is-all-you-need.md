@@ -25,7 +25,7 @@ By examining these aspects, we aim to shed light on the potential of smaller lan
 
 ## Setup
 
-In this section, we will provide an overview of the dataset used for the experiments and the RAG pipeline setup.
+In this section, we will provide an overview of the dataset used for the experiments and the RAG pipeline setup. In total there were 28 experiments both with Simple RAG and Mixture RAG pipelines.
 
 ### Dataset
 
@@ -301,7 +301,8 @@ From the table, we can observe which questions have the lowest scores. Specifica
 
 The next step involves a detailed analysis of the results for each experiment. This analysis includes ranking the experiments based on the average scores for each metric: faithfulness, answer relevancy, and context utilization. For clarity and comprehensiveness, the top 14 experiments for each metric are highlighted and presented below. Additionally, an overall ranking is conducted by calculating the average of the average scores across all metrics. This comprehensive ranking provides a holistic view of the experiments' performance, facilitating a more informed evaluation and comparison.
 
-<h4>Faithfulness</h4>
+#### Faithfulness
+
 <table>
   <thead>
     <tr>
@@ -332,7 +333,8 @@ The table above ranks various experiments based on their faithfulness scores, wh
 
 This observation suggests that smaller language models can perform nearly as well as, or sometimes better than, larger models in terms of faithfulness. The close scores among the top experiments indicate that model architecture and training strategies play a significant role in achieving high faithfulness, regardless of the model size. This insight is valuable for guiding future improvements and optimizations in model development, as it highlights the potential of smaller models to deliver high-quality results, results that are faithful to the context and source information provided.
 
-#### Answer Relevancy 
+#### Answer Relevancy
+
 <table>
   <thead>
     <tr>
@@ -365,6 +367,7 @@ This again indicates that smaller language models can generate highly relevant r
 
 
 #### Context Utilization
+
 <table>
   <thead>
     <tr>
@@ -394,6 +397,7 @@ This again indicates that smaller language models can generate highly relevant r
 The table above ranks various experiments based on their context utilization scores, which measure how effectively the retrieved context aligns with the annotated answers. Here really we can see how RAG systems based on smaller language models are performing really well in terms of context utilization. From the best 14 experiments, 11 of them are based on smaller language models. Another interesting thing is that mixture RAG approaches are excellent in context utilization, with 3 of the top 5 experiments being based on the mixture RAG approach. The experiments `mixture-rag-llama3.1-8b-instruct`, `mixture-rag-mixtral-8x7-instruct-modified`, and `mixture-rag-mixtral-8x7-instruct` have context utilization scores of 0.916667, 0.916667, and 0.913889 respectively.
 
 #### Average of the Scores
+
 <table>
   <thead>
     <tr>
