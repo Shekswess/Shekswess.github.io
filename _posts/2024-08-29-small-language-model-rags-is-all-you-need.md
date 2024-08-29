@@ -97,10 +97,18 @@ Each of the LLMs have specific instruction prompt templates that are used for th
 - [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
 
 All of the LLMs that are used in the RAG pipelines have the same parameters:
-- temperature: 0.1
-- max_tokens: 4096
-- top_p: 1
-- top_k: 250
+
+- **temperature**: 0.1
+  - In short, the lower the temperature, the more deterministic the results in the sense that the highest probable next token is always picked. Increasing temperature could lead to more randomness, which encourages more diverse or creative outputs. You are essentially increasing the weights of the other possible tokens. In terms of application, you might want to use a lower temperature value for tasks like fact-based QA to encourage more factual and concise responses. For poem generation or other creative tasks, it might be beneficial to increase the temperature value.
+
+- **max_tokens**: 4096
+  - This parameter sets the maximum number of tokens that the model can generate in a single response. It ensures that the output does not exceed a certain length, which is useful for controlling the verbosity of the responses.
+
+- **top_p**: 1
+  - A sampling technique with temperature, called nucleus sampling, where you can control how deterministic the model is. If you are looking for exact and factual answers keep this low. If you are looking for more diverse responses, increase to a higher value. If you use Top P it means that only the tokens comprising the top_p probability mass are considered for responses, so a low top_p value selects the most confident responses. This means that a high top_p value will enable the model to look at more possible words, including less likely ones, leading to more diverse outputs.
+
+- **top_k**: 250
+  - This parameter limits the sampling pool to the top_k most probable tokens. A lower value makes the model more deterministic by considering fewer options, while a higher value allows for more diversity by considering a larger pool of tokens.
 
 We utilized two different RAG pipeline configurations for the experiments:
 - **Simple RAG Pipeline**: Uses a single LLM to generate the responses.
@@ -260,7 +268,8 @@ The initial exploration of the results focused on identifying problematic questi
 
 To identify these problematic questions, the dataset was grouped by individual questions. For each question, the mean scores were calculated across three key metrics: faithfulness, answer relevancy, and context utilization. These mean scores provided a comprehensive view of each question's performance. Subsequently, an overall average score was computed for each question by taking the basic average of the mean scores from the three metrics. This overall score was then used to rank the questions, allowing for an informed decision on which questions to exclude from the experiments.
 
-<h4>Questions with the lowest scores</h4>
+#### Questions with the lowest scores
+
 <table>
   <thead>
     <tr>
@@ -323,7 +332,7 @@ The table above ranks various experiments based on their faithfulness scores, wh
 
 This observation suggests that smaller language models can perform nearly as well as, or sometimes better than, larger models in terms of faithfulness. The close scores among the top experiments indicate that model architecture and training strategies play a significant role in achieving high faithfulness, regardless of the model size. This insight is valuable for guiding future improvements and optimizations in model development, as it highlights the potential of smaller models to deliver high-quality results, results that are faithful to the context and source information provided.
 
-<h4>Answer Relevancy</h4>
+#### Answer Relevancy 
 <table>
   <thead>
     <tr>
@@ -355,7 +364,7 @@ The table above ranks various experiments based on their answer relevancy scores
 This again indicates that smaller language models can generate highly relevant responses that are closely aligned with the given prompts. We can even see that the mixture rag pipeline approach with the smart technique of choosing the best response from the generated responses(thought) can achieve high answer relevancy scores. 
 
 
-<h4>Context Utilization</h4>
+#### Context Utilization
 <table>
   <thead>
     <tr>
@@ -384,7 +393,7 @@ This again indicates that smaller language models can generate highly relevant r
 
 The table above ranks various experiments based on their context utilization scores, which measure how effectively the retrieved context aligns with the annotated answers. Here really we can see how RAG systems based on smaller language models are performing really well in terms of context utilization. From the best 14 experiments, 11 of them are based on smaller language models. Another interesting thing is that mixture RAG approaches are excellent in context utilization, with 3 of the top 5 experiments being based on the mixture RAG approach. The experiments `mixture-rag-llama3.1-8b-instruct`, `mixture-rag-mixtral-8x7-instruct-modified`, and `mixture-rag-mixtral-8x7-instruct` have context utilization scores of 0.916667, 0.916667, and 0.913889 respectively.
 
-<h4>Average of the Scores</h4>
+#### Average of the Scores
 <table>
   <thead>
     <tr>
