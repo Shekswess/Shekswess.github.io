@@ -19,7 +19,7 @@ title: Bojan Jakimovski # the main title
 tagline: My Personal Technical Blogpost # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A personal blogpost about my technical journey in the world of Machine Learning, Deep Learning, Federated Learning, Data & MLOps and Cloud Computing.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
