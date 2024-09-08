@@ -11,9 +11,10 @@ image: /assets/images/small_language_model_rags_clip.jpeg
 
 In the rapidly evolving landscape of artificial intelligence and natural language processing, the quest for efficient and effective language models has led researchers and practitioners to explore various approaches. One such promising technique is Retrieval-Augmented Generation (RAG), which combines the power of language models with external knowledge retrieval. We are going to do a comprehensive analysis of RAG systems based on different language models, with a particular focus on the performance of smaller models compared to their larger counterparts.
 
-As AI continues to permeate various industries and applications, there's a growing need for systems that can deliver high-quality, faithful, and relevant responses while efficiently utilizing context. Traditional wisdom might suggest that larger language models would invariably outperform smaller ones. However, with our experiments we are going to show surprising and promising results that challenge this assumption.
+As AI continues to permeate various industries and applications, there’s a growing need for systems that can deliver high-quality, faithful, and relevant responses while efficiently utilizing context. Traditional wisdom might suggest that larger language models would invariably outperform smaller ones. However, with our experiments, we are going to show surprising and promising results that challenge this assumption.
 
 We will explore the following topics in our analysis:
+
 
 - The competitive performance of smaller language models in RAG systems
 - The effectiveness of innovative techniques like Mixture RAG pipelines inspired by the Mixture of Agents (MoA) technique
@@ -21,7 +22,7 @@ We will explore the following topics in our analysis:
 - The particular strengths of smaller models in context utilization
 - The additional benefits of using smaller language models, including self-hosting capabilities, improved efficiency, and democratization of AI
 
-By examining these aspects, we aim to shed light on the potential of smaller language models and sophisticated RAG approaches to deliver powerful AI capabilities while offering greater flexibility, control, and cost-effectiveness. 
+By examining these aspects, we aim to shed light on the potential of smaller language models and sophisticated RAG approaches to deliver powerful AI capabilities while offering greater flexibility, control, and cost-effectiveness.
 
 ## Setup
 
@@ -99,13 +100,13 @@ Each of the LLMs have specific instruction prompt templates that are used for th
 All of the LLMs that are used in the RAG pipelines have the same parameters:
 
 - **temperature**: 0.1
-  - In short, the lower the temperature, the more deterministic the results in the sense that the highest probable next token is always picked. Increasing temperature could lead to more randomness, which encourages more diverse or creative outputs. You are essentially increasing the weights of the other possible tokens. In terms of application, you might want to use a lower temperature value for tasks like fact-based QA to encourage more factual and concise responses. For poem generation or other creative tasks, it might be beneficial to increase the temperature value.
+  - In short, the lower the temperature, the more deterministic the results, in the sense that the most probable next token is always picked. Increasing temperatures could lead to more randomness, which encourages more diverse or creative outputs. You are essentially increasing the weight of the other possible tokens. In terms of application, you might want to use a lower temperature value for tasks like fact-based QA to encourage more factual and concise responses. For poem generation or other creative tasks, it might be beneficial to increase the temperature value.
 
 - **max_tokens**: 4096
   - This parameter sets the maximum number of tokens that the model can generate in a single response. It ensures that the output does not exceed a certain length, which is useful for controlling the verbosity of the responses.
 
 - **top_p**: 1
-  - A sampling technique with temperature, called nucleus sampling, where you can control how deterministic the model is. If you are looking for exact and factual answers keep this low. If you are looking for more diverse responses, increase to a higher value. If you use Top P it means that only the tokens comprising the top_p probability mass are considered for responses, so a low top_p value selects the most confident responses. This means that a high top_p value will enable the model to look at more possible words, including less likely ones, leading to more diverse outputs.
+  - A sampling technique with temperature called nucleus sampling, where you can control how deterministic the model is. If you are looking for exact and factual answers, keep this low. If you are looking for more diverse responses, increase the value. If you use Top P it means that only the tokens comprising the top_p probability mass are considered for responses, so a low top_p value selects the most confident responses. This means that a high top_p value will enable the model to look at more possible words, including less likely ones, leading to more diverse outputs.
 
 - **top_k**: 250
   - This parameter limits the sampling pool to the top_k most probable tokens. A lower value makes the model more deterministic by considering fewer options, while a higher value allows for more diversity by considering a larger pool of tokens.
@@ -139,13 +140,13 @@ user_message: "Please answer my question based on the provided context:"
 
 #### Mixture RAG Pipeline
 
-The Mixture RAG pipeline mostly is like the Simple RAG pipeline but in the Generator we basically trigger multiple LLMs(Simple RAGs with the same prompt system and user messages previsoly defined) to generate the responses and those response are the aggregated by another LLM. This is how the Mixture RAG looks:
+The Mixture RAG pipeline is mostly is like the Simple RAG pipeline, but in the Generator we basically trigger multiple LLMs (Simple RAGs with the same prompt system and user messages previously defined) to generate the responses, and those responses are the aggregated by another LLM. This is how the Mixture RAG looks:
 
 ![image](../assets/images/mixture.png)
 _**Mixture RAG Pipeline**_
 
 
-There are three different system and user messages combinations used for the experiments, for the aggregation LLM:
+There are three different system and user message combinations used for the experiments, for the aggregation LLM:
 
 - One combination is really similar to the one used in the Mixture of Agents (MoA) implementation:
 
@@ -160,7 +161,7 @@ system_message:
 user_message: "Please synthesize the responses from the small language models and give me only the most accurate information."
 ```
 
-- Second combination is a bit modified version of the first one:
+- The second combination is a bit modified from the first one:
 
 ```
 system_message: 
@@ -173,7 +174,7 @@ system_message:
 user_message: "Please generate a single response based on the provided responses:"
 ```
 
-- Third combination is basically making the aggregator LLM to choose the best response from the generated responses(thought):
+- The third combination is basically making the aggregator LLM to choose the best response from the generated responses (thought):
 
 ```
 system_message: 
@@ -186,7 +187,6 @@ system_message:
 
 user_message: "Please choose a single response based on the provided responses:"
 ```
-
 
 ## Methodology
 
@@ -207,7 +207,7 @@ The metrics used for the evaluation of the experiments are:
 </div>
 
 
-- **Answer Relevancy**: The evaluation metric, Answer Relevancy, focuses on assessing how pertinent the generated answer is to the given prompt. A lower score is assigned to answers that are incomplete or contain redundant information and higher scores indicate better relevancy. This metric is computed using the question, the context and the answer. The Answer Relevancy is defined as the mean cosine similarity of the original question to a number of artifical questions, which where generated (reverse engineered) based on the answer:
+- **Answer Relevancy**: The evaluation metric, Answer Relevancy, focuses on assessing how pertinent the generated answer is to the given prompt. A lower score is assigned to answers that are incomplete or contain redundant information, and higher scores indicate better relevancy. This metric is computed using the question, the context and the answer. The Answer Relevancy is defined as the mean cosine similarity of the original question to a number of artificial questions that were generated (reverse engineered) based on the answer:
 
 <div style="text-align: center;">
   <p>
@@ -245,7 +245,7 @@ Where:
   </p>
 </div>
 
-> Eventhough in practice the score will range between 0 and 1 most of the time, this is not mathematically guranteed, due to the nature of the cosine similarity ranging from -1 to 1.
+> Even though in practice the score will range between 0 and 1 most of the time, this is not mathematically guaranteed, due to the nature of the cosine similarity, which ranges from -1 to 1.
 {: .prompt-info }
 
 - **Context Utilization**: Context utilization measures the extent to which the retrieved context aligns with the annotated answer, treated as the ground truth. It is computed using question, ground truth and the retrieved context, and the values range between 0 and 1, with higher values indicating better performance. To estimate context utilization from the ground truth answer, each claim in the ground truth answer is analyzed to determine whether it can be attributed to the retrieved context or not. In an ideal scenario, all claims in the ground truth answer should be attributable to the retrieved context. If the ground truth is not provided, the judge evaluator LLM is used to generate the ground truth answer.
@@ -266,7 +266,7 @@ For the Judge LLM Evaluator, we utilized the Claude 3.5 Sonnet model with the mo
 
 The initial exploration of the results focused on identifying problematic questions, specifically those with lower scores. The objective was to refine the experiments by excluding these less effective questions and concentrating on the 10 most relevant ones. This approach aims to enhance the overall quality and reliability of the experiments by ensuring that only the most pertinent questions and answers are considered.
 
-To identify these problematic questions, the dataset was grouped by individual questions. For each question, the mean scores were calculated across three key metrics: faithfulness, answer relevancy, and context utilization. These mean scores provided a comprehensive view of each question's performance. Subsequently, an overall average score was computed for each question by taking the basic average of the mean scores from the three metrics. This overall score was then used to rank the questions, allowing for an informed decision on which questions to exclude from the experiments.
+To identify these problematic questions, the dataset was grouped by individual questions. For each question, the mean scores were calculated across three key metrics: faithfulness, answer relevancy, and context utilization. These mean scores provided a comprehensive view of each question’s performance. Subsequently, an overall average score was computed for each question by taking the basic average of the mean scores from the three metrics. This overall score was then used to rank the questions, allowing for an informed decision on which questions to exclude from the experiments.
 
 #### Questions with the lowest scores
 
@@ -299,7 +299,7 @@ To identify these problematic questions, the dataset was grouped by individual q
 
 From the table, we can observe which questions have the lowest scores. Specifically, the last four questions exhibit the lowest performance and are therefore excluded from the subsequent analysis. This exclusion helps to focus the analysis on the more reliable and relevant questions, ensuring that the results are not skewed by outliers or less effective queries.
 
-The next step involves a detailed analysis of the results for each experiment. This analysis includes ranking the experiments based on the average scores for each metric: faithfulness, answer relevancy, and context utilization. For clarity and comprehensiveness, the top 14 experiments for each metric are highlighted and presented below. Additionally, an overall ranking is conducted by calculating the average of the average scores across all metrics. This comprehensive ranking provides a holistic view of the experiments' performance, facilitating a more informed evaluation and comparison.
+The next step involves a detailed analysis of the results for each experiment. This analysis includes ranking the experiments based on the average scores for each metric: faithfulness, answer relevancy, and context utilization. For clarity and comprehensiveness, the top 14 experiments for each metric are highlighted and presented below. Additionally, an overall ranking is conducted by calculating the average of the average scores across all metrics. This comprehensive ranking provides a holistic view of the experiments’ performance, facilitating a more informed evaluation and comparison.
 
 #### Faithfulness
 
@@ -331,7 +331,7 @@ The next step involves a detailed analysis of the results for each experiment. T
 
 The table above ranks various experiments based on their faithfulness scores, which measure how accurately the generated responses adhere to the source information. Based on the results from the table, it is evident that the scores of the RAG  systems based on smaller language models are very close to, or in some cases even better than, those based on larger language models. For instance, in the top 7 scores, we have 4 RAG systems that are based on smaller language models: `simple-rag-llama-3.1-8b`, `mixture-rag-gemma2-9b-it-thought` - which is a combination of multiple smaller language, `simple-rag-gemma-7b-it`, and `simple-rag-llama-3-8b`. These smaller models achieve faithfulness scores of 0.957778, 0.924542, 0.923677, and 0.913214 respectively, which are comparable to or even surpass the scores of some larger models. 
 
-This observation suggests that smaller language models can perform nearly as well as, or sometimes better than, larger models in terms of faithfulness. The close scores among the top experiments indicate that model architecture and training strategies play a significant role in achieving high faithfulness, regardless of the model size. This insight is valuable for guiding future improvements and optimizations in model development, as it highlights the potential of smaller models to deliver high-quality results, results that are faithful to the context and source information provided.
+This observation suggests that smaller language models can perform nearly as well as, or sometimes better than, larger models in terms of faithfulness. The close scores among the top experiments indicate that model architecture and training strategies play a significant role in achieving high faithfulness, regardless of the model size. This insight is valuable for guiding future improvements and optimizations in model development, as it highlights the potential of smaller models to deliver high-quality results that are faithful to the context and source information provided.
 
 #### Answer Relevancy
 
@@ -424,8 +424,45 @@ The table above ranks various experiments based on their context utilization sco
   </tbody>
 </table>
 
-The table above ranks various experiments based on their average scores, which provide a comprehensive view of the experiments' performance across all metrics. The results show the dominance of RAG systems based on smaller language models, with 9 of the top 14 experiments being based on smaller models.
+The table above ranks various experiments based on their average scores, which provide a comprehensive view of the experiments’ performance across all metrics. The results show the dominance of RAG systems based on smaller language models, with 9 of the top 14 experiments being based on smaller models.
 
+Here are some examples questions and answers from the experiments from the table above:
+
+```plaintext
+mixture-rag-gemma2-9b-it-thought
+
+Question: "Does Claude 3 models have vision capabilities?"
+
+Answer: "Yes, Claude 3 models have vision capabilities. According to the text, they can recognize and identify objects visually, and they can think in complex ways, such as understanding both an object's appearance and its connections to concepts like mathematics. Additionally, the text mentions that Claude 3 models can process images, including tables, graphs, and photos, and can even generate text from images with hard-to-read handwriting"
+```
+
+```plaintext
+mixture-rag-gemma2-9b-it-modified
+
+Question: "Does Claude 3 models have vision capabilities?"
+
+Answer: "Yes, Claude 3 models possess vision capabilities. 
+
+They can recognize and identify objects visually, understanding not only their appearance but also their connections to concepts like mathematics.  This allows them to process images, including tables, graphs, and photos, and even generate text from images with hard-to-read handwriting. 
+
+Furthermore, Claude 3 models can accept multimodal input, meaning they can process both text and images together. This expands their capabilities and allows for richer context in understanding user requests. 
+
+It's important to note, however, that the performance of these models may be less robust for low-resource languages and they might generate inaccurate information about images. Therefore, for critical applications requiring high precision and accuracy, human validation is recommended."
+```
+
+```plaintext
+simple-rag-gemma2-9b-it
+
+Question: "Does Claude 3 models have vision capabilities?"
+
+Answer: "Yes, Claude 3 models have vision capabilities. 
+
+The text states: "Claude 3 models can recognize and identify objects visually, and they can think in complex ways, such as understanding both an object’s appearance and its connections to concepts like mathematics." 
+
+It also mentions that Claude 3 Haiku, one of the models in the family, includes vision capabilities."
+```
+
+It can be seen that all of the answers are relevant and informative but the Mixture RAG approach with thought technique is providing the most concise and informative answer. This is a great example of how the Mixture RAG approach can enhance the performance of the RAG system by aggregating responses from multiple smaller language models and selecting the best one.
 
 ### Conclusion
 
