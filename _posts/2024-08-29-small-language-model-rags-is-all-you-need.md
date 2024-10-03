@@ -1,5 +1,6 @@
 ---
 title: Small Language Model RAGs is All You Need
+description: A comprehensive analysis of Retrieval-Augmented Generation (RAG) systems based on different language models, with a particular focus on the performance of small language models compared to their larger counterparts.
 author: shekswess
 date: 2024-08-29 14:10:00 +0800
 categories: [LLM, RAG]
