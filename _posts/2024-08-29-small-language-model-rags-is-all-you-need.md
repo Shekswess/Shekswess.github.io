@@ -10,7 +10,7 @@ image: /assets/images/small_language_model_rags_clip.jpeg
 
 ## Introduction
 
-In the rapidly evolving landscape of artificial intelligence and natural language processing, the quest for efficient and effective language models has led researchers and practitioners to explore various approaches. One such promising technique is Retrieval-Augmented Generation (RAG), which combines the power of language models with external knowledge retrieval. We are going to do a comprehensive analysis of RAG systems based on different language models, with a particular focus on the performance of smaller models compared to their larger counterparts.
+In the current AI landscape, the quest for efficient and effective language models has led researchers and practitioners to explore various approaches. One such promising technique is Retrieval-Augmented Generation (RAG), which combines the power of language models with external knowledge retrieval. We are going to do a comprehensive analysis of RAG systems based on different language models, with a particular focus on the performance of smaller models compared to their larger counterparts.
 
 As AI continues to permeate various industries and applications, there’s a growing need for systems that can deliver high-quality, faithful, and relevant responses while efficiently utilizing context. Traditional wisdom might suggest that larger language models would invariably outperform smaller ones. However, with our experiments, we are going to show surprising and promising results that challenge this assumption.
 
