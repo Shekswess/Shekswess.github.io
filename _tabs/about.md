@@ -24,6 +24,10 @@ These are some of my older blog posts that are not part of this my personal blog
 - [Unleashing the Power of Large Language Models in Healthcare and Wellness: Practical Context Providing in Healthcare and Wellness with Mistral 7B](https://mlops.community/%f0%9f%a4%b8%e2%9a%95%ef%b8%8funleashing-the-power-of-large-language-models-in-healthcare-and-wellness-practical-context-providing-in-healthcare-and-wellness-with-mistral-7b/)
 - [How I Transformed My Data Science Team's Productivity by Introduction DataOps & MLOps](https://home.mlops.community/public/blogs/how-i-transformed-my-data-science-teams-productivity-by-introducing-dataops-mlops)
 
+## Public Talks 🗣️
+These are records of some of my public talks:
+- [Langfuse: Unveiling The Art of Observability In LLM Applications 🚀 🔎](https://youtu.be/SK27_JHj9cY)
+
 
 ## Let's Connect! 🤝
 I am always eager to expand my knowledge and collaborate on challenging projects. Feel free to reach out to me if you're interested in potential collaborations on the following platforms:
