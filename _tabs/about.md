@@ -9,8 +9,9 @@ I'm a Senior Machine Learning Engineer with a passion for building robust and sc
 
 - 🔭 Master’s Degree graduate in Electrical Engineering and Information Technologies, specializing in Dedicated Computer Systems
 - 👨‍💻 Senior ML Engineer working on MLOps and GenAI solutions.
-- 🥅 2025 Goals: Research in the field of Synthetic Data Generation, Small Language Models and Systems based on Agentic Behaviour
-- ⚡ Fun fact: I love to experiment and make different kinds of coffee and tea !
+- ⭐ 8x AWS Certified, demonstrating extensive expertise across various AWS services.
+- 🥅 2025 Goals: Research in the field of Synthetic Data Generation, Small Language Models, Post-Training.
+- ⚡ Fun fact: I love to experiment and make different kinds of coffee and tea!
 
 This is my personal blog where I share my thoughts, experiences, and projects. Feel free to explore my content and reach out to me if you have any questions or suggestions. I'm always eager to connect with like-minded individuals and learn from their experiences.
 
