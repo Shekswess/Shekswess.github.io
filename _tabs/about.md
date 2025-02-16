@@ -34,10 +34,10 @@ These are records of some of my public talks:
 I am always eager to expand my knowledge and collaborate on challenging projects. Feel free to reach out to me if you're interested in potential collaborations on the following platforms:
 
 - LinkedIn: [Bojan Jakimovski](https://www.linkedin.com/in/bojan-jakimovski/)
-- GitHub:[Bojan Jakimovski](https://github.com/Shekswess)
-- Hugging Face: [Bojan Jakimovski](https://huggingface.co/Shekswess)
+- GitHub:[Shekswess](https://github.com/Shekswess)
+- Hugging Face: [Shekswess](https://huggingface.co/Shekswess)
 - Research Gate: [Bojan Jakimovski](https://www.researchgate.net/profile/Bojan-Jakimovski)
 - Email: [jakimovski_bojan@outlook.com](mailto:jakimovski_bojan@outlook.com)
-- Medium blog: [Medium Blog](https://medium.com/@jakimovski_bojan)
+- Medium blog: [Bojan Jakimovski](https://medium.com/@jakimovski_bojan)
 
 Looking forward to connecting with you and exploring exciting opportunities together! 🚀
