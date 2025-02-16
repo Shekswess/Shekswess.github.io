@@ -18,6 +18,7 @@ This is my personal blog where I share my thoughts, experiences, and projects. F
 ## Older blog posts or blog posts on different pages 📚
 These are some of my older blog posts that are not part of this my personal blog:
 
+- [Dive into DeepSeek](https://www.loka.com/blog/dive-into-deepseek)
 - [Productionizing AI Image Generation with Inferentia2](https://www.loka.com/blog/productionizing-ai-image-generation-with-inferentia2)
 - [Budget Instruction Fine-tuning on Llama 3 8B Instruct(on Medical Data) with Hugging Face, Google Colab and Unsloth](https://mlops.community/budget-instruction-fine-tuning-of-llama-3-8b-instructon-medical-data-with-hugging-face-google-colab-and-unsloth/)
 - [MLflow on AWS with Pulumi: A Step-by-Step Guide](https://home.mlops.community/public/blogs/mlflow-on-aws-with-pulumi-a-step-by-step-guide)
@@ -37,5 +38,6 @@ I am always eager to expand my knowledge and collaborate on challenging projects
 - Hugging Face: [Bojan Jakimovski](https://huggingface.co/Shekswess)
 - Research Gate: [Bojan Jakimovski](https://www.researchgate.net/profile/Bojan-Jakimovski)
 - Email: [jakimovski_bojan@outlook.com](mailto:jakimovski_bojan@outlook.com)
+- Medium blog: [Medium Blog](https://medium.com/@jakimovski_bojan)
 
 Looking forward to connecting with you and exploring exciting opportunities together! 🚀
