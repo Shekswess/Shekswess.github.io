@@ -18,6 +18,9 @@ This is my personal blog where I share my thoughts, experiences, and projects. F
 ## Older blog posts or blog posts on different pages 📚
 These are some of my older blog posts that are not part of this my personal blog:
 
+- [Part 3: Deploying DeepSeek-R1 Models on AWS- designed Silicon Instances](https://medium.com/loka-engineering/part-3-deploying-deepseek-r1-models-on-aws-designed-silicon-instances-0aef410d0617)
+- [Part 2: Deploying Distiled DeepSeek-R1 Models on Amazon SageMaker AI](https://medium.com/loka-engineering/part-2-deploying-distiled-deepseek-r1-models-on-amazon-sagemaker-ai-4b5ee7cb6c11)
+- [Part 1: Deploying Distilled DeepSeek-R1 Models on Amazon Bedrock](https://medium.com/loka-engineering/harnessing-open-source-ai-on-aws-2f9b0fd9c42d)
 - [Dive into DeepSeek](https://www.loka.com/blog/dive-into-deepseek)
 - [Productionizing AI Image Generation with Inferentia2](https://www.loka.com/blog/productionizing-ai-image-generation-with-inferentia2)
 - [Budget Instruction Fine-tuning on Llama 3 8B Instruct(on Medical Data) with Hugging Face, Google Colab and Unsloth](https://mlops.community/budget-instruction-fine-tuning-of-llama-3-8b-instructon-medical-data-with-hugging-face-google-colab-and-unsloth/)
@@ -27,6 +30,7 @@ These are some of my older blog posts that are not part of this my personal blog
 
 ## Public Talks 🗣️
 These are records of some of my public talks:
+- [Breaking Down DeepSeek-R1](https://youtu.be/U3wxNy8MNxY)
 - [Langfuse: Unveiling The Art of Observability In LLM Applications 🚀 🔎](https://youtu.be/SK27_JHj9cY)
 
 
