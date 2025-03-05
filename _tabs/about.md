@@ -30,6 +30,7 @@ These are some of my older blog posts that are not part of this my personal blog
 
 ## Public Talks 🗣️
 These are records of some of my public talks:
+- [DeepSeek on AWS](https://youtu.be/zRkZrRUkJ48)
 - [Breaking Down DeepSeek-R1](https://youtu.be/U3wxNy8MNxY)
 - [Langfuse: Unveiling The Art of Observability In LLM Applications 🚀 🔎](https://youtu.be/SK27_JHj9cY)
 
