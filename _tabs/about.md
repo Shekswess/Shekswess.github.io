@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 2
 ---
 Hi there! 👋 I'm  Bojan Jakimovski !
 
@@ -14,27 +14,8 @@ I'm a Senior Machine Learning Engineer & College Professor with a passion for bu
 - 🥅 2025 Goals: Research in the field of Synthetic Data Generation, Small Language Models, Post-Training.
 - ⚡ Fun fact: I love to experiment and make different kinds of coffee and tea!
 
+
 This is my personal blog where I share my thoughts, experiences, and projects. Feel free to explore my content and reach out to me if you have any questions or suggestions. I'm always eager to connect with like-minded individuals and learn from their experiences.
-
-## Older blog posts or blog posts on different pages 📚
-These are some of my older blog posts that are not part of this my personal blog:
-
-- [Part 3: Deploying DeepSeek-R1 Models on AWS- designed Silicon Instances](https://medium.com/loka-engineering/part-3-deploying-deepseek-r1-models-on-aws-designed-silicon-instances-0aef410d0617)
-- [Part 2: Deploying Distiled DeepSeek-R1 Models on Amazon SageMaker AI](https://medium.com/loka-engineering/part-2-deploying-distiled-deepseek-r1-models-on-amazon-sagemaker-ai-4b5ee7cb6c11)
-- [Part 1: Deploying Distilled DeepSeek-R1 Models on Amazon Bedrock](https://medium.com/loka-engineering/harnessing-open-source-ai-on-aws-2f9b0fd9c42d)
-- [Dive into DeepSeek](https://www.loka.com/blog/dive-into-deepseek)
-- [Productionizing AI Image Generation with Inferentia2](https://www.loka.com/blog/productionizing-ai-image-generation-with-inferentia2)
-- [Budget Instruction Fine-tuning on Llama 3 8B Instruct(on Medical Data) with Hugging Face, Google Colab and Unsloth](https://mlops.community/budget-instruction-fine-tuning-of-llama-3-8b-instructon-medical-data-with-hugging-face-google-colab-and-unsloth/)
-- [MLflow on AWS with Pulumi: A Step-by-Step Guide](https://home.mlops.community/public/blogs/mlflow-on-aws-with-pulumi-a-step-by-step-guide)
-- [Unleashing the Power of Large Language Models in Healthcare and Wellness: Practical Context Providing in Healthcare and Wellness with Mistral 7B](https://mlops.community/%f0%9f%a4%b8%e2%9a%95%ef%b8%8funleashing-the-power-of-large-language-models-in-healthcare-and-wellness-practical-context-providing-in-healthcare-and-wellness-with-mistral-7b/)
-- [How I Transformed My Data Science Team's Productivity by Introduction DataOps & MLOps](https://home.mlops.community/public/blogs/how-i-transformed-my-data-science-teams-productivity-by-introducing-dataops-mlops)
-
-## Public Talks 🗣️
-These are records of some of my public talks:
-- [DeepSeek on AWS](https://youtu.be/zRkZrRUkJ48)
-- [Breaking Down DeepSeek-R1](https://youtu.be/U3wxNy8MNxY)
-- [Langfuse: Unveiling The Art of Observability In LLM Applications 🚀 🔎](https://youtu.be/SK27_JHj9cY)
-
 
 ## Let's Connect! 🤝
 I am always eager to expand my knowledge and collaborate on challenging projects. Feel free to reach out to me if you're interested in potential collaborations on the following platforms:

@@ -3,9 +3,9 @@ title: Make JavaScript Great Again
 description: Can JavaScript be great again?
 author: shekswess
 date: 2024-11-16 00:00:00 +0800
-categories: [JavaScript]
+categories: [AI, JavaScript]
 tags: [AI, deno, transformers.js, tensorflow.js,  Jupyter Notebook]
-image: /assets/images/javascript.jpeg
+image: /assets/images/javascript_blog/javascript.jpeg
 ---
 
 ## JavaScript's Downfall

@@ -3,9 +3,9 @@ title: Flexible AI Project Template
 description: A comprehensive yet flexible AI project template that addresses the challenges of project organization in AI, ML, MLOps, and LLMOps.
 author: shekswess
 date: 2024-10-03 14:10:00 +0800
-categories: [AI]
+categories: [AI, uv]
 tags: [uv, GitHub Actions, Docker Compose, pre-commit, pytest, MLflow, Langfuse, Jupyter Notebook]
-image: /assets/images/flexible-ai-project-template.jpeg
+image: /assets/images/ai_template_blog/flexible-ai-project-template.jpeg
 ---
 
 ## Introduction

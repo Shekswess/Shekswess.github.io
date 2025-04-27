@@ -3,9 +3,9 @@ title: Small Language Model RAGs is All You Need
 description: A comprehensive analysis of Retrieval-Augmented Generation (RAG) systems based on different language models, with a particular focus on the performance of small language models compared to their larger counterparts.
 author: shekswess
 date: 2024-08-29 14:10:00 +0800
-categories: [LLM, RAG]
+categories: [AI, SLM]
 tags: [LLM, RAG, LangChain, Langfuse, Ragas, Llama 3.1, Mistral, Mixtral, Gemma, Gemma2, Claude 3.5 Sonnet, Claude 3.5 Opus, Claude 3.5 Haiku, GPT-4o, GPT-4o Mini, GPT-4 Turbo]
-image: /assets/images/small_language_model_rags_clip.jpeg
+image: /assets/images/slm_rag_blog/small_language_model_rags_clip.jpeg
 ---
 
 ## Introduction
@@ -127,7 +127,7 @@ Let's dive into the details of each pipeline configuration.
 
 The Simple RAG pipeline uses a single LLM to generate the responses. This is how the Simple RAG looks:
 
-![image](../assets/images/simple.png)
+![image](../assets/images/slm_rag_blog/simple.png)
 _**Simple RAG Pipeline**_
 
 For all the experiments the system and the user messages are the same:
@@ -148,7 +148,7 @@ user_message: "Please answer my question based on the provided context:"
 
 The Mixture RAG pipeline is mostly is like the Simple RAG pipeline, but in the Generator we basically trigger multiple LLMs (Simple RAGs with the same prompt system and user messages previously defined) to generate the responses, and those responses are the aggregated by another LLM. This is how the Mixture RAG looks:
 
-![image](../assets/images/mixture.png)
+![image](../assets/images/slm_rag_blog/mixture.png)
 _**Mixture RAG Pipeline**_
 
 
