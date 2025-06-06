@@ -6,6 +6,16 @@ order: 1
 
 Welcome to my collection of public talks and presentations. Below you'll find recordings of my speaking engagements on various topics related to AI, machine learning, and LLM technologies.
 
+
+---
+### Synthetic Data and Multimodal AI: Transforming Localization
+
+A deep dive podcast about how synthetic data and multimodal AI are revolutionizing the localization industry, enhancing efficiency and accuracy.
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/b_K1Hs2_GcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ---
 
 ### DeepSeek on AWS
