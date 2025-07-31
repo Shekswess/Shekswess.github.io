@@ -1,22 +1,19 @@
 #  The contact options.
 
-
-
 - type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/bojan-jakimovski/'
+  icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
+  url: "https://www.linkedin.com/in/bojan-jakimovski/"
 
 - type: github
   icon: "fab fa-github"
 
 - type: huggingface
   icon: "fas fa-robot"
-  url: 'https://huggingface.co/Shekswess'
+  url: "https://huggingface.co/Shekswess"
 
 - type: researchgate
   icon: "fab fa-researchgate"
-  url: 'https://www.researchgate.net/profile/Bojan-Jakimovski'
-
+  url: "https://www.researchgate.net/profile/Bojan-Jakimovski"
 
 - type: email
   icon: "fas fa-envelope"
@@ -24,23 +21,8 @@
 
 - type: medium
   icon: "fab fa-medium"
-  url: 'https://medium.com/@jakimovski_bojan'
+  url: "https://medium.com/@jakimovski_bojan"
 
 - type: x
   icon: "fab fa-x"
-  url: 'https://x.com/Shekswess'
-
-# - type: rss
-#   icon: "fas fa-rss"
-#   noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
-# - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-                # Fill with your Linkedin homepage
-#
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+  url: "https://x.com/Shekswess"
