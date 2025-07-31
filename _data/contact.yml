@@ -1,25 +1,34 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
+
 
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/bojan-jakimovski/'
 
+- type: github
+  icon: "fab fa-github"
+
+- type: huggingface
+  icon: "fas fa-robot"
+  url: 'https://huggingface.co/Shekswess'
 
 - type: researchgate
   icon: "fab fa-researchgate"
   url: 'https://www.researchgate.net/profile/Bojan-Jakimovski'
 
 
-# - type: twitter
-#   icon: "fa-brands fa-x-twitter"
-
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: medium
+  icon: "fab fa-medium"
+  url: 'https://medium.com/@jakimovski_bojan'
+
+- type: x
+  icon: "fab fa-x"
+  url: 'https://x.com/Shekswess'
 
 # - type: rss
 #   icon: "fas fa-rss"
