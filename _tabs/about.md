@@ -54,12 +54,15 @@ I specialize in MLOps and Generative AI solutions with extensive experience in d
   </div>
 </div>
 
+
 ## Research Interests
 
-- 🔬 **Small Language Models**: Optimization for production environments
-- 🧠 **Synthetic Data Generation**: Creating high-quality training data for specialized domains
-- 🛠️ **Post-Training Techniques**: RLHF, IFT/SFT, Distributed Post-Training
-- 🚀 **2025 Goals**: Deepen research in Synthetic Data Generation, Small Language Models, Post-Training
+- 🔬 **Pre-training & Post-training of LLMs**: From large-scale model training to fine-tuning, alignment, and optimization for practical applications  
+- 🧠 **Small Language Models (SLMs)**: Efficiency, deployment, and real-world use cases of lightweight models  
+- 📊 **Synthetic Data Generation**: Creating high-quality, domain-specific data to power LLM pre-training and post-training  
+- ⚡ **Distributed Systems & GPUs**: Scalable training and inference using distributed architectures and hardware acceleration  
+- 🚀 **2025 Goals**: Advance research in LLM training pipelines, synthetic data generation, efficient small model architectures, and distributed AI infrastructure  
+
 
 ## Personal
 

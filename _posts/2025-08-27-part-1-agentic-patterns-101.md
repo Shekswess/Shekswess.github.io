@@ -334,7 +334,7 @@ if __name__ == "__main__":
    )
 ```
 
-## [LLM Routing](https://github.com/LokaHQ/agentic-patterns-101/blob/main/agentic-patterns/llm-routing.py)
+### [LLM Routing](https://github.com/LokaHQ/agentic-patterns-101/blob/main/agentic-patterns/llm-routing.py)
 
 ![LLM Routing](https://cdn-images-1.medium.com/max/720/1*Ny27jKW5vOwgwkT5jWrZ4w.png)
 
