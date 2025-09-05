@@ -49,7 +49,7 @@ I specialize in MLOps and Generative AI solutions with extensive experience in d
     <i class="fab fa-aws fa-2x"></i>
     <div>
       <strong>Certifications</strong>
-      <p>8x AWS Certified, demonstrating extensive expertise across various AWS services</p>
+      <p>AWS Ambassador, 8x AWS Certified, demonstrating extensive expertise across various AWS services</p>
     </div>
   </div>
 </div>
