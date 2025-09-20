@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Make JavaScript Great Again
 description: Can JavaScript be great again?
 author: shekswess

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Part 1: Deploying Distilled DeepSeek-R1 Models on Amazon Bedrock" 
 description: "Harnessing Open Source AI on AWS"
 author: shekswess

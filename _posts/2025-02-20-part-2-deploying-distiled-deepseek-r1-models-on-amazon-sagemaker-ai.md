@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Part 2: Deploying Distiled DeepSeek-R1 Models on Amazon SageMaker AI" 
 description: "Harnessing Open Source AI on AWS"
 author: shekswess

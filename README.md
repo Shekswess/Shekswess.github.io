@@ -9,9 +9,9 @@ This is my personal blogpost website deployed on GitHub. It is built using Ruby,
 - [Bundler](https://bundler.io/)
 - [Node.js](https://nodejs.org/)
 
-## Usage
+## Usage    
 
-For more details, please check the [official template repository](https://github.com/cotes2020/chirpy-starter)
+For more details, please check the [official template repository](https://github.com/riggraz/no-style-please/tree/master)
 
 ## License
 

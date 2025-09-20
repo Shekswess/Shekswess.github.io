@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "MLflow on AWS with Pulumi: A Step-by-Step Guide"
 description: "Learn how to deploy MLflow on AWS using Pulumi, a modern infrastructure as code tool. This guide covers everything from setting up your environment to deploying and managing MLflow."
 author: shekswess

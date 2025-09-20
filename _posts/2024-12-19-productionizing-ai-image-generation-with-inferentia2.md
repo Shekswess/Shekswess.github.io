@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Productionizing AI Image Generation with Inferentia2"
 description: "AWS’s new chip unlocks cost savings and scalability in Stable Diffusion."
 author: shekswess

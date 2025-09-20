@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Unleashing the Power of Large Language Models in Healthcare and Wellness: Practical Context Providing in Healthcare and Wellness with Mistral 7B"
 description: Can Large Language Models be used in Healthcare and Wellness?
 author: shekswess

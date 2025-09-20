@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Dive into DeepSeek"
 description: "How the open-recipe LLM is transforming GenAI"
 author: shekswess

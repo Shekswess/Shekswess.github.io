@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Part 3: Deploying DeepSeek-R1 Models on AWS- designed Silicon Instances" 
 description: "Harnessing Open Source AI on AWS"
 author: shekswess

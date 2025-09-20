@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Part 2: Agentic Patterns 101 with Loka & Strands-Agents"
 description: "Agentic Patterns 101, with Strands-Agents"
 author: shekswess

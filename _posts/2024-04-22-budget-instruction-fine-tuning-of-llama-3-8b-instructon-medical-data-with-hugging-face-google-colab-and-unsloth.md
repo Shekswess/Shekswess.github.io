@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Budget Instruction Fine-tuning of Llama 3 8B Instruct (on Medical Data) with Hugging Face, Google Colab and Unsloth"
 description: "Learn how to fine-tune Llama 3 8B Instruct on medical data using Google Colab and Unsloth for efficient memory management."
 author: shekswess

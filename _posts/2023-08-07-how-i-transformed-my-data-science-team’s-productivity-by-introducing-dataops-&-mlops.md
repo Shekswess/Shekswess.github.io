@@ -1,4 +1,5 @@
 ---
+layout: post
 title: How I Transformed My Data Science Team’s Productivity by Introducing DataOps & MLOps
 description: Tranforming Data Science Team's Productivity with simple but yet effective steps
 author: shekswess

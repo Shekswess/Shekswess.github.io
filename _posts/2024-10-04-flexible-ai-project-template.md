@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Flexible AI Project Template
 description: A comprehensive yet flexible AI project template that addresses the challenges of project organization in AI, ML, MLOps, and LLMOps.
 author: shekswess

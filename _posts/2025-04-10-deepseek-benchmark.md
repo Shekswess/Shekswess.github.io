@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Part 4: Benchmarking DeepSeek Cost, Performance and Business Use Cases on AWS" 
 description: "Harnessing Open Source AI on AWS"
 author: shekswess

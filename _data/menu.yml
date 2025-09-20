@@ -1,0 +1,32 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: about
+    entries:
+      - title: MSc in Dedicated Computer Systems @ <a href="https://www.ukim.edu.mk/">Ss. Cyril and Methodius University, FEEIT</a>
+      - title: Machine Learning Lead @ <a href="https://www.loka.com/">Loka</a>
+      - title: College Professor @ <a href="https://next.edu.mk/">BrainsterNext</a>
+      - title: AWS Ambassador & 9x Certified @ <a href="https://aws.amazon.com/partners/ambassadors/">AWS Ambassador Program</a>
+
+  - title: research interests
+    entries:
+      - title: Pre-training & Post-training of LLMs
+      - title: Small Language Models (SLMs)
+      - title: Synthetic Data Generation
+      - title: Distributed Systems & GPUs
+
+  - title: talks
+    entries:
+      - title: "<a href='https://www.youtube.com/watch?v=b_K1Hs2_GcU'>Synthetic Data and Multimodal AI: Transforming Localization</a>"
+      - title: <a href='https://www.youtube.com/watch?v=zRkZrRUkJ48'>DeepSeek on AWS</a>
+      - title: <a href='https://www.youtube.com/watch?v=U3wxNy8MNxY'>Breaking Down DeepSeek-R1</a>
+      - title: "<a href='https://www.youtube.com/watch?v=SK27_JHj9cY'>Langfuse: Unveiling The Art of Observability In LLM Applications </a>"
+
+
+  - title: posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: "all posts"
+      show_more_url: "archive.html"
