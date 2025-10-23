@@ -1,9 +1,10 @@
 ---
 layout: post
+center_captions: true
 title: "Can Tiny Language Models Reason?"
 description: "Exploring the capabilities of Tiny Language Models to reason and understand complex tasks."
 author: shekswess
-date: 2025-10-21 00:00:00 +0800
+date: 2025-10-23 00:00:00 +0800
 categories: [AI, LLM]
 tags:
   [
@@ -16,23 +17,29 @@ tags:
     Reasoning,
     Open Source,
   ]
+image: https://github-production-user-asset-6210df.s3.amazonaws.com/72557383/494877130-5f453496-8180-4cf4-94da-26ebbe1159d4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251023T113806Z&X-Amz-Expires=300&X-Amz-Signature=9a3824abb9e842ac97bcde7d7583b54b8b45599cda909f8ba290513ebae6ba8f&X-Amz-SignedHeaders=host
 ---
 
-Over the past year, the AI community has witnessed a wave of breakthroughs in reasoning-capable language models. Among these, DeepSeek R1 [1] emerged as a milestone, showing that with the right approach and correct setup, language models can perform complex reasoning tasks. The release of DeepSeek R1 triggered a reasoning boom, where researchers began exploring how to imbue models of different sizes with structured reasoning, narrowing the gap between large language models (LLMs) typical of frontier labs and more modestly sized models that can be trained and deployed on consumer-grade hardware, i.e., small language models (SLMs).
+Over the past year, the AI community has witnessed a wave of breakthroughs in reasoning-capable language models. Among these, DeepSeek R1 [1] marked a major milestone, proving that with the right approach and setup, language models can handle complex reasoning tasks. Its release sparked a “reasoning boom,” as researchers began exploring ways to imbue models of all sizes with structured reasoning. This movement has started to close the gap between large language models (LLMs) from frontier labs and smaller models that can be trained and deployed on consumer-grade hardware—small language models (SLMs).
 
-Inspired by that momentum, the Tiny Reasoning Language Model (trlm) project asks a bold question: _Can tiny models reason?_ If DeepSeek R1 showed that reasoning is possible in large models, perhaps the same principles can allow a 135M-parameter model to carry out multi-step reasoning in a stable, explainable way.
+Inspired by that momentum, the Tiny Reasoning Language Model (trlm) project asks a bold question:
 
-Recent research gives hope to this ambition. Less is More: Recursive Reasoning with Tiny Networks [2] demonstrates that recursion enables reasoning even in extremely compact networks. Tina: Tiny Reasoning Models via LoRA [3] introduces a parameter-efficient RL-based approach that imbues reasoning ability via low-rank adaptation. And MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with Open Training Recipes [4] pushes reasoning down into sub-billion regimes via smart data curation and post-training recipe design.
+ _Can tiny language models reason?_
 
-This report presents trlm in three deliberate stages: teaching a 135M model to talk, to think (with &lt;think&gt; traces), and finally to prefer good reasoning via alignment. Along the way, it surfaces challenges, surprises, and insights that emerged from compressing reasoning behaviors into a compact model. The base model throughout is SmolLM2‑135M‑Instruct [5].
+If DeepSeek R1 showed that reasoning is possible in large models, perhaps a well-designed post-training process can allow a 135M-parameter model to carry out multi-step reasoning in a stable, explainable way.
+
+Recent research gives hope to this ambition. The approach showcased with Tiny Recursion Model (TRM) [2] demonstrates that recursion enables reasoning even in extremely compact networks. Similarly, Tina: Tiny Reasoning Models via LoRA [3], introduces a parameter-efficient RL-based approach that imbues reasoning ability via low-rank adaptation. Finally, MobileLLM-R1 [4] demonstrates that careful data curation and post-training design can push reasoning capabilities into the sub-billion-parameter regime.
+
+This report presents trlm in three deliberate stages: teaching a 135M model to talk, to think (with &lt;think&gt; traces), and finally to prefer good reasoning via alignment. Along the way, it surfaces challenges, surprises, and insights that emerged from compressing reasoning behaviors into a tiny compact language model.
 
 ## Methods of Experimentation
 
 The trlm pipeline is structured as a curriculum. Rather than relying on emergent behavior, the approach progressively teaches a tiny model how to converse, how to express structured thinking, and how to prefer better thoughts and answers. See Figure 1 for an overview.
 
-<img width="800" height="563" alt="trlm pipeline stages" src="https://github.com/user-attachments/assets/195ef389-6aa9-4527-b4f0-bea68c0841ae"/>
-
-_Figure 1: trlm training pipeline across three stages (SFT → Think → DPO)._
+<figure>
+  <img width="800" height="563" alt="trlm pipeline stages" src="https://github.com/user-attachments/assets/195ef389-6aa9-4527-b4f0-bea68c0841ae"/>
+  <figcaption>Figure 1: trlm training pipeline across three stages (SFT → SFT (Think) → DPO).</figcaption>
+</figure>
 
 Stage 1 performs supervised fine‑tuning on instruction following, summarization, rewriting, and everyday conversation without any chain‑of‑thought. The objective is to stabilize the conversational prior so the model follows directions and produces coherent outputs without hidden thoughts leaking into answers.
 
@@ -48,7 +55,7 @@ Three curated blends were built, one per stage, with a preparation pipeline that
 
 Stage 1 is a non‑reasoning SFT blend published as _Shekswess/trlm-sft-stage-1-final-2_ with roughly 58k dialogues. The dominant share comes from SmolTalk2 instruction‑following and short form tasks without hidden thoughts. The largest contributor is _smol_magpie_ultra_no_think_ at about 57.8 percent, followed by summarize and rewrite variants at 12.9 percent each, with the remainder from everyday conversations and system chats. This mix intentionally biases toward clarity and compliance rather than long chains. Table 1 summarizes the Stage 1 composition.
 
-****Table 1: Stage 1 SFT blend composition (non‑reasoning)****
+<p class="table-title">Table 1: Stage 1 SFT blend composition (non‑reasoning)</p>
 
 | Source (subset)                                                                | Samples | Share |
 | ------------------------------------------------------------------------------ | ------: | ----: |
@@ -62,7 +69,7 @@ Stage 1 is a non‑reasoning SFT blend published as _Shekswess/trlm-sft-stage-1-
 
 Stage 2 is a reasoning SFT blend, _Shekswess/trlm-sft-stage-2-final-2_, with around 78k traces that explicitly include &lt;think&gt; segments. The largest component is _Llama_Nemotron_Post_Training_Dataset_reasoning_r1_ at 51.5 percent, complemented by OpenThoughts3 at 25.6 percent, multi‑turn reasoning prompts at 12.8 percent, and Qwen3‑generated traces at 6.4 percent. _chat_template_kwargs_ are dropped across sources to keep the schema uniform. The intent is to make reasoning a consistent language, not an artifact of formatting. Table 2 summarizes the Stage 2 composition.
 
-****Table 2: Stage 2 SFT blend composition (reasoning with &lt;think&gt;)****
+<p class="table-title">Table 2: Stage 2 SFT blend composition (reasoning with &lt;think&gt;)</p>
 
 | Source (subset)                                                             | Samples | Share |
 | --------------------------------------------------------------------------- | ------: | ----: |
@@ -75,7 +82,7 @@ Stage 2 is a reasoning SFT blend, _Shekswess/trlm-sft-stage-2-final-2_, with aro
 
 Stage 3 is the preference alignment dataset, _Shekswess/trlm-dpo-stage-3-final-2_, constructed around 50k chosen versus rejected pairs from _olmo-3-preference-mix-deltas_ variants. Legacy metadata is normalized and _dataset_ is renamed to _source_ for consistency with earlier stages. These pairs focus on reasoning quality rather than only surface‑level helpfulness. Table 3 summarizes the Stage 3 dataset.
 
-****Table 3: Stage 3 DPO dataset (chosen vs rejected pairs)****
+<p class="table-title">Table 3: Stage 3 DPO dataset (chosen vs rejected pairs)</p>
 
 | Source (split)                                                                            | Samples | Notes                                                 |
 | ----------------------------------------------------------------------------------------- | ------: | ----------------------------------------------------- |
@@ -85,9 +92,9 @@ This staged strategy allows the model to learn to converse first, then to think 
 
 ## Training Setup and Configuration
 
-All stages fine‑tune SmolLM2‑135M‑Instruct [5] by doing full supervised fine-tuning. Training was run on a single AMD MI300x instance, with artifacts saved regularly and public checkpoints pushed at the end of each stage: _Shekswess/trlm-stage-1-sft-final-2_, _Shekswess/trlm-stage-2-sft-final-2_, and _Shekswess/trlm-stage-3-dpo-final-2_. For Stage 2 onward, the tokenizer is extended with _<think>_ and _</think>_ as special tokens and a chat template is enforced where thoughts appear inside _<think>_ and the final answer appears outside. This discipline keeps traces readable and reduces leakage of internal steps into answers.
+All stages fine‑tune SmolLM2‑135M‑Instruct [5] by doing full supervised fine-tuning. Training was run on a single AMD MI300x instance, with artifacts saved regularly and public checkpoints pushed at the end of each stage: _Shekswess/trlm-stage-1-sft-final-2_, _Shekswess/trlm-stage-2-sft-final-2_, and _Shekswess/trlm-stage-3-dpo-final-2_. For Stage 2 onward, the tokenizer is extended with &lt;think&gt; and &lt;/think&gt; as special tokens and a chat template is enforced where thoughts appear inside &lt;think&gt; tags and the final answer appears outside. This discipline keeps traces readable and reduces leakage of internal steps into answers.
 
-Optimization is straightforward. Stage 1 and Stage 2 use standard supervised fine‑tuning with a schedule tuned for stability on a tiny backbone. Stage 3 switches to the DPO objective with per‑batch chosen and rejected completions. Checkpoints are saved roughly every 1.5k steps while monitoring loss, token accuracy, entropy, reward margins, and chosen versus rejected dynamics. The key curves for each stage are below.
+Optimization is straightforward. Stage 1 and Stage 2 use standard supervised fine‑tuning with a schedule tuned for stability on a tiny backbone. Stage 3 switches to the DPO objective with per‑batch chosen and rejected completions. Checkpoints are saved roughly every 300 steps while monitoring loss, token accuracy, entropy, reward margins, and chosen versus rejected dynamics. Let's review the training curves and configurations for each stage.
 
 ### Stage 1 - SFT without chain‑of‑thought
 
@@ -106,15 +113,15 @@ Optimization is straightforward. Stage 1 and Stage 2 use standard supervised fin
   <figcaption>Figure 4: Stage 1 SFT output entropy.</figcaption>
 </figure>
 
-As shown in Figure 2, the loss decreases smoothly and then stabilizes, indicating the tiny model reliably learns general instruction following without special treatment for thoughts. Token accuracy climbs with small oscillations typical of a diverse short‑form mix (Figure 3). Entropy trends downward before settling, consistent with a compact model becoming confident without becoming brittle (Figure 4).
+As shown in Figure 2, the loss decreases smoothly and then stabilizes, indicating the tiny model reliably learns general instruction following without special treatment for thoughts. Token accuracy climbs with small oscillations typical of a diverse short‑form mix (Figure 3). Entropy trends downward before settling, consistent with a compact model becoming confident without becoming brittle (Figure 4). This establishes a solid conversational foundation which Stage 2 can build upon with the introduction of CoT reasoning capabilities.
 
-****Table 4: Stage 1 SFT training configuration****
+<p class="table-title">Table 4: Stage 1 SFT training configuration</p>
 
 | Parameter              | Value                                          |
 | ---------------------- | ---------------------------------------------- |
-| Base model             | *HuggingFaceTB/SmolLM2-135M-Instruct*          |
-| Tokenizer              | *HuggingFaceTB/SmolLM2-135M-Instruct*          |
-| Dataset                | *Shekswess/trlm-sft-stage-1-final-2* (*train*) |
+| Base model             | _HuggingFaceTB/SmolLM2-135M-Instruct_          |
+| Tokenizer              | _HuggingFaceTB/SmolLM2-135M-Instruct_          |
+| Dataset                | _Shekswess/trlm-sft-stage-1-final-2_ (_train_) |
 | Epochs                 | 3                                              |
 | Per-device batch size  | 32                                             |
 | Gradient accumulation  | 4                                              |
@@ -127,8 +134,6 @@ As shown in Figure 2, the loss decreases smoothly and then stabilizes, indicatin
 | Max length             | 4096                                           |
 | Scheduler              | cosine                                         |
 | NEFTune noise alpha    | 0.01                                           |
-| Packing                | false                                          |
-| Data loader workers    | 12                                             |
 
 ### Stage 2 - SFT with &lt;think&gt; reasoning
 
@@ -147,16 +152,16 @@ As shown in Figure 2, the loss decreases smoothly and then stabilizes, indicatin
   <figcaption>Figure 7: Stage 2 SFT output entropy.</figcaption>
 </figure>
 
-Introducing &lt;think&gt; segments increases task difficulty. Training remains well‑behaved and converges without collapse (Figure 5). Accuracy stabilizes slightly below Stage 1, matching the added difficulty and longer targets when thoughts are present (Figure 6). Entropy stays in a healthy range, suggesting exploration inside &lt;think&gt; with decisive answers outside (Figure 7).
+Introducing &lt;think&gt; CoT segments increases task difficulty. Training remains well‑behaved and converges without collapse (Figure 5). Accuracy stabilizes slightly below Stage 1, matching the added difficulty and longer targets when thoughts are present (Figure 6). Entropy stays in a healthy range, suggesting exploration inside &lt;think&gt; tags with decisive answers outside (Figure 7). Notably, the model learns to use &lt;think&gt; as a structured language, producing readable multi‑step traces that align with prompts. However some malformed traces appear, indicating room for further refinement in formatting and data curation, which also motivates Stage 3 alignment.
 
-****Table 5: Stage 2 SFT training configuration****
+<p class="table-title">Table 5: Stage 2 SFT training configuration</p>
 
 | Parameter              | Value                                          |
 | ---------------------- | ---------------------------------------------- |
-| Base model             | *Shekswess/trlm-stage-1-sft-final-2*           |
-| Tokenizer              | *Shekswess/trlm-stage-1-sft-final-2*           |
-| Special tokens         | *<think>, </think>*                            |
-| Dataset                | *Shekswess/trlm-sft-stage-2-final-2* (*train*) |
+| Base model             | _Shekswess/trlm-stage-1-sft-final-2_           |
+| Tokenizer              | _Shekswess/trlm-stage-1-sft-final-2_           |
+| Special tokens         | &lt;think&gt;, &lt;/think&gt;                  |
+| Dataset                | _Shekswess/trlm-sft-stage-2-final-2_ (_train_) |
 | Epochs                 | 1                                              |
 | Per-device batch size  | 32                                             |
 | Gradient accumulation  | 4                                              |
@@ -178,7 +183,7 @@ Introducing &lt;think&gt; segments increases task difficulty. Training remains w
 
 <figure>
   <img src="../assets/images/trlm/dpo-stage-3-graphs/accuracies_rewards_train.png" alt="Chosen vs rejected rewards and accuracies during Stage 3 DPO." />
-  <figcaption>Figure 9: Stage 3 DPO chosen versus rejected rewards and accuracies.</figcaption>
+  <figcaption>Figure 9: Stage 3 DPO rewards accuracies.</figcaption>
 </figure>
 
 <figure>
@@ -186,15 +191,15 @@ Introducing &lt;think&gt; segments increases task difficulty. Training remains w
   <figcaption>Figure 10: Stage 3 DPO reward margins showing separation over time.</figcaption>
 </figure>
 
-With DPO the loss variance drops after a short warm‑up (Figure 8), and chosen versus rejected rewards separate with widening margins (Figure 9 and Figure 10). Over time the policy prefers cleaner traces and more decisive answers. The chosen and rejected log‑prob dynamics form a consistent signal without overfitting to any single prompt template.
+With DPO the loss variance drops after a short warm‑up (Figure 8), and chosen versus rejected rewards separate with widening margins (Figure 9 and Figure 10). Over time the policy prefers cleaner traces and more decisive answers. The chosen and rejected log‑prob dynamics form a consistent signal without overfitting to any single prompt template. After some test interactions, the model produces notably more concise and correct reasoning traces, indicating that even at 135M parameters, preference alignment effectively shapes reasoning style and quality.
 
-****Table 6: Stage 3 DPO training configuration****
+<p class="table-title">Table 6: Stage 3 DPO training configuration</p>
 
 | Parameter              | Value                                          |
 | ---------------------- | ---------------------------------------------- |
-| Base model             | *Shekswess/trlm-stage-2-sft-final-2*           |
-| Tokenizer              | *Shekswess/trlm-stage-2-sft-final-2*           |
-| Dataset                | *Shekswess/trlm-dpo-stage-3-final-2* (*train*) |
+| Base model             | _Shekswess/trlm-stage-2-sft-final-2_           |
+| Tokenizer              | _Shekswess/trlm-stage-2-sft-final-2_           |
+| Dataset                | _Shekswess/trlm-dpo-stage-3-final-2_ (_train_) |
 | Epochs                 | 1                                              |
 | Per-device batch size  | 32                                             |
 | Gradient accumulation  | 4                                              |
@@ -204,17 +209,16 @@ With DPO the loss variance drops after a short warm‑up (Figure 8), and chosen 
 | Warmup ratio           | 0.1                                            |
 | Max grad norm          | 0.2                                            |
 | DPO beta               | 0.1                                            |
-| DPO loss               | *apo_zero*                                     |
+| DPO loss               | _apo_zero_                                     |
 | Max prompt length      | 1048                                           |
 | Max length             | 2048                                           |
-| Scheduler              | *cosine_with_min_lr* (*min_lr_rate=0.1*)       |
-| Remove unused columns  | false                                          |
+| Scheduler              | _cosine_with_min_lr_ (_min_lr_rate=0.1_)       |
 
 ## Discussion
 
 Across the three stages a clear capability progression emerges. Stage 1 establishes a strong conversational prior that tiny backbones often lack out of the box. In Stage 2, once the model learns to use &lt;think&gt; as a language, it can carry multi‑step traces that are readable and mostly well‑formed. Stage 3 shifts the distribution of those traces toward helpful, correct, and efficient reasoning rather than rambling.
 
-Three practical lessons emerge. First, delimiters matter. Adding &lt;think&gt; and enforcing a consistent template reduces malformed traces and stabilizes training. Second, curation dominates. The balance among *Llama_Nemotron*, *OpenThoughts*, and multi‑turn synthetic sources tracks closely with the kinds of traces the model reproduces. Third, alignment is a strong lever even at 135M parameters. Preference optimization shifts style and correctness in a way that outweighs the model’s size.
+Three practical lessons emerge. First, delimiters matter. Adding &lt;think&gt; and enforcing a consistent template reduces malformed traces and stabilizes training. Second, curation dominates. The balance among _Llama_Nemotron_, _OpenThoughts_, and multi‑turn synthetic sources tracks closely with the kinds of traces the model reproduces. Third, alignment is a strong lever even at 135M parameters. Preference optimization shifts style and correctness in a way that outweighs the model’s size.
 
 See Figure 10 for an example model interaction trace.
 

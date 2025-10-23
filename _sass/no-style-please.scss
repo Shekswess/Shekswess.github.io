@@ -43,7 +43,14 @@ h2, h3, h4, h5, h6 { margin-top: 3rem; }
 
 hr { margin: 2rem 0; }
 
-p { margin: 1rem 0; }
+p {
+  margin: 1rem 0;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 
 li { margin: 0.4rem 0; }
 
@@ -99,4 +106,15 @@ img {
 
 a {
   text-decoration: none;
+}
+
+// Center captions (opt-in per post via .center-captions on <article>)
+.center-captions {
+  figcaption { text-align: center; }
+  table caption { text-align: center; }
+  // Common Markdown caption patterns
+  p > em:only-child { display: block; text-align: center; }
+  p > strong:only-child { display: block; text-align: center; }
+  p > strong:only-child > em:only-child { display: block; text-align: center; }
+  .table-title, .figure-title { text-align: center; }
 }
