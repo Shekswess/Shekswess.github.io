@@ -17,7 +17,7 @@ tags:
     Reasoning,
     Open Source,
   ]
-image: https://github-production-user-asset-6210df.s3.amazonaws.com/72557383/494877130-5f453496-8180-4cf4-94da-26ebbe1159d4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251023T113806Z&X-Amz-Expires=300&X-Amz-Signature=9a3824abb9e842ac97bcde7d7583b54b8b45599cda909f8ba290513ebae6ba8f&X-Amz-SignedHeaders=host
+image: https://github.com/user-attachments/assets/5f453496-8180-4cf4-94da-26ebbe1159d4
 ---
 
 Over the past year, the AI community has witnessed a wave of breakthroughs in reasoning-capable language models. Among these, DeepSeek R1 [1] marked a major milestone, proving that with the right approach and setup, language models can handle complex reasoning tasks. Its release sparked a “reasoning boom,” as researchers began exploring ways to imbue models of all sizes with structured reasoning. This movement has started to close the gap between large language models (LLMs) from frontier labs and smaller models that can be trained and deployed on consumer-grade hardware—small language models (SLMs).
@@ -37,8 +37,8 @@ This report presents trlm in three deliberate stages: teaching a 135M model to t
 The trlm pipeline is structured as a curriculum. Rather than relying on emergent behavior, the approach progressively teaches a tiny model how to converse, how to express structured thinking, and how to prefer better thoughts and answers. See Figure 1 for an overview.
 
 <figure>
-  <img width="800" height="563" alt="trlm pipeline stages" src="https://github.com/user-attachments/assets/195ef389-6aa9-4527-b4f0-bea68c0841ae"/>
-  <figcaption>Figure 1: trlm training pipeline across three stages (SFT → SFT (Think) → DPO).</figcaption>
+  <img width="800" height="450" alt="trlm pipeline stages" src="https://github.com/user-attachments/assets/195ef389-6aa9-4527-b4f0-bea68c0841ae"/>
+  <figcaption>Figure 1: trlm training pipeline across three stages <br/>(SFT → SFT (Think) → DPO).</figcaption>
 </figure>
 
 Stage 1 performs supervised fine‑tuning on instruction following, summarization, rewriting, and everyday conversation without any chain‑of‑thought. The objective is to stabilize the conversational prior so the model follows directions and produces coherent outputs without hidden thoughts leaking into answers.
@@ -69,7 +69,7 @@ Stage 1 is a non‑reasoning SFT blend published as _Shekswess/trlm-sft-stage-1-
 
 Stage 2 is a reasoning SFT blend, _Shekswess/trlm-sft-stage-2-final-2_, with around 78k traces that explicitly include &lt;think&gt; segments. The largest component is _Llama_Nemotron_Post_Training_Dataset_reasoning_r1_ at 51.5 percent, complemented by OpenThoughts3 at 25.6 percent, multi‑turn reasoning prompts at 12.8 percent, and Qwen3‑generated traces at 6.4 percent. _chat_template_kwargs_ are dropped across sources to keep the schema uniform. The intent is to make reasoning a consistent language, not an artifact of formatting. Table 2 summarizes the Stage 2 composition.
 
-<p class="table-title">Table 2: Stage 2 SFT blend composition (reasoning with &lt;think&gt;)</p>
+<p class="table-title">Table 2: Stage 2 SFT blend composition <br/>(reasoning CoT traces with &lt;think&gt;)</p>
 
 | Source (subset)                                                             | Samples | Share |
 | --------------------------------------------------------------------------- | ------: | ----: |
