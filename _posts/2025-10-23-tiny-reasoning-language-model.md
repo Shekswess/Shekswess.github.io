@@ -275,7 +275,7 @@ This project was executed by a single researcher with support from the following
 
 ## Resources
 
-- Project repository: [GitHub](https://github.com/bojanjakimovski/tiny-reasoning-language-model)
+- Project repository: [GitHub](https://github.com/Shekswess/tiny-reasoning-language-model)
 - Hugging Face Model, Checkpoints, and Datasets Collection: [Hugging Face](https://huggingface.co/collections/Shekswess/tiny-reasoning-language-model)
 
 ## Citations
