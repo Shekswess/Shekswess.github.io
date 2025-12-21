@@ -23,6 +23,7 @@ entries:
 
   - title: talks
     entries:
+      - title: "<a href='https://youtu.be/DAXAZSKSNG8'>Model Context Protocol (MCP): The Backend that AI Agents understand </a>"
       - title: "<a href='https://www.youtube.com/watch?v=b_K1Hs2_GcU'>Synthetic Data and Multimodal AI: Transforming Localization</a>"
       - title: <a href='https://www.youtube.com/watch?v=zRkZrRUkJ48'>DeepSeek on AWS</a>
       - title: <a href='https://www.youtube.com/watch?v=U3wxNy8MNxY'>Breaking Down DeepSeek-R1</a>
