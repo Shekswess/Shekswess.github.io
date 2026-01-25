@@ -20,6 +20,8 @@ tags:
 image: https://github.com/user-attachments/assets/5f453496-8180-4cf4-94da-26ebbe1159d4
 ---
 
+_**Technical Blog Cited in ["Falcon-H1-Tiny: A series of extremely small, yet powerful language models redefining capabilities at small scale"](https://huggingface.co/spaces/tiiuae/tiny-h1-blogpost)**_
+
 Over the past year, the AI community has witnessed a wave of breakthroughs in reasoning-capable language models. Among these, DeepSeek R1 [1] marked a major milestone, proving that with the right approach and setup, language models can handle complex reasoning tasks. Its release sparked a “reasoning boom,” as researchers began exploring ways to imbue models of all sizes with structured reasoning. This movement has started to close the gap between large language models (LLMs) from frontier labs and smaller models that can be trained and deployed on consumer-grade hardware—small language models (SLMs).
 
 Inspired by that momentum, the Tiny Reasoning Language Model (trlm) project asks a bold question:
