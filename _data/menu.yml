@@ -29,9 +29,17 @@ entries:
       - title: <a href='https://www.youtube.com/watch?v=U3wxNy8MNxY'>Breaking Down DeepSeek-R1</a>
       - title: "<a href='https://www.youtube.com/watch?v=SK27_JHj9cY'>Langfuse: Unveiling The Art of Observability In LLM Applications </a>"
 
+  - title: papers
+    entries:
+      - title: "<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:d1gkVwhDpl0C'>Privacy-aware Human Activity Recognition with Smart Glasses for Digital Therapeutics </a>"
+      - title: "<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:u5HHmVD_uO8C'>Monitoring Valence with Facial EMG Sensors using Machine Learning</a>"
+      - title: <a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:2osOgNQ5qMEC'>Network Anomaly Detection using Federated Learning for the Internet of Things</a>
+
   - title: posts
     post_list:
-      limit: 5
+      limit: 3
       show_more: true
       show_more_text: "all posts"
       show_more_url: "archive.html"
+
+    
