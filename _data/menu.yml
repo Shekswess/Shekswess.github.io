@@ -18,6 +18,7 @@ entries:
 
   - title: open-source projects
     entries:
+      - title: <a href="https://github.com/Shekswess/tiny-think">Tiny Think</a>
       - title: <a href="https://github.com/Shekswess/tiny-reasoning-language-model">Tiny Reasoning Language Model (trlm)</a>
       - title: <a href="https://github.com/Shekswess/synthgenai">SynthGenAI</a>
 
@@ -31,6 +32,7 @@ entries:
 
   - title: papers
     entries:
+      - title: "<a href='https://github.com/Shekswess/tiny-think'>Tiny Think: Reasoning-First Post-Training for Tiny Math and STEM Language Models (Soon Available)</a>"
       - title: "<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:d1gkVwhDpl0C'>Privacy-aware Human Activity Recognition with Smart Glasses for Digital Therapeutics </a>"
       - title: "<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:u5HHmVD_uO8C'>Monitoring Valence with Facial EMG Sensors using Machine Learning</a>"
       - title: <a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:2osOgNQ5qMEC'>Network Anomaly Detection using Federated Learning for the Internet of Things</a>

@@ -187,7 +187,7 @@ But the real value is not the scoring itself, it is the iteration loop it enable
 
 We ship a single-file chat UI served directly by FastAPI. No build step, no framework. We use one HTML file that consumes the same SSE event stream our application would.
 
-![Agent Template Chat Interface (Streaming Mode)](https://miro.medium.com/v2/resize:fit:720/format:webp/1*rz93ou1c967cz4E1a_4d5Q.gif)
+![Agent Template Chat Interface (Streaming Mode)](https://miro.medium.com/v2/resize:fit:720/format:webp/1*xcMBXF0WBWBE8HxngJNPGw.gif)
 
 _Agent Template Chat Interface (Streaming Mode)_
 
