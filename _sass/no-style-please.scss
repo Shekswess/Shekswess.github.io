@@ -104,6 +104,40 @@ img {
   margin: 0 auto;
 }
 
+video {
+  max-width: 100%;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.post-video {
+  margin: 2rem 0;
+}
+
+.post-video video {
+  width: 100%;
+  border: thin solid black;
+  background: black;
+}
+
+.post-video figcaption {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 900px) {
+  .w {
+    max-width: 760px;
+  }
+}
+
 a {
   text-decoration: none;
 }
