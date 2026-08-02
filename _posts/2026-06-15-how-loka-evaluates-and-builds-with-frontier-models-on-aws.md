@@ -12,6 +12,10 @@ source_url: "https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/"
 source_authors: ["Petar Kalinovski", "Bojan Jakimovski"]
 ---
 
+_**Original Source of the blog post: [How Loka Evaluates and Buildswith Frontier Models on AWS](https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/)**_
+
+_**Blog was written with my colleague from Loka: Petar Kalinovski**_
+
 ## Introduction
 
 OpenAI **GPT-5.5, GPT-5.4, and Codex** are now generally

@@ -12,6 +12,10 @@ source_url: "https://aws.amazon.com/blogs/machine-learning/how-loka-built-a-natu
 source_authors: ["Bojan Jakimovski", "Arabinda Pani", "Nina Cvetkovska", "Venkat Gomatham"]
 ---
 
+_**Original Source of the blog post: [How Loka Built a Natural, Low-Latency Voice Agent with Amazon Nova 2 Sonic](https://aws.amazon.com/blogs/machine-learning/how-loka-built-a-natural-low-latency-voice-agent-with-amazon-nova-2-sonic/)**_
+
+_**Blog was written with my colleagues from Loka & AWS: Nina Cvetkovska, Venkat Gomatham and Arabinda Pani**_
+
 [Loka](https://www.loka.com/) transformed customer voice interactions by building a conversational AI agent with [Amazon Nova 2 Sonic](https://nova.amazon.com/sonic) that keeps customers engaged with natural, responsive experiences. Their AWS-based solution achieves high speech reasoning accuracy on [Big Bench Audio](https://huggingface.co/datasets/ArtificialAnalysis/big_bench_audio) while delivering significantly lower costs and faster response times than traditional voice AI pipelines. In this post, we demonstrate the architecture and approach Loka used to solve a common frustration: robotic, slow voice assistants that cause customers to hang up, damaging brand reputation and driving up support costs.
 
 ## Why traditional voice assistants fall short
@@ -140,21 +144,3 @@ Speech-to-speech AI has reached production readiness. Start experimenting with N
 This post represents a collaboration between AWS and Loka, who specialize in building production-ready AI solutions. Loka’s team has already solved the hard problems around architecture, evaluation, and optimization. Their automotive dealership experience translates directly to other industries.
 
 Speech-to-speech AI is still in its early days. The best applications haven’t been invented yet. Your industry knowledge combined with this technology could create breakthrough solutions. Start your journey with [Nova 2 Sonic](https://nova.amazon.com/sonic) and [Loka](https://partners.amazonaws.com/partners/0010h00001hfV65AAE/Loka) today. Transform how your customers experience conversation with your business.
-
-## About the authors
-
-**Bojan Jakimovski**
-
-Bojan Jakimovski is a Machine Learning Lead at Loka, an AWS Ambassador, and a 9x AWS Certified professional. He holds a Master’s degree in Electrical Engineering and Information Technologies from FEEIT, specializing in Dedicated Computer Systems, and brings expertise across machine learning, deep learning, MLOps, and cloud-native architectures on AWS. As a hands-on practitioner, he designs and deploys scalable AI systems, with a strong focus on Generative AI, distributed training, and production-grade ML infrastructure. His interests also extend to high-performance computing, federated learning and real-time sensitive systems, where he continues to explore efficient and scalable approaches to modern AI systems.
-
-**Nina Cvetkovska**
-
-Nina Cvetkovska is a Machine Learning Engineer at Loka and an AWS Certified Machine Learning Specialist. She holds a background in Software Engineering from FCSE, bringing a strong academic foundation to her hands-on work in ML and AI. As a practitioner, Nina focuses on building and deploying machine learning solutions with interests in computer vision, edge AI, and real-time multimodal systems, including speech-to-speech applications, where she explores efficient and low-latency approaches to modern AI.
-
-**Venkat Gomatham**
-
-Venkat Gomatham is a Senior Partner Solutions Architect at AWS, providing strategic guidance to partners in their cloud transformation journey. With 22+ years as an IT architect, he drives innovation and digital transformation initiatives, helping organizations modernize their IT landscapes through cutting-edge technologies like Agentic and Physical AI.
-
-**Arabinda Pani**
-
-Arabinda Pani is a Principal Generative AI Specialist Solutions Architect at AWS, where he helps enterprise customers and strategic partners design, build, and scale generative AI and agentic AI solutions. As part of the AMER Generative AI Specialist PSA team, he leads technical enablement and thought leadership initiatives centered on Amazon Bedrock, Amazon Nova, and agentic AI — driving significant partner adoption and business impact across the Americas. With 22+ years of IT experience spanning database engineering, cloud architecture, and AI/ML, Arabinda brings deep technical expertise and a strong track record of translating complex AI capabilities into real-world business value. He holds an MBA from San Diego State University, a B.Tech. from NIT Warangal, and is an AWS Certified Solutions Architect – Professional.

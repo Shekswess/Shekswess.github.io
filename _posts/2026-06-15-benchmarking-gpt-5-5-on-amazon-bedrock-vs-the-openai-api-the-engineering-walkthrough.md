@@ -11,7 +11,7 @@ image: https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/assets/cover-b
 
 _**Original Source of the blog post: [Benchmarking GPT-5.5 on Amazon Bedrock vs. the OpenAI API: The Engineering Walkthrough](https://medium.com/loka-engineering/benchmarking-gpt-5-5-on-amazon-bedrock-vs-the-openai-api-the-engineering-walkthrough-3d57899fc058)**_
 
-_**Written by Petar Kalinovski and Bojan Jakimovski**_
+_**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
 ## The Engineering Walkthrough
 

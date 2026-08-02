@@ -5,11 +5,13 @@ layout: default
 {%-include back_link.html-%}
 
 <article{% if page.center_captions %} class="center-captions"{% endif %}>
-  <p class="post-meta">
-    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
-  </p>
-  
-  <h1>{{ page.title }}</h1>
+  {% unless page.hide_post_header %}
+    <p class="post-meta">
+      <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    </p>
+
+    <h1>{{ page.title }}</h1>
+  {% endunless %}
 
   {{ content }}
 </article>

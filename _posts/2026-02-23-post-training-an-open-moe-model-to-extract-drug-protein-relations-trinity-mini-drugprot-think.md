@@ -12,7 +12,7 @@ image: https://raw.githubusercontent.com/LokaHQ/Trinity-Mini-DrugProt-Think/main
 
 _**Original Source of the blog post: [Post-Training an Open MoE Model to Extract Drug-Protein Relations: Trinity-Mini-DrugProt-Think](https://lokahq.github.io/Trinity-Mini-DrugProt-Think/)**_
 
-_**Written by Bojan Jakimovski and Petar Kalinovski**_
+_**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
 ## Introduction 
 

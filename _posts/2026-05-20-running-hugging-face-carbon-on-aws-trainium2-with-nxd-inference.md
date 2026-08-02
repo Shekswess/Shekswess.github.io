@@ -12,8 +12,6 @@ image: https://lokahq.github.io/carbon-neuronx-distributed-inference/assets/carb
 
 _**Original Source of the blog post: [Running Hugging Face Carbon on AWS Trainium2 with NxD Inference](https://lokahq.github.io/carbon-neuronx-distributed-inference/)**_
 
-_**Written by Bojan Jakimovski**_
-
 ## Introduction
 
 The Human Genome Project, completed in 2003, cost around [$3 billion](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost) over 13 years to sequence the first human genome. Today, the sequencing bill is measured in hundreds of dollars. That changes the problem. For many bio and HCLS teams, the hard part is no longer getting enough sequence data. The hard part is turning that data into something useful: variant effect prediction, regulatory annotation, gene expression modeling, therapeutic sequence design, and repeated scoring runs that need to happen inside a secure cloud environment.

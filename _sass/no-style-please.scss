@@ -120,6 +120,15 @@ video {
   background: black;
 }
 
+.post-video iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: thin solid black;
+}
+
 .post-video figcaption {
   text-align: center;
   margin-top: 0.75rem;

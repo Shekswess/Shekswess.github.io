@@ -22,7 +22,7 @@ image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*xEcRIU_nbeSKahsP
 
 _**Original Source of the blog post: [The Agent Assembly Line](https://medium.com/loka-engineering/the-agent-assembly-line-eabc3e95263d)**_
 
-_**Written by Mario Petkoski, Bojan Jakimovski, and Zafir Stojanovski**_
+_**Blog was written with my colleagues from Loka: Mario Petkoski & Zafir Stojanovski**_
 
 Every team building with LLMs hits the same wall. The demo works in a notebook. Then you spend three months wiring up config loading, session persistence, streaming APIs, guardrails, evaluation, and deployment before a single user touches it.
 

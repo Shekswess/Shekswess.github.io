@@ -12,7 +12,6 @@ image: https://lokahq.github.io/carbon-neuronx-distributed-inference/assets/carb
 
 _**Original Source of the blog post: [Running Hugging Face's Carbon on AWS Trainium2 with NxD Inference](https://medium.com/loka-engineering/running-hugging-faces-carbon-on-aws-trainium2-with-nxd-inference-ecdee6c2f4ce)**_
 
-_**Written by Bojan Jakimovski**_
 
 The Engineering Walkthrough
 

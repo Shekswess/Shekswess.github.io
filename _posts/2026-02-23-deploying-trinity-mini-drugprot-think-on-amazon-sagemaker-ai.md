@@ -12,7 +12,7 @@ image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hGTTkxr2NSYWjqvF
 
 _**Original Source of the blog post: [Deploying Trinity-Mini-DrugProt-Think on Amazon SageMaker AI](https://medium.com/loka-engineering/deploying-trinity-mini-drugprot-think-on-amazon-sagemaker-ai-9e1c1c430ce9)**_
 
-_**Written by Bojan Jakimovski, Machine Learning Lead and Petar Kalinovski, Machine Learning Engineer**_
+_**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
 If you work in regulated domains (Healthcare, Life Sciences, Finance) you routinely hit constraints that break the default “just call a hosted API” approach:
 
