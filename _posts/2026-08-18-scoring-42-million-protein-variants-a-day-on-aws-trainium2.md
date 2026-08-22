@@ -6,12 +6,19 @@ author: shekswess
 date: 2026-08-18 00:00:00 +0800
 categories: [AI]
 tags: [AWS Trainium2, Neuron, PyTorch, ESMC, Hugging Face, Protein Language Models, Bio AI]
-image: https://lokahq.github.io/esmc-neuronx/assets/cover.jpg
+image: /assets/images/esmc-neuronx/cover.jpg
 canonical_url: https://lokahq.github.io/esmc-neuronx/
+source_title: "Scoring 42 Million Protein Variants a Day on AWS Trainium2"
+source_url: "https://lokahq.github.io/esmc-neuronx/"
+source_authors: ["João Correia", "Telmo Felgueira", "Tiago Gonçalves", "Bojan Jakimovski", "Jim Burtoft", "Louise Ping"]
 ---
 
 
 _**Original Source of the blog post: [Scoring 42 Million Protein Variants a Day on AWS Trainium2](https://lokahq.github.io/esmc-neuronx/)**_
+
+_**Blog was written with my colleagues from Loka & AWS: João Correia, Telmo Felgueira, Tiago Gonçalves, Jim Burtoft & Louise Ping**_
+
+![Cover: ESMC-300M, 42 million protein variants scored per day on a single trn2.3xlarge](/assets/images/esmc-neuronx/cover.jpg)
 
 
 ## Introduction
@@ -92,7 +99,9 @@ With four logical NeuronCores in parallel, the full-instance throughput is **490
 
 Table 3. D2Deep throughput and ROC-AUC by hardware configuration.
 
-Figure 1. D2Deep throughput across hardware configurations. Trainium2 4×logical NeuronCore at batch=16 and H100 at batch=16 are the key comparison: 18.6% higher throughput on Trainium2 at approximately 60% lower cost per million samples.
+![D2Deep throughput across hardware configurations](/assets/images/esmc-neuronx/figure-1.png)
+
+*Figure 1. D2Deep throughput across hardware configurations. Trainium2 4×logical NeuronCore at batch=16 and H100 at batch=16 are the key comparison: 18.6% higher throughput on Trainium2 at approximately 60% lower cost per million samples.*
 
 ### Per-unit comparison at batch=1
 
@@ -108,7 +117,9 @@ Table 4. Per-unit comparison at batch=1.
 
 At batch=1, a single Trainium2 logical NeuronCore scores 69.9 samples/s (279.4 ÷ 4) versus 35.9 samples/s on H100. **The Trainium2 logical NeuronCore is 1.95× faster per unit at batch=1 in this run.** The result suggests better utilization for this small, fixed-shape encoder workload; profiling would be needed to attribute it to a specific hardware subsystem.
 
-Figure 2. Per-unit throughput at batch=1: one Trainium2 logical NeuronCore vs one H100 GPU.
+![Per-unit throughput at batch=1](/assets/images/esmc-neuronx/figure-2.png)
+
+*Figure 2. Per-unit throughput at batch=1: one Trainium2 logical NeuronCore vs one H100 GPU.*
 
 ### Batch scaling
 
@@ -120,7 +131,9 @@ Conversely, on Trainium2, our tests show that batch=16 is the practical sweet sp
 
 In terms of raw throughput for bulk operations, H100 still has the higher potential, at a higher cost; Trainium2 can still be heavily optimized through kernel development. In the low-batch regime, Trainium2 is already the clear winner.
 
-Figure 3. Batch scaling for ESMC-300M D2Deep. H100 throughput grows 11.5× from batch=1 to batch=16 and reaches 998 samples/s at batch=256. Trainium2 (4 logical NeuronCores) is shown at the batch sizes measured here; batch=16 is its practical sweet spot for this workload.
+![Batch scaling for ESMC-300M D2Deep](/assets/images/esmc-neuronx/figure-3.png)
+
+*Figure 3. Batch scaling for ESMC-300M D2Deep. H100 throughput grows 11.5× from batch=1 to batch=16 and reaches 998 samples/s at batch=256. Trainium2 (4 logical NeuronCores) is shown at the batch sizes measured here; batch=16 is its practical sweet spot for this workload.*
 
 ### Cost-normalized throughput
 
@@ -146,7 +159,9 @@ Both rates are one-day EC2 Capacity Blocks for ML in São Paulo (sa-east-1), cap
 
 Table 6. Hourly cost and cost per million samples by configuration.
 
-Figure 4. Cost per million samples scored. At batch=16, Trainium2 scores more samples per second than H100 at approximately 60% lower cost per million; at maximum batch the two converge.
+![Cost per million samples scored](/assets/images/esmc-neuronx/figure-4.png)
+
+*Figure 4. Cost per million samples scored. At batch=16, Trainium2 scores more samples per second than H100 at approximately 60% lower cost per million; at maximum batch the two converge.*
 
 **The bottom line:** for this low-batch regime, Trainium2 is the more cost-effective option by far. At these measured rates, $2.235/hour on Trainium2 produces 490.8 samples/s, while $4.720/hour on H100 produces 414.0 samples/s—approximately **2.5× more samples per dollar** on Trainium2. Even at maximum batch, Trainium2 is still the slightly more cost-effective option.
 
