@@ -18,9 +18,6 @@ _**Original Source of the blog post: [Scoring 42 Million Protein Variants a Day 
 
 _**Blog was written with my colleagues from Loka & AWS: João Correia, Telmo Felgueira, Tiago Gonçalves, Jim Burtoft & Louise Ping**_
 
-![Cover: ESMC-300M, 42 million protein variants scored per day on a single trn2.3xlarge](/assets/images/esmc-neuronx/cover.jpg)
-
-
 ## Introduction
 
 Protein variant effect prediction is a core problem in computational biology. Every human protein can be altered by thousands of single-amino-acid substitutions. Some cause disease. Most do not. Distinguishing the two, at scale, underpins therapeutic target selection, clinical variant interpretation, and personalized medicine pipelines.
