@@ -10,7 +10,7 @@ image: https://miro.medium.com/v2/resize:fit:2800/format:webp/1*qkEIPaOidMZgOenq
 ---
 
 
-_**Original Source of the blog post: [Part 2: Deploying Distiled DeepSeek-R1 Models on Amazon SageMaker AI](https://medium.com/loka-engineering/part-2-deploying-distiled-deepseek-r1-models-on-amazon-sagemaker-ai-4b5ee7cb6c11)**_
+_**Original Source of the blog post: [Part 2: Deploying Distiled DeepSeek-R1 Models on Amazon SageMaker AI](https://lokahq.github.io/tech-blog/blog/part-2-deploying-distiled-deepseek-r1-models-on-amazon-sagemaker-ai/)**_
 
 _**Blog was written with my colleague from Loka: Crhistian Cardona**_
 

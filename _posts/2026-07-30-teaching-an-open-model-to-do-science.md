@@ -213,7 +213,7 @@ The method is the reusable part: encode a scientific workflow as actions and ver
 
 Arcee supplied Trinity Mini, an adaptable open model with a practical active-parameter footprint. Prime Intellect supplied the open-source `prime-rl` training system. AWS supplied infrastructure for accelerated training, artifact storage, model serving, application services, security, and observability. Loka built the biomedical datasets, environments, verifiers, research process, and scientific application.
 
-Petar Kalinovski’s earlier [Trinity Mini DrugProt-Think](https://lokahq.github.io/Trinity-Mini-DrugProt-Think/) project showed that a compact open model could learn a scientific specialty and set the direction for this collaboration.
+Petar Kalinovski’s earlier [Trinity Mini DrugProt-Think](https://lokahq.github.io/tech-blog/blog/trinity-drugprot/) project showed that a compact open model could learn a scientific specialty and set the direction for this collaboration.
 
 
 ### Citation
@@ -251,5 +251,5 @@ url          = {https://github.com/LokaHQ/prime-rl-drug-discovery-copilot}
 16. [Autonomous AI research for nanoGPT speedrun](https://www.primeintellect.ai/auto-nanogpt). Prime Intellect's durable-harness auto-research loop.
 17. [Anthropic statement on Fable and Mythos access](https://www.anthropic.com/news/fable-mythos-access). A concrete example of frontier-model access changing through external policy.
 18. [GPT-5.6 availability](https://help.openai.com/en/articles/20001354-gpt-56-in-chatgpt/). Official OpenAI guidance on plan, product, workspace, regional, and safeguard constraints.
-19. [Trinity Mini DrugProt-Think](https://lokahq.github.io/Trinity-Mini-DrugProt-Think/). The earlier project that led into this collaboration.
+19. [Trinity Mini DrugProt-Think](https://lokahq.github.io/tech-blog/blog/trinity-drugprot/). The earlier project that led into this collaboration.
 20. [GEPA](https://github.com/gepa-ai/gepa). Reflective prompt evolution for optimizing text-based components against task-specific evaluation.

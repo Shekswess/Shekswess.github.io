@@ -9,11 +9,11 @@ categories: [AI, LLM]
 tags: [xAI, Grok 4.3, Amazon Bedrock, Bedrock Mantle, Benchmarking, AWS]
 image: /assets/images/grok-benchmark/background.png
 source_title: "The Many Paths to Grok 4.3"
-source_url: "https://lokahq.github.io/grok-bedrock-xapi-benchmark/blog/"
+source_url: "https://lokahq.github.io/tech-blog/blog/grok-bedrock-xai/"
 source_authors: ["Nina Cvetkovska", "Bojan Jakimovski"]
 ---
 
-_**Original Source of the blog post: [Benchmarking Grok 4.3 on Amazon Bedrock Mantle vs. the xAI API: The Engineering Walkthrough with Loka](https://lokahq.github.io/grok-bedrock-xapi-benchmark/blog/)**_
+_**Original Source of the blog post: [Benchmarking Grok 4.3 on Amazon Bedrock Mantle vs. the xAI API: The Engineering Walkthrough with Loka](https://lokahq.github.io/tech-blog/blog/grok-bedrock-xai/)**_
 
 _**Blog was written with my colleague from Loka & AWS: Nina Cvetkovska**_
 
@@ -168,7 +168,7 @@ If you find this work useful, please cite:
   year         = {2026},
   month        = {jul},
   howpublished = {Blog post},
-  url          = {https://lokahq.github.io/grok-bedrock-xapi-benchmark/blog/}
+  url          = {https://lokahq.github.io/tech-blog/blog/grok-bedrock-xai/}
 }
 ```
 
