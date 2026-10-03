@@ -9,11 +9,11 @@ categories: [AI, LLM]
 tags: [xAI, Grok 4.3, Amazon Bedrock, Bedrock Mantle, Benchmarking, GSM8K, AWS]
 image: /assets/images/grok-benchmark/background.png
 source_title: "Benchmarking Grok 4.3 on Amazon Bedrock Mantle vs. the xAI API: The Engineering Walkthrough"
-source_url: "https://medium.com/loka-engineering/benchmarking-grok-4-3-07ecfa9a48f3"
+source_url: "https://lokahq.github.io/tech-blog/blog/benchmarking-grok-4-3/"
 source_authors: ["Nina Cvetkovska", "Bojan Jakimovski"]
 ---
 
-_**Original Source of the blog post: [Benchmarking Grok 4.3 on Amazon Bedrock Mantle vs. the xAI API: The Engineering Walkthrough with Loka](https://medium.com/loka-engineering/benchmarking-grok-4-3-07ecfa9a48f3)**_
+_**Original Source of the blog post: [Benchmarking Grok 4.3 on Amazon Bedrock Mantle vs. the xAI API: The Engineering Walkthrough with Loka](https://lokahq.github.io/tech-blog/blog/benchmarking-grok-4-3/)**_
 
 _**Blog was written with my colleague from Loka & AWS: Nina Cvetkovska**_
 

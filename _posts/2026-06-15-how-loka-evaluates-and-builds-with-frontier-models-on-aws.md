@@ -6,13 +6,13 @@ author: shekswess
 date: 2026-06-15 00:00:00 +0800
 categories: [AI, LLM]
 tags: [OpenAI, Amazon Bedrock, GPT-5.5, Codex, AWS, Benchmarking, Agentic AI]
-image: https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/assets/cover-banner-gpt.png
+image: https://lokahq.github.io/tech-blog/blog/gpt/cover-banner-gpt.png
 source_title: "How Loka Evaluates and Builds with Frontier Models on AWS"
-source_url: "https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/"
+source_url: "https://lokahq.github.io/tech-blog/blog/openai-bedrock/"
 source_authors: ["Petar Kalinovski", "Bojan Jakimovski"]
 ---
 
-_**Original Source of the blog post: [How Loka Evaluates and Buildswith Frontier Models on AWS](https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/)**_
+_**Original Source of the blog post: [How Loka Evaluates and Buildswith Frontier Models on AWS](https://lokahq.github.io/tech-blog/blog/openai-bedrock/)**_
 
 _**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
@@ -59,9 +59,9 @@ model path is the same: OpenAI on Bedrock, benchmarked before it was trusted
 with production workloads.
 
 For the engineering walkthrough behind the benchmark harness, commands,
-result files, and scoring logic, read our companion Medium post:
+result files, and scoring logic, read our companion blog post:
 [Benchmarking GPT-5.5 on
-Amazon Bedrock vs. the OpenAI API](https://medium.com/p/3d57899fc058).
+Amazon Bedrock vs. the OpenAI API](https://lokahq.github.io/tech-blog/blog/benchmarking-gpt-5-5-on-amazon-bedrock-vs-the-openai-api-the-engineering-walkthrough/).
 
 What we want you to take away. The useful unlock is the
 combination of a model-agnostic production architecture, Bedrock's governance
@@ -406,8 +406,8 @@ to underwriting.
 ![openai](../assets/images/openai/image_7.png)
 
 <figure class="post-video">
-<video controls preload="metadata" poster="https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/assets/fsi-copilot-thumb.png">
-<source src="https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/assets/fsi-copilot-demo.mp4" type="video/mp4">
+<video controls preload="metadata" poster="https://lokahq.github.io/tech-blog/blog/gpt/fsi-copilot-thumb.png">
+<source src="https://lokahq.github.io/tech-blog/blog/gpt/fsi-copilot-demo.mp4" type="video/mp4">
 </video>
 <figcaption>The FSI Evidence Copilot launch walkthrough: case brief → checklist → cash-flow chart → draft packet, with the decision boundary held throughout.</figcaption>
 </figure>
@@ -452,8 +452,8 @@ subtle, easy-to-miss finding that makes or breaks a review:
 
 ![openai](../assets/images/openai/image_8.png)
 <figure class="post-video">
-<video controls preload="metadata" poster="https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/assets/clinical-glp1-poster.png">
-<source src="https://lokahq.github.io/gpt-bedrock-openai-benchmark/blog/assets/clinical-glp1-demo.mp4" type="video/mp4">
+<video controls preload="metadata" poster="https://lokahq.github.io/tech-blog/blog/gpt/clinical-glp1-poster.png">
+<source src="https://lokahq.github.io/tech-blog/blog/gpt/clinical-glp1-demo.mp4" type="video/mp4">
 </video>
 <figcaption>The Clinical Evidence Copilot preparing the GLP-1 review (CEC-1001) end to end.</figcaption>
 </figure>

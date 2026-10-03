@@ -20,7 +20,7 @@ tags:
 image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*6-WL3LSunbhXP-8QNFTD8A.png
 ---
 
-_**Original Source of the blog post: [Part 2: Agentic Patterns 101 with Loka & Strands-Agents](https://medium.com/loka-engineering/part-2-agentic-patterns-101-with-loka-strands-agents-86f6a1ad14e5)**_
+_**Original Source of the blog post: [Part 2: Agentic Patterns 101 with Loka & Strands-Agents](https://lokahq.github.io/tech-blog/blog/part-2-agentic-patterns-101-with-loka-strands-agents/)**_
 
 _**Blog was written with my colleagues from Loka: Nina Cvetkovska & Petar Kalinovski**_
 
@@ -780,4 +780,4 @@ Use these patterns as a toolbox to build systems that are robust, scalable, and 
 # References
 
 If you haven’t check Part 1 of the blog post series, you can check it on this link:
-- [Part 1: Agentic Patterns 101 with Loka & Strands-Agents](https://medium.com/loka-engineering/part-1-agentic-patterns-101-with-loka-strands-agents-13f45ea62c70)
+- [Part 1: Agentic Patterns 101 with Loka & Strands-Agents](https://lokahq.github.io/tech-blog/blog/part-1-agentic-patterns-101-with-loka-strands-agents/)

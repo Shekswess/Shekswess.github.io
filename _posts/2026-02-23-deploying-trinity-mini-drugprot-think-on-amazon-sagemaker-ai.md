@@ -10,7 +10,7 @@ image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hGTTkxr2NSYWjqvF
 ---
 
 
-_**Original Source of the blog post: [Deploying Trinity-Mini-DrugProt-Think on Amazon SageMaker AI](https://medium.com/loka-engineering/deploying-trinity-mini-drugprot-think-on-amazon-sagemaker-ai-9e1c1c430ce9)**_
+_**Original Source of the blog post: [Deploying Trinity-Mini-DrugProt-Think on Amazon SageMaker AI](https://lokahq.github.io/tech-blog/blog/deploying-trinity-mini-drugprot-think-on-amazon-sagemaker-ai/)**_
 
 _**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
@@ -22,7 +22,7 @@ If you work in regulated domains (Healthcare, Life Sciences, Finance) you routin
 
 There’s also a bigger ecosystem dynamic: the most competitive open-weight releases have increasingly come from a small set of labs, and “who ships open weights” shapes who gets to build locally and cheaply. We chose [Arcee AI](https://www.arcee.ai)’s [Trinity Mini](https://huggingface.co/arcee-ai/Trinity-Mini) as a concrete Western open-weight test case, and [DrugProt](https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-1/) as the biomedical task.
 
-In our [main write-up](https://lokahq.github.io/Trinity-Mini-DrugProt-Think/) we trained **Trinity-Mini-DrugProt-Think**: a LoRA adapter on top of **Arcee Trinity Mini** for DrugProt drug-protein relation extraction via RLVR. This post is the missing “last mile”: how to serve that **base model + LoRA adapter** as a **SageMaker real-time endpoint**, using the **SageMaker Python SDK v3** and a standard Hugging Face PyTorch inference container.
+In our [main write-up](https://lokahq.github.io/tech-blog/blog/trinity-drugprot/) we trained **Trinity-Mini-DrugProt-Think**: a LoRA adapter on top of **Arcee Trinity Mini** for DrugProt drug-protein relation extraction via RLVR. This post is the missing “last mile”: how to serve that **base model + LoRA adapter** as a **SageMaker real-time endpoint**, using the **SageMaker Python SDK v3** and a standard Hugging Face PyTorch inference container.
 
 The guiding principle is production leverage: ship a tiny adapter artifact, keep the base model immutable, and let SageMaker AI own the undifferentiated heavy lifting (instances, endpoint lifecycle, IAM, logs/metrics).
 
@@ -230,7 +230,7 @@ The main decisions that determine whether this feels “production-grade” are 
 Production-grade ML is not about bigger models - it is about clearer boundaries, reproducible artifacts, and operational control. And yes, production is where the real fun starts.
 
 ### Additional Helpful Links
-- [Experiments Technical Report](https://lokahq.github.io/Trinity-Mini-DrugProt-Think/)
+- [Experiments Technical Report](https://lokahq.github.io/tech-blog/blog/trinity-drugprot/)
 - [Code Repository](https://github.com/LokaHQ/Trinity-Mini-DrugProt-Think)
 - [HF Adapters](https://huggingface.co/lokahq/Trinity-Mini-DrugProt-Think)
 - [SageMaker Python SDK v3](https://github.com/aws/sagemaker-python-sdk)

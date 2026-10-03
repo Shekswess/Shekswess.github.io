@@ -6,11 +6,11 @@ author: shekswess
 date: 2026-05-21 00:00:00 +0800
 categories: [AI, LLM]
 tags: [AWS Trainium2, NxD Inference, Neuron, Hugging Face, Carbon, Bio AI, Genomics]
-image: https://lokahq.github.io/carbon-neuronx-distributed-inference/assets/carbon-trainium2-cover.png
+image: https://lokahq.github.io/tech-blog/blog/carbon/cover.png
 ---
 
 
-_**Original Source of the blog post: [Running Hugging Face's Carbon on AWS Trainium2 with NxD Inference](https://medium.com/loka-engineering/running-hugging-faces-carbon-on-aws-trainium2-with-nxd-inference-ecdee6c2f4ce)**_
+_**Original Source of the blog post: [Running Hugging Face's Carbon on AWS Trainium2 with NxD Inference](https://lokahq.github.io/tech-blog/blog/running-hugging-faces-carbon-on-aws-trainium2-with-nxd-inference/)**_
 
 
 The Engineering Walkthrough
@@ -25,7 +25,7 @@ The short answer is yes. We compiled and benchmarked all three Carbon checkpoint
 
 This post is the [code-side companion](https://github.com/LokaHQ/carbon-neuronx-distributed-inference) to the main benchmark writeup. The main article covers the business and platform story. This one covers the practical path: tokenizer handling, compile shape, benchmark harness, result interpretation, and what did not improve the baseline.
 
-For the full report, including the Trainium2 business case, A100 reference comparison, and cost-normalized throughput charts, read the main Loka writeup: [Running Hugging Face Carbon on AWS Trainium2 with NxD Inference](https://lokahq.github.io/carbon-neuronx-distributed-inference/).
+For the full report, including the Trainium2 business case, A100 reference comparison, and cost-normalized throughput charts, read the main Loka writeup: [Running Hugging Face Carbon on AWS Trainium2 with NxD Inference](https://lokahq.github.io/tech-blog/blog/carbon-trainium2/).
 
 ### Why Carbon Was a Good Fit for NxD Inference
 
