@@ -7,14 +7,14 @@ date: 2026-08-18 00:00:00 +0800
 categories: [AI]
 tags: [AWS Trainium2, Neuron, PyTorch, ESMC, Hugging Face, Protein Language Models, Bio AI]
 image: /assets/images/esmc-neuronx/cover.jpg
-canonical_url: https://lokahq.github.io/tech-blog/blog/esmc-trainium2/
+canonical_url: https://lokahq.github.io/tech-blog/esmc-trainium2/
 source_title: "Scoring 42 Million Protein Variants a Day on AWS Trainium2"
-source_url: "https://lokahq.github.io/tech-blog/blog/esmc-trainium2/"
+source_url: "https://lokahq.github.io/tech-blog/esmc-trainium2/"
 source_authors: ["João Correia", "Telmo Felgueira", "Tiago Gonçalves", "Bojan Jakimovski", "Jim Burtoft", "Louise Ping"]
 ---
 
 
-_**Original Source of the blog post: [Scoring 42 Million Protein Variants a Day on AWS Trainium2](https://lokahq.github.io/tech-blog/blog/esmc-trainium2/)**_
+_**Original Source of the blog post: [Scoring 42 Million Protein Variants a Day on AWS Trainium2](https://lokahq.github.io/tech-blog/esmc-trainium2/)**_
 
 _**Blog was written with my colleagues from Loka & AWS: João Correia, Telmo Felgueira, Tiago Gonçalves, Jim Burtoft & Louise Ping**_
 

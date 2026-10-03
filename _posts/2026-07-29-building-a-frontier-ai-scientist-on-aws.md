@@ -97,7 +97,7 @@ This is why Trinity Mini hits the engineering sweet spot for a domain agent:
 
 By post-training a small open-weight model and serving it on AWS Trainium, the AI Scientist moves beyond a frontier-API demo to an owned, cost-controlled production grade system a team can run and keep improving — a blueprint that generalizes to any domain where a small model must reason over verifiable tools.
 
-A special thanks to Petar Kalinovski, whose earlier [Trinity Mini DrugProt-Think](https://lokahq.github.io/tech-blog/blog/trinity-drugprot/) project first showed that a compact open model could learn a real scientific specialty, and kicked off this whole effort.
+A special thanks to Petar Kalinovski, whose earlier [Trinity Mini DrugProt-Think](https://lokahq.github.io/tech-blog/trinity-drugprot/) project first showed that a compact open model could learn a real scientific specialty, and kicked off this whole effort.
 
 [image1]: /assets/images/frontier-ai-scientist-aws/image1.png
 

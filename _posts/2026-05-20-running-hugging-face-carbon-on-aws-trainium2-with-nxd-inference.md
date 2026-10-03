@@ -10,7 +10,7 @@ image: https://lokahq.github.io/tech-blog/blog/carbon/cover.png
 ---
 
 
-_**Original Source of the blog post: [Running Hugging Face Carbon on AWS Trainium2 with NxD Inference](https://lokahq.github.io/tech-blog/blog/carbon-trainium2/)**_
+_**Original Source of the blog post: [Running Hugging Face Carbon on AWS Trainium2 with NxD Inference](https://lokahq.github.io/tech-blog/carbon-trainium2/)**_
 
 ## Introduction
 
@@ -177,7 +177,7 @@ The numbers are already useful: Carbon-500M reaches 1,568 bp/s, Carbon-3B reache
 
 If you are building with open bio models and need them running in production on AWS, [reach out to Loka](https://www.loka.com/). This is exactly the problem we work on.
 
-**Want the code-side walkthrough?** We also prepared a companion engineering post that goes deeper on the tokenizer handling, NxD Inference compile path, benchmark harness, and optimization variants. Read it on [the Loka Blog](https://lokahq.github.io/tech-blog/blog/running-hugging-faces-carbon-on-aws-trainium2-with-nxd-inference/), or inspect the benchmark package in the [public GitHub repository](https://github.com/LokaHQ/carbon-neuronx-distributed-inference).
+**Want the code-side walkthrough?** We also prepared a companion engineering post that goes deeper on the tokenizer handling, NxD Inference compile path, benchmark harness, and optimization variants. Read it on [the Loka Blog](https://lokahq.github.io/tech-blog/running-hugging-faces-carbon-on-aws-trainium2-with-nxd-inference/), or inspect the benchmark package in the [public GitHub repository](https://github.com/LokaHQ/carbon-neuronx-distributed-inference).
 
 **A small thank-you:** Sincere thanks to Petar Kalinovski, Henrique Ribeiro Delgado da Silva, Tiago Gonçalves, João Correia, Telmo Felgueira, Pedro Dias, and Zafir Stojanovski for taking the time to review, sanity-check, and sharpen this work before it went out.
 
