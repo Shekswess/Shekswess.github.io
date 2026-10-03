@@ -20,7 +20,7 @@ tags:
 image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*xEcRIU_nbeSKahsPKix_kg.png
 ---
 
-_**Original Source of the blog post: [The Agent Assembly Line](https://lokahq.github.io/tech-blog/blog/the-agent-assembly-line/)**_
+_**Original Source of the blog post: [The Agent Assembly Line](https://lokahq.github.io/tech-blog/the-agent-assembly-line/)**_
 
 _**Blog was written with my colleagues from Loka: Mario Petkoski & Zafir Stojanovski**_
 

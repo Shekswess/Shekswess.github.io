@@ -9,7 +9,7 @@ tags: [DeepSeek, DeepSeek-R1, Generative AI, Large Language Models, LLMs, AI, Ma
 image: https://miro.medium.com/v2/resize:fit:2800/format:webp/1*ZipoYVSKO1CqVk8_bI2SYg.png
 ---
 
-_**Original Source of the blog post: [Part 1: Deploying Distilled DeepSeek-R1 Models on Amazon Bedrock](https://lokahq.github.io/tech-blog/blog/harnessing-open-source-ai-on-aws/)**_
+_**Original Source of the blog post: [Part 1: Deploying Distilled DeepSeek-R1 Models on Amazon Bedrock](https://lokahq.github.io/tech-blog/harnessing-open-source-ai-on-aws/)**_
 
 _**Blog was written with my colleague from Loka: Crhistian Cardona**_
 

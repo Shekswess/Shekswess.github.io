@@ -9,7 +9,7 @@ tags: [OpenAI, Amazon Bedrock, GPT-5.5, Benchmarking, GSM8K, AWS, Latency]
 image: https://lokahq.github.io/tech-blog/blog/gpt/cover-banner-gpt.png
 ---
 
-_**Original Source of the blog post: [Benchmarking GPT-5.5 on Amazon Bedrock vs. the OpenAI API: The Engineering Walkthrough](https://lokahq.github.io/tech-blog/blog/benchmarking-gpt-5-5-on-amazon-bedrock-vs-the-openai-api-the-engineering-walkthrough/)**_
+_**Original Source of the blog post: [Benchmarking GPT-5.5 on Amazon Bedrock vs. the OpenAI API: The Engineering Walkthrough](https://lokahq.github.io/tech-blog/benchmarking-gpt-5-5-on-amazon-bedrock-vs-the-openai-api-the-engineering-walkthrough/)**_
 
 _**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
@@ -23,7 +23,7 @@ The concrete question behind the benchmark was simple:
 
 We ran the full GSM8K test split, 1,319 grade-school math problems, through both provider paths at three reasoning levels (`medium`, `high`, `xhigh`), recording per-request streaming latency, output throughput, token usage, and failures. The benchmark harness is open and the results are saved in the repo. This post walks through the setup, the exact commands, the output format, and the design choices that made the comparison clean.
 
-For the main findings, including the accuracy tables, latency charts, and the two regulated-industry copilots we built on the path that passed, read the main Loka writeup here: [How Loka Evaluates and Builds with Frontier Models on AWS](https://lokahq.github.io/tech-blog/blog/openai-bedrock/)
+For the main findings, including the accuracy tables, latency charts, and the two regulated-industry copilots we built on the path that passed, read the main Loka writeup here: [How Loka Evaluates and Builds with Frontier Models on AWS](https://lokahq.github.io/tech-blog/openai-bedrock/)
 
 ## Why GSM8K
 

@@ -20,7 +20,7 @@ tags:
 image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*6-WL3LSunbhXP-8QNFTD8A.png
 ---
 
-_**Original Source of the blog post: [Part 1: Agentic Patterns 101 with Loka & Strands-Agents](https://lokahq.github.io/tech-blog/blog/part-1-agentic-patterns-101-with-loka-strands-agents/)**_
+_**Original Source of the blog post: [Part 1: Agentic Patterns 101 with Loka & Strands-Agents](https://lokahq.github.io/tech-blog/part-1-agentic-patterns-101-with-loka-strands-agents/)**_
 
 _**Blog was written with my colleagues from Loka: Nina Cvetkovska & Petar Kalinovski**_
 

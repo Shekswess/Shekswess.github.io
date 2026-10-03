@@ -9,7 +9,7 @@ tags: [DeepSeek, DeepSeek-R1, Generative AI, Large Language Models, LLMs, AI, Ma
 image: https://miro.medium.com/v2/resize:fit:2800/format:webp/1*fU07cfa0bWqnr4oLJNpzKA.png
 ---
 
-_**Original Source of the blog post: [Part 4: Benchmarking DeepSeek Cost, Performance and Business Use Cases on AWS](https://lokahq.github.io/tech-blog/blog/part-4-benchmarking-deepseek-cost-performance-and-business-use-cases-on-aws/)**_
+_**Original Source of the blog post: [Part 4: Benchmarking DeepSeek Cost, Performance and Business Use Cases on AWS](https://lokahq.github.io/tech-blog/part-4-benchmarking-deepseek-cost-performance-and-business-use-cases-on-aws/)**_
 
 _**Blog was written with my colleague from Loka: Crhistian Cardona**_
 

@@ -9,7 +9,7 @@ tags: [DeepSeek, DeepSeek-R1, Generative AI, Large Language Models, LLMs, AI, Ma
 image: https://miro.medium.com/v2/resize:fit:2800/format:webp/1*0lr_BYOYcsuXOa2N-ZZNoA.png
 ---
 
-_**Original Source of the blog post: [Part 3: Deploying DeepSeek-R1 Models on AWS- designed Silicon Instances](https://lokahq.github.io/tech-blog/blog/part-3-deploying-deepseek-r1-models-on-aws-designed-silicon-instances/)**_
+_**Original Source of the blog post: [Part 3: Deploying DeepSeek-R1 Models on AWS- designed Silicon Instances](https://lokahq.github.io/tech-blog/part-3-deploying-deepseek-r1-models-on-aws-designed-silicon-instances/)**_
 
 _**Blog was written with my colleague from Loka: Crhistian Cardona**_
 

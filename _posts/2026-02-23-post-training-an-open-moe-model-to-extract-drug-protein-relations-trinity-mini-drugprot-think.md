@@ -10,7 +10,7 @@ image: https://raw.githubusercontent.com/LokaHQ/Trinity-Mini-DrugProt-Think/main
 ---
 
 
-_**Original Source of the blog post: [Post-Training an Open MoE Model to Extract Drug-Protein Relations: Trinity-Mini-DrugProt-Think](https://lokahq.github.io/tech-blog/blog/trinity-drugprot/)**_
+_**Original Source of the blog post: [Post-Training an Open MoE Model to Extract Drug-Protein Relations: Trinity-Mini-DrugProt-Think](https://lokahq.github.io/tech-blog/trinity-drugprot/)**_
 
 _**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
@@ -635,7 +635,7 @@ If you want to use the fine-tuned model, you do not need to re-run the training.
 We have published the adapter weights ([**lokahq/Trinity-Mini-DrugProt-Think**](https://huggingface.co/lokahq/Trinity-Mini-DrugProt-Think)) and written a step-by-step deployment guide
 using the **AWS SageMaker SDK v3**, covering how to serve the merged
 model as a real-time endpoint:
-[deployment guide](https://lokahq.github.io/tech-blog/blog/deploying-trinity-mini-drugprot-think-on-amazon-sagemaker-ai/).
+[deployment guide](https://lokahq.github.io/tech-blog/deploying-trinity-mini-drugprot-think-on-amazon-sagemaker-ai/).
 SageMaker’s managed inference handles scaling and hardware allocation;
 the guide walks through container selection, endpoint configuration, and a
 sample inference call against the DrugProt relation types.

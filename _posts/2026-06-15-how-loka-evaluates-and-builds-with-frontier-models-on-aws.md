@@ -8,11 +8,11 @@ categories: [AI, LLM]
 tags: [OpenAI, Amazon Bedrock, GPT-5.5, Codex, AWS, Benchmarking, Agentic AI]
 image: https://lokahq.github.io/tech-blog/blog/gpt/cover-banner-gpt.png
 source_title: "How Loka Evaluates and Builds with Frontier Models on AWS"
-source_url: "https://lokahq.github.io/tech-blog/blog/openai-bedrock/"
+source_url: "https://lokahq.github.io/tech-blog/openai-bedrock/"
 source_authors: ["Petar Kalinovski", "Bojan Jakimovski"]
 ---
 
-_**Original Source of the blog post: [How Loka Evaluates and Buildswith Frontier Models on AWS](https://lokahq.github.io/tech-blog/blog/openai-bedrock/)**_
+_**Original Source of the blog post: [How Loka Evaluates and Buildswith Frontier Models on AWS](https://lokahq.github.io/tech-blog/openai-bedrock/)**_
 
 _**Blog was written with my colleague from Loka: Petar Kalinovski**_
 
@@ -61,7 +61,7 @@ with production workloads.
 For the engineering walkthrough behind the benchmark harness, commands,
 result files, and scoring logic, read our companion blog post:
 [Benchmarking GPT-5.5 on
-Amazon Bedrock vs. the OpenAI API](https://lokahq.github.io/tech-blog/blog/benchmarking-gpt-5-5-on-amazon-bedrock-vs-the-openai-api-the-engineering-walkthrough/).
+Amazon Bedrock vs. the OpenAI API](https://lokahq.github.io/tech-blog/benchmarking-gpt-5-5-on-amazon-bedrock-vs-the-openai-api-the-engineering-walkthrough/).
 
 What we want you to take away. The useful unlock is the
 combination of a model-agnostic production architecture, Bedrock's governance
