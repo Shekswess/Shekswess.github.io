@@ -24,6 +24,8 @@ entries:
 
   - title: talks
     entries:
+      - title: "<a href='https://youtu.be/BidAf4NzQCo'>LLMs Created Far More Problems Than They Solved</a>"
+      - title: "<a href='https://youtu.be/jeEdkC_Eirg'>What Do You Do When NVIDIA GPUs Aren't Available for Inference?</a>"
       - title: "<a href='https://youtu.be/xTfCk3a-Esk'>Production-Ready Agent Harness on AWS with Strands Agents</a>"
       - title: "<a href='https://youtu.be/DAXAZSKSNG8'>Model Context Protocol (MCP): The Backend that AI Agents understand </a>"
       - title: "<a href='https://www.youtube.com/watch?v=b_K1Hs2_GcU'>Synthetic Data and Multimodal AI: Transforming Localization</a>"
