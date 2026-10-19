@@ -14,7 +14,8 @@ entries:
       - title: Pre-training & Post-training of LLMs
       - title: Small Language Models (SLMs)
       - title: Synthetic Data Generation
-      - title: Distributed Systems & GPUs
+      - title: Self-Improving AI Systems
+      - title: Distributed Systems & Accelerators
 
   - title: open-source projects
     entries:
