@@ -37,8 +37,10 @@ entries:
 
   - title: papers
     entries:
+      - title: "<a href='https://doi.org/10.1007/978-3-032-38812-4_3'>Rethinking Scale in Language Modelling: Evaluating Small and Large Models in Retrieval-Augmented Generation</a>"
       - title: "<a href='https://ieeexplore.ieee.org/document/11731575'>Tiny Think: Reasoning-First Post-Training for Tiny Math and STEM Language Models</a>"
       - title: "<a href='https://ieeexplore.ieee.org/document/11731556'>BedrockKBSelector: A Cost-Aware RAG Evaluation Framework for AWS-managed Knowledge Bases</a>"
+      - title: "<a href='https://doi.org/10.1007/978-3-032-22091-2_21'>Federated Machine Learning for Sensor-based Human Activity Recognition in Limited Data Environments</a>"
       - title: "<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:d1gkVwhDpl0C'>Privacy-aware Human Activity Recognition with Smart Glasses for Digital Therapeutics </a>"
       - title: "<a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:u5HHmVD_uO8C'>Monitoring Valence with Facial EMG Sensors using Machine Learning</a>"
       - title: <a href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=557AYDUAAAAJ&citation_for_view=557AYDUAAAAJ:2osOgNQ5qMEC'>Network Anomaly Detection using Federated Learning for the Internet of Things</a>
