@@ -3,7 +3,7 @@ layout: "post"
 title: "(AgentCore) Memory is All You Need"
 description: "What changes in cost, risk and quality when AI agents are designed to remember what truly matters?"
 author: "shekswess"
-date: "2026-10-21 00:00:00 +0200"
+date: "2026-10-21 00:00:00 +0000"
 permalink: "/agentcore-memory-is-all-you-need.html"
 categories: ["AI", "AWS"]
 tags: ["AgentCore", "Memory", "Agentic AI", "Amazon Bedrock"]

@@ -30,7 +30,8 @@ PY
 ```
 
 The imported copies preserve the published titles, dates (TorchNeuron:
-2026-10-13; AgentCore: 2026-10-21), author credits, source links, and article
+2026-10-13; AgentCore: 2026-10-21, using UTC dates so the CI timezone does not
+shift them to the previous day), author credits, source links, and article
 prose, with these presentation changes:
 
 - Remove the verbatim duplicated opening paragraph in AgentCore section 1,
