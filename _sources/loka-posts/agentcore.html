@@ -1,0 +1,627 @@
+<!DOCTYPE html><!-- Last Published: Thu Oct 22 2026 13:30:29 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.loka.com" data-wf-page="64c2ceb61882c85a4419f25a" data-wf-site="6490383845d4c0f51f929ca8" lang="en" data-wf-collection="64c2ceb61882c85a4419f24a" data-wf-item-slug="agentcore-memory-is-all-you-need"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>(AgentCore) Memory is All You Need - Loka</title><meta content="What changes in cost, risk and quality when AI agents are designed to remember what truly matters?" name="description"/><meta content="(AgentCore) Memory is All You Need - Loka" property="og:title"/><meta content="What changes in cost, risk and quality when AI agents are designed to remember what truly matters?" property="og:description"/><meta content="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8d9c4f33e3d00c21581e6_agentcore-memory-blog-post.webp" property="og:image"/><meta content="(AgentCore) Memory is All You Need - Loka" name="twitter:title"/><meta content="What changes in cost, risk and quality when AI agents are designed to remember what truly matters?" name="twitter:description"/><meta content="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8d9c4f33e3d00c21581e6_agentcore-memory-blog-post.webp" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/css/loka-website.shared.bb4364eb0.min.css" rel="stylesheet" type="text/css" integrity="sha384-u0Nk6w7+UQgEuYCKJ0SIfNmFWZoGiIcb1KgdA1C4uZNjDsmilm/I+Dso2CJISTuE" crossorigin="anonymous"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/649052c9d3731fb704eea658_favicon.svg" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/649052ccef8518c3ccdc7f96_webclip.svg" rel="apple-touch-icon"/><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3KSSSF');</script>
+<!-- End Google Tag Manager -->
+<style>
+.header {
+	/* transform: translate3d(0,-100%,0); */
+}
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+   pointer-events: none;
+}
+  .hs-button {
+    background-position: center right 1.5rem;
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@2.9.2/dist/cookieconsent.min.css">
+<style>
+:root {
+  --cc-btn-primary-bg: #1877f2;
+  --cc-btn-primary-hover-bg: #4490f2;
+  --cc-btn-secondary-hover-bg: #ededed;
+  --cc-btn-secondary-bg: #ffffff;
+}
+ .cc_div .cloud #c-txt {
+  font-size: 1rem;
+   color: #000000;
+}
+  #c-bns button + button {
+   border: 1px solid #000000;
+    color: #000000;
+  }
+
+</style>
+<script 
+    id="6senseWebTag" 
+    src="https://j.6sc.co/j/e526007c-6b7d-433c-bdde-3265abd11546.js"
+></script><!-- [Attributes by Finsweet] Social Share -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-socialshare@1/socialshare.js"></script>
+<!-- [Attributes by Finsweet] Powerful Rich Text -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-richtext@1/richtext.js"></script></head><body><main class="page-wrapper"><header data-wf--header--variant="base" class="header"><div class="header-inner open"><div class="logo-wrapper"><a href="/" class="logo w-inline-block"><div class="logo-img w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 28"><path d="M0 5.018h3.761V19.62h7.776v3.776H0V5.017Zm44.64 0h4.013v9.567l9.822-9.567h4.974l-8.82 8.792-.23.197 6.541 6.575L76.45 5.018H80v18.127h-3.76v-12.84l-12.582 12.84h-5.223l-6.23-6.315-.281-.282-3.27 3.22v3.629H44.64V5.017ZM27.712.193c-7.593 0-13.75 6.18-13.75 13.807 0 7.623 6.157 13.806 13.753 13.806S41.467 21.626 41.467 14C41.464 6.374 35.308.193 27.712.193Zm-.104 23.793c-5.503 0-9.968-4.48-9.968-10.008 0-5.526 4.462-10.009 9.968-10.009 5.507 0 9.97 4.48 9.97 10.009 0 5.528-4.465 10.008-9.97 10.008Z" fill="currentColor"/><path d="M30.722 13.999a2.973 2.973 0 0 1-2.967 2.979 2.973 2.973 0 0 1-2.968-2.98 2.973 2.973 0 0 1 2.968-2.978 2.973 2.973 0 0 1 2.967 2.979Z" fill="currentColor"/></svg></div></a><div data-w-id="9a50bf99-f10b-9f91-235c-298004ef61ee" class="menu-trigger"><div class="menu-bar top"></div><div class="menu-bar middle"></div><div class="menu-bar bottom"></div></div></div><div class="nav-links-wrapper"><nav class="nav-links"><div data-hover="true" data-delay="500" id="w-node-b34a3e69-6b9b-33b0-9f70-cf1e5041884c-5041883b" data-w-id="b34a3e69-6b9b-33b0-9f70-cf1e5041884c" class="nav-dropdown line-mobile w-dropdown"><div class="nav-dropdown-toggle line-mobile w-dropdown-toggle"><a href="/services" class="nav-link mobile-hidden w-inline-block"><div class="nav-link-inner"><div class="nav-link-label first">Services</div></div></a><div class="nav-dropdown-icon mobile-hidden w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.999 11.79v-8m3.772 4.439-3.065 3.065a1 1 0 0 1-1.414 0L4.227 8.229" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="nav-dropdown-toggle-mobile"><div>Services</div><div class="nav-dropdown-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.999 11.79v-8m3.772 4.439-3.065 3.065a1 1 0 0 1-1.414 0L4.227 8.229" stroke="currentColor" stroke-width="1.5"/></svg></div></div></div><nav class="nav-dropdown-list services w-dropdown-list"><div class="nav-dropdown-list-inner services"><a id="w-node-d1a128f1-7196-1e56-d9dd-aaccb913499c-5041883b" href="/services" class="dropdown-services-card-wrapper w-inline-block"><div class="dropdown-services-card-img-wrapper"><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6490970507292d2b33ad93d7_startup-spirit-img-04.webp" loading="eager" sizes="100vw" srcset="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6490970507292d2b33ad93d7_startup-spirit-img-04-p-500.webp 500w, https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6490970507292d2b33ad93d7_startup-spirit-img-04-p-800.webp 800w, https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6490970507292d2b33ad93d7_startup-spirit-img-04.webp 948w" alt="" class="dropdown-services-card-img"/><div class="dropdown-services-card-overlay"></div></div><div class="dropdown-services-card-inner"><div class="text-size-small uppercase text-color-white">Services</div><p class="text-size-medium">Nail your immovable launch.</p><div class="button yellow"><div class="button-label default">More</div><div class="button-bg yellow"><div class="button-label">More</div></div></div></div></a><a id="w-node-_6997419a-635d-5a24-d771-c696e9aa49f2-5041883b" href="/aws" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label aws">AWS Solutions</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6527dc620b5866dd8cddfe51_aws-logo-nav-menu.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/aws"/><a id="w-node-acc34b9a-5852-a6da-c5bc-80a94ea9a7d5-5041883b" href="/services/genai" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label">GenAI &amp; ML</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64d292274c01e9845a93e8d7_services-ai-data.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/services/genai"/><a id="w-node-_9a104bf0-e062-8564-0f63-9c827b1dc794-5041883b" href="/services/data-analytics" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label">Data &amp; Analytics</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/65aeee0139c19f7a2eb7c87e_icon-data-analytics.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/services/data-analytics"/><a id="w-node-_2005751d-4154-f3c9-d3cb-14a8cb5552e6-5041883b" href="/services/devops" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label">DevOps &amp; Migrations</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64d2922661002190600b3b13_services-devops-cloud.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/services/devops"/><a id="w-node-_12b0798e-eb5f-b30c-f517-492f5119cf22-5041883b" href="/services/design-app-development" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label">Design &amp; App Development</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64d29227e3a56dc474844218_services-design-app-development.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/services/design-app-development"/><a id="w-node-e2f5efad-8adc-6fff-d19f-dd1700eb3642-5041883b" href="/services/healthcare" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label">Healthcare</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64d292272316f3ed0f67e680_services-healthcare.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/services/healthcare"/><a href="/services/life-sciences" class="dropdown-services-link w-inline-block"><div class="dropdown-services-link-label">Life Sciences</div><img src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64d292278fa353397d3b61c9_services-life-sciences.svg" loading="eager" alt="" class="dropdown-services-link-img"/></a><link rel="prefetch" href="/services/life-sciences"/></div></nav></div><a id="w-node-b34a3e69-6b9b-33b0-9f70-cf1e50418846-5041883b" href="/work" class="nav-link w-inline-block"><div class="nav-link-inner"><div class="nav-link-label first">Work</div></div></a><link rel="prefetch" href="/work"/><a id="w-node-b34a3e69-6b9b-33b0-9f70-cf1e5041887d-5041883b" href="/labs" class="nav-link w-inline-block"><div class="nav-link-inner"><div class="nav-link-label first">LokaLabs</div></div></a><link rel="prefetch" href="/labs"/><a id="w-node-b34a3e69-6b9b-33b0-9f70-cf1e50418883-5041883b" href="/careers" class="nav-link w-inline-block"><div class="nav-link-inner"><div class="nav-link-label first">Careers</div></div></a><link rel="prefetch" href="/careers"/><div data-hover="true" data-delay="500" id="w-node-_6994e4f3-6e3c-233c-dc83-7d7010f83c1c-5041883b" data-w-id="6994e4f3-6e3c-233c-dc83-7d7010f83c1c" class="nav-dropdown line-mobile w-dropdown"><div class="nav-dropdown-toggle expand w-dropdown-toggle"><div>Originals</div><div class="nav-dropdown-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M7.999 11.79v-8m3.772 4.439-3.065 3.065a1 1 0 0 1-1.414 0L4.227 8.229" stroke="currentColor" stroke-width="1.5"/></svg></div></div><nav class="nav-dropdown-list w-dropdown-list"><div class="nav-dropdown-list-inner originals"><a id="w-node-_6994e4f3-6e3c-233c-dc83-7d7010f83c23-5041883b" href="/podcast" class="originals-link-block w-inline-block"><div class="originals-link-identifier"><div class="originals-link-line-wrapper"><div class="line-tip-wrapper menu"><div class="line-tip-line blue"></div><div class="line-tip-shape blue w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg></div></div><div class="line-tip-wrapper menu"><div class="line-tip-line blue"></div><div class="line-tip-shape blue w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg></div></div></div><div class="text-color-blue">Podcast</div></div><div data-is-ix2-target="1" class="originals-link-block-bg" data-w-id="6994e4f3-6e3c-233c-dc83-7d7010f83c30" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6495acd8022344322ca6b806_originals_menu_bg_listen.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.25" data-duration="0" data-loading="eager" data-ix2-initial-state="0"></div></a><a id="w-node-_6994e4f3-6e3c-233c-dc83-7d7010f83c31-5041883b" href="/blog" class="originals-link-block w-inline-block"><div class="originals-link-identifier"><div class="originals-link-line-wrapper"><div class="line-tip-wrapper menu"><div class="line-tip-line green"></div><div class="line-tip-shape green w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="currentColor" d="M0 0h8v8H0z"/></svg></div></div><div class="line-tip-wrapper menu"><div class="line-tip-line green"></div><div class="line-tip-shape green w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="currentColor" d="M0 0h8v8H0z"/></svg></div></div></div><div class="text-color-green">Blog</div></div><div data-is-ix2-target="1" class="originals-link-block-bg" data-w-id="6994e4f3-6e3c-233c-dc83-7d7010f83c3e" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6495acd8b7df17e6d18e08b9_originals_menu_bg_read.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.25" data-duration="0" data-loading="eager" data-ix2-initial-state="0"></div></a><a id="w-node-_6994e4f3-6e3c-233c-dc83-7d7010f83c3f-5041883b" href="/press" class="originals-link-block w-inline-block"><div class="originals-link-identifier"><div class="originals-link-line-wrapper"><div class="line-tip-wrapper menu"><div class="line-tip-line yellow"></div><div class="line-tip-shape yellow w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M8 4 0 8V0l8 4Z" fill="currentColor"/></svg></div></div><div class="line-tip-wrapper menu"><div class="line-tip-line yellow"></div><div class="line-tip-shape yellow w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M8 4 0 8V0l8 4Z" fill="currentColor"/></svg></div></div></div><div class="text-color-yellow">Press</div></div><div data-is-ix2-target="1" class="originals-link-block-bg" data-w-id="6994e4f3-6e3c-233c-dc83-7d7010f83c4c" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6495acd8725bd15e9ad64473_originals_menu_bg_press.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.25" data-duration="0" data-loading="eager" data-ix2-initial-state="0"></div></a><link rel="prefetch" href="/press"/><a id="w-node-_4a48a00e-e872-f413-a016-b25208bff9ec-5041883b" href="/events" class="originals-link-block w-inline-block"><div class="originals-link-identifier"><div class="originals-link-line-wrapper"><div class="line-tip-wrapper menu"><div class="line-tip-line"></div><div class="line-tip-shape dark w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 8">
+  <path fill="currentColor" d="M0 0h4a4 4 0 1 1 0 8H0V0Z"/>
+</svg></div></div><div class="line-tip-wrapper menu"><div class="line-tip-line"></div><div class="line-tip-shape dark w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 8">
+  <path fill="currentColor" d="M0 0h4a4 4 0 1 1 0 8H0V0Z"/>
+</svg></div></div></div><div class="text-light">Events</div></div><div data-is-ix2-target="1" class="originals-link-block-bg" data-w-id="4a48a00e-e872-f413-a016-b25208bff9f7" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/65390eb259a066f094d68916_originals_menu_bg_events_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.3333333333333333" data-duration="0" data-loading="eager" data-ix2-initial-state="0"></div></a><link rel="prefetch" href="/events"/></div></nav></div><a id="w-node-_2c491332-abc0-ab52-cda4-05b034be6e8d-5041883b" href="/about" class="nav-link w-inline-block"><div class="nav-link-inner"><div class="nav-link-label first">About</div></div></a><link rel="prefetch" href="/about"/></nav><a href="/contact" class="button header-cta mobile white w-inline-block"><div class="button-label default">Contact</div><div class="button-bg white"><div class="button-label">Contact</div></div></a><link rel="prefetch" href="/contact"/></div><a href="/contact" class="button header-cta desktop white w-inline-block"><div class="button-label default">Contact</div><div class="button-bg white"><div class="button-label">Contact</div></div></a><link rel="prefetch" href="/contact"/></div></header><div data-w-id="ce62b87d-cbf6-a9c2-cef0-0946e9458194" class="services-header-wrapper"><section class="section services-hero"><div class="page-padding"><div class="container"><div class="grid-12cols"><div id="w-node-ce62b87d-cbf6-a9c2-cef0-0946e9458199-4419f25a"><div class="text-size-medium font-weight-medium">Blog</div><h1 fs-socialshare-element="content" id="w-node-ce62b87d-cbf6-a9c2-cef0-0946e945819c-4419f25a" class="text-size-huge">(AgentCore) Memory is All You Need</h1></div><p id="w-node-ce62b87d-cbf6-a9c2-cef0-0946e945819d-4419f25a" class="paragraph-big">What changes in cost, risk and quality when AI agents are designed to remember what truly matters?</p></div></div></div><div class="page-padding"></div></section><div class="services-header-img-wrapper"><img loading="eager" alt="(AgentCore) Memory is All You Need" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8d9c4f33e3d00c21581e6_agentcore-memory-blog-post.webp" class="services-header-img"/></div><div class="services-header-backdrop"></div></div><article class="section blog-post-content"><div class="page-padding"><div class="container"><div class="blog-post-wrapper"><aside id="w-node-ce62b87d-cbf6-a9c2-cef0-0946e94581a6-4419f25a" class="blog-post-share"><a fs-socialshare-element="linkedin" href="#" class="social-share-link w-inline-block"><div class="social-share-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455l-.001 6.286ZM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z" fill="currentColor"/></svg></div><div>Share on LinkedIn</div><div class="social-share-line-dark"></div><div class="social-share-line-blue"></div></a><a fs-socialshare-element="twitter" href="#" class="social-share-link w-inline-block"><div class="social-share-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.324a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 7.849 4.067 5.883 1.64 2.916A4.822 4.822 0 0 0 .974 5.39c0 1.71.87 3.213 2.188 4.096A4.904 4.904 0 0 1 .934 8.87v.06a4.923 4.923 0 0 0 3.946 4.828 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.416 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.21c9.053 0 13.998-7.497 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0 0 24 4.344l-.047-.02Z" fill="currentColor"/></svg></div><div>share on twitter</div><div class="social-share-line-dark"></div><div class="social-share-line-blue"></div></a><a fs-socialshare-element="facebook" href="#" class="social-share-link w-inline-block"><div class="social-share-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.357c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.989 24 12Z" fill="currentColor"/></svg></div><div>Share on facebook</div><div class="social-share-line-dark"></div><div class="social-share-line-blue"></div></a><a href="#" class="social-share-link email w-inline-block"><div class="social-share-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="m3 5 8.293 8.293a1 1 0 0 0 1.414 0L21 5" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Send via email</div><div class="social-share-line-dark"></div><div class="social-share-line-blue"></div></a></aside><div id="w-node-d89bc617-0067-0f49-7dfe-ee38b249f505-4419f25a"><div class="blog-player-wrapper w-condition-invisible"><div class="podcast-player-static no-margin-top w-condition-invisible"><h2 class="text-size-small uppercase text-color-blue">Listen to this article:</h2><div tmplayer-init="true" class="sp-track-wrapper podcast-player"><div class="sp-track"><div class="sp-controla-wrapper"><div tmplayer-button="play" class="sp-play"><div class="sp-play-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.25 10.667c1 .592 1 2.074 0 2.666L7 20V4l11.25 6.667Z" fill="currentColor"/></svg></div></div><div tmplayer-button="pause" class="sp-pause"><div class="sp-play-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg></div></div><div class="sp-media-player-bar-wrapper"><div tmplayer-element="elapsed" class="sp-elapsed">0:00</div><div tmplayer-element="progress-bar-wrapper" class="sp-progress-bar-wrapper"><div class="sp-progress-bar-background"><div tmplayer-element="progress-bar" class="progress-bar"><div data-w-id="e800354e-3c1c-8e96-e626-8097e1731a65" class="true-progress-head"></div></div></div></div><div tmplayer-element="duration" class="sp-duration">0:00</div></div></div><div tmplayer-element="audio" class="true-media-player-single-track"><div tmplayer-meta="audio-url" class="track-url"></div></div></div></div></div></div><div fs-richtext-element="rich-text" class="blog-content w-richtext"><p><strong>Executive summary</strong></p><p>An AI agent that remembers what matters can cost less to run, work reliably in regulated environments, and become more useful over time. The difference comes down to how memory is designed; not how much information is stored. Memory shapes what the model sees each time it responds, influencing the cost, risk, and quality of every interaction.</p><p>Drawing on Loka&#x27;s work with Amazon Bedrock AgentCore Memory, this paper explores four key aspects of designing memory for agents that deliver real value:</p><ol role="list"><li><strong>Cost:</strong> Memory is one of the biggest levers for controlling token costs. In one Loka engagement, redesigning memory reduced the context retrieved per turn by 70%. A more consistent prompt layout cut prompt-token costs by a further 80% from the second turn onward.</li><li><strong>Risk:</strong> Decisions about what to retain, who can access it, and when to delete it start with the first record. AgentCore Memory provides the managed infrastructure, while your team defines the policies that govern how memory is used. </li><li><strong>Value: </strong>Remembering a fact is only half the equation. Agents deliver value when they can apply what they remember to make better decisions and take more useful actions.</li><li><strong>Where to start:</strong> Three practical steps to help you design memory effectively before your next agent pilot.</li></ol><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b433dfd2fbd7fc195340_706d0aff.png" loading="lazy"/></div></figure><h2>‍<strong>1. What it takes for agent pilots to reach production</strong></h2><p>Forecasts put 40% of enterprise applications shipping with task-specific agents by the end of 2026, up from under 5% a year earlier.<sup>1</sup> By a separate measure, only around 17% of organizations report having deployed agents at all, while more than 60% expect to within two years.<sup>2</sup></p><p>Forecasts put 40% of enterprise applications shipping with task-specific agents by the end of 2026, up from under 5% a year earlier.<sup>1</sup> By a separate measure, only around 17% of organizations report having deployed agents at all, while more than 60% expect to within two years.<sup>2</sup></p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25813_5ad44eb2.png" loading="lazy"/></div></figure><p>Where agents are running, they run narrowly. Among enterprises above $1 billion in revenue, the share scaling agents reached 40% this year, up from 27% last year, while smaller organizations reported 22%, unchanged.<sup>3</sup> Whatever is driving that growth isn&#x27;t reaching most of the market, and even across organizations of every size, the reach within a company stays shallow: in any single business function, no more than one organization in ten reported scaling agents, and most of those that did were live in only one or two functions.<sup>4</sup></p><p>More than 40% of agentic projects are expected to be canceled by the end of 2027, for three stated reasons: escalating costs, unclear business value, and inadequate risk controls.<sup>5</sup> Model capability is not among them. Costs escalate because context grows, and memory is what decides what goes into it: the write path decides what is kept, while the retrieval path decides what is loaded on each call. Context size is an output of memory policy, not an independent knob. Risk controls fail because data retention decisions are made by engineers who do not know they are making them.</p><p>Context is what the model sees on a single call. Memory is what the system keeps between calls (the raw session record and the durable facts distilled from it) and selectively loads back into context when it is relevant. The industry&#x27;s answer so far has been bigger context windows, but window size governs what a model can see, not what it can reliably use. Model accuracy degrades as input length increases, well before the advertised limit. Across eighteen frontier models tested, performance fell in every case.<sup>6</sup> The benchmark literature agrees: commercial assistants and long-context models show roughly a 30% accuracy drop retaining information across sustained interactions;<sup>7</sup> even at 10,000–100,000 tokens, well inside any current window, models struggle with recalling specific events correctly;<sup>8</sup> and in conversations averaging 300 turns across up to 35 sessions, models and retrieval both help, and both still lag human performance by a wide margin.<sup>9</sup> Cost moves the same direction: every token carried forward is a token paid for on every call, so a strategy of &quot;keep more in context&quot; makes the bill grow with the conversation. </p><p>Memory is the way out of that trade-off, but it is not a drop-in fix. Storing more is not the answer any more than holding more in context was: agents that nearly max out today&#x27;s most-cited recall benchmarks still perform poorly the moment they have to act on what they recorded earlier in a real agentic loop.<sup>10</sup> Recall and use are different capabilities. Note that the 300-turn benchmark cited above, where models still lagged humans by a wide margin, is the same one now reported as close to saturated. That two-year gap is the argument: recall got solved, but use did not.</p><p>What works is selectivity on both sides of the store: deciding what is worth writing and deciding how much of it is worth loading on any given turn. That is the principle human memory runs on: consolidate what recurs, discard what doesn&#x27;t, and reconstruct the rest from cues instead of storing everything. That argues for treating memory as a design problem rather than a capacity problem. Designed well, it is the largest cost lever available, holds up in regulated settings, and stores facts that actually change behavior.</p><p><strong>What this means for leaders:</strong> The projects that reach production treat memory as a business decision, not a storage setting. It sets what each interaction costs, which data you keep and for how long, and whether the agent improves with use. Defining a memory strategy early is what allows a pilot to scale.</p><p>Amazon Bedrock AgentCore Memory provides that foundation as a managed service: short-term and long-term memory, isolation tied to verified identity, and configurable expiry. The sections that follow cover the design decisions that sit on top of it, where cost, risk, and value are actually decided.</p><h2><strong>2. Memory decides your token bill</strong></h2><p>Model tokens make up the large majority of a production agent&#x27;s cost. A single complex turn can involve six to eight model calls against a context in the low hundreds of thousands of tokens. Memory determines whether that context carries five retrieved facts or an entire replayed history. It&#x27;s where the biggest savings live when designed deliberately, and where spend grows quietly when it isn&#x27;t, surfacing only on the invoice.<br/></p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25819_4b4d0cd4.png" loading="lazy"/></div></figure><h3>‍<strong>Where the money goes. </strong></h3><p>In the analytics deployment, a natural-language analytics agent running over a large, sensitive operational dataset, model inference accounted for roughly 95% of running cost. Memory operations, billed on records held and retrieval calls made, sat well below inference even at production volume. That split follows from the pricing model more than from this particular workload: every token is billed on every call and scales with the length of the conversation, while memory is billed on what is stored and what is retrieved, neither of which grows the same way. Any agent that carries its history forward in context lands in roughly the same place. <br/><br/>What moves the ratio is scale: inference dominates absolute spend at production volume, while at pilot volume the always-on costs dominate the per-request economics. The costs that deserved attention were the fixed ones that don&#x27;t scale down: the managed vector store behind long-term memory carries an always-on charge, provisioned once per customer regardless of usage, which made it the largest fixed cost in the deployment. Query execution itself averaged around five seconds against total response times of roughly a minute. Nine-tenths of the wall clock, and the matching share of the bill, went to model reasoning rather than to task completion.<sup>12</sup></p><h3><strong>Why memory reduces cost. </strong></h3><p>Three mechanisms, in order of impact:</p><ol role="list"><li>Retrieval replaces replay: without memory, continuity means carrying the whole conversation forward on every call, and a bounded retrieval step stands in for that, so cost stops growing with session length.</li><li>Bounded context enables bounded cost: a fixed retrieval budget makes cost per turn predictable, which matters more for pricing an agent than its average cost does.</li><li>Fewer turns per resolution: an agent that remembers a stated constraint doesn&#x27;t ask again, and every avoided clarification removes a full turn, which is six to eight model calls rather than one.</li></ol><h3><strong>Where memory increases cost. </strong></h3><p>Memory isn&#x27;t free, and the easiest cost to miss is its interaction with prompt caching. Providers cache the stable prefix of a prompt and bill it at a steep discount on later calls, cutting agentic cost substantially. A careless memory implementation, however, destroys that saving. If it injects freshly retrieved text into the cached prefix, that prefix is different on every turn, so it no longer matches the cache, and the full prompt is billed again. In that same analytics deployment, the memory layer was rebuilt for exactly this reason. <br/></p><p>The first version pulled roughly 1,500 tokens of loosely matched context into every turn. Restructuring what was stored and applying a relevance threshold before results reached the model cut that to around 450 tokens on a match and 25 on a miss, reductions of roughly 70% and 98%, respectively. Holding the stable part of the prompt identical across turns reduced prompt-token cost by a further 80% from the second turn onward. Set against the pipeline it replaced, the memory-equipped agent answered the same benchmark set with median response time down about 15% and every prior correctness defect eliminated. Those figures were captured with the memory store deliberately emptied, so they are a floor rather than a ceiling.<sup>12</sup> One number moved the wrong way. Response-time variability rose, and the slowest requests got slower: retrieval adds a variable-latency step in front of the model, and on a miss you pay that latency for none of the token saving. The median improved; the tail did not.<sup>12</sup></p><p><sup>‍</sup><br/>	<strong>What this means for leaders:</strong> set against the pipeline it replaced, the memory-equipped agent answered the same questions faster, with every prior correctness defect eliminated, while loading less than a third of the retrieved memory per turn. That is the return on designing memory deliberately.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa2581c_08c204ba.png" loading="lazy"/></div></figure><h2><strong>3. Memory in regulated, data-sensitive industries</strong></h2><p>In regulated, data-sensitive industries, the decision that lowers cost often raises exposure. Long-term memory holding a personal interaction is a retention decision before it&#x27;s an engineering one. A cache that lets one tenant&#x27;s data surface in another&#x27;s context is an isolation failure. A store that cannot forget on request will eventually appear in an audit finding. Most teams reach these questions after the memory layer is built, making them significantly more expensive to remediate.<br/></p><p><strong>What this means for leaders: </strong>For CIOs, CISOs, and compliance leads, memory is where AI governance becomes concrete. Only around one in five companies report mature agent governance today.<sup>11</sup> The organizations that settle retention, isolation, and deletion up front move through compliance review faster and reach production sooner.</p><h3><strong>What must be decided before the first record is written. </strong></h3><p>Retention must be set by fact type rather than by store: identity and preferences may persist, session context should expire in hours, and anything derived from a transaction inherits that transaction&#x27;s lifecycle. Isolation belongs below the application, where each tenant&#x27;s namespace comes from their verified identity token rather than from a value the calling code passes in. Tenant separation handled in app code is one bug away from a cross-tenant leak. Deletion must target precisely the right records. Semantic stores match by similarity, and similarity applied to a deletion request will take out the target&#x27;s neighbors along with it. Every derived record needs a link back to what produced it, or a user&#x27;s &quot;forget me&quot; request leaves the derivation intact under a different name. And where compliance requires it, an agent whose behavior shifts under a silent model upgrade is a governance problem, controlled by pinning versions and testing against a stable baseline.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25820_996ad77d.png" loading="lazy"/></div></figure><h3><strong>Platform support. </strong></h3><p>AgentCore Memory provides short-term and long-term memory as managed resources, with namespaces derived from token claims, policy-based access control evaluated at the infrastructure layer, and records that support configurable expiry. What it doesn&#x27;t decide for you is retention policy, durability rules per fact type, or the retrieval logic above it, and that is where the regulated-environment work lives.</p><p>This split works in the customer&#x27;s favor: AWS runs and scales the memory infrastructure, and your team keeps full control of the policies that govern it.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25823_390e24e9.png" loading="lazy"/></div></figure><h3><strong>In practice. </strong></h3><p>Both examples below are engagements as delivered, not recommended patterns. They are included because the two reached opposite conclusions about how much to remember.</p><p>A natural-language analytics agent answering questions over a large, sensitive operational dataset stores three things: a running conversation summary, plus (persisting across sessions) each user&#x27;s stated preferences and a small set of facts about how they work. The two are held apart deliberately: a stated preference is given directly by the user, such as a preferred query language, while a working fact is inferred from behavior, such as always wanting the query before the summary. They earn different retention rules, because what a user stated can be shown back to them and corrected, while what was inferred cannot. Retention was set at 90 days, recorded explicitly as a placeholder rather than a policy, with a standing rule that personally identifiable data cannot enter memory until a retention policy is formally agreed with the customer&#x27;s compliance function. Isolation runs below the application: each customer has a separate memory store, keyed by a verified identity token rather than by anything the calling code supplies. Compliance review produced three concrete changes:<br/></p><ol role="list"><li>Session credentials cut from thirty days to eight hours</li><li>Identifiable fields excluded from any generated summary</li><li>The storage layer is closed to public network access entirely, at a fixed always-on cost that does not scale down with usage.</li></ol><p>Compliance review required those three. A separate, self-initiated change, made after a control built for exactly this purpose failed in practice, is the one worth passing on. A content-filter rule meant to catch identifiable data was removed, because in this domain the vocabulary of legitimate analysis reads the same as the vocabulary of the risk, and the filter was rejecting valid answers. Data protection moved to controlling who can reach the data; instead of screening answers for sensitive-looking words, the system now checks each requester&#x27;s permissions when the query runs and returns only what that person is cleared to see. Content filtering and data protection are different controls, and using one to do the other&#x27;s job produces a system nobody can use.<sup>12</sup></p><p>A second agent reviews a completed piece of work against an external governing standard, in a domain where more than one standard can plausibly apply and only a human expert can say which one governs the case at hand. The agent surfaces the candidate standards; a human reviewer picks the one that applies; the agent completes the comparison. Memory here is deliberately minimal: case context and candidate standards for the duration of the pause, and nothing retained afterward. The flow is one request with one human checkpoint rather than a conversation, so persisting it would create a retention obligation for no functional gain. The reusable reference standard was pushed into a separate shared library holding only reference material, which is why it can be shared across customer sites while memory cannot. Isolation is per-site at the infrastructure layer, with a separate runtime, access role, and memory resource for each site, so a misrouted session cannot reach another site&#x27;s data because the permission does not exist. Every governance question here was raised before anything was built: where model processing sits relative to the existing data-protection agreement, whether the system can explain how it reached a conclusion, and who owns the retention and encryption decisions.<sup>13</sup></p><h2><strong>4. Getting memory right in production<br/></strong></h2><p>Storing facts and using them are different problems. Most implementations solve the first and assume the second follows. That is how an agent ends up repeating a stored preference back to a user and then ignoring it in the same session.</p><p><strong>What this means for leaders: </strong>For leaders, this is the difference between an agent that impresses in a demo, and one users still trust after a hundred sessions. Each pattern below is invisible on a dashboard, and each has a fix that costs far less at design time than in production.</p><p>On the way in, a working system resolves what the current turn is about, decides which memory applies, pulls more candidates than it needs, then ranks and trims to a fixed budget. It never runs a single search over everything and hopes the top match is relevant. On the way out, new facts are extracted, checked against what&#x27;s already stored, given a durability rule appropriate to the type of facts they represent, and linked back to the interaction that produced them, so a later deletion request can find every trace.</p><p>Four failure patterns show up repeatedly once the retrieval itself is working correctly:</p><ul role="list"><li><strong>Exclusion failure.</strong> A remembered &quot;don&#x27;t&quot; is treated as a suggestion, not a rule, once enough other context points the other way. The fix is architectural: exclusions belong in code as filters applied before results reach the model, not as sentences asking the model to remember what to avoid.</li><li><strong>Long-term compounding.</strong> More stored records means noisier ranking and a rising bill, and it arrives without any warning signal. Nothing breaks; it just silently worsens. Durability must be a property of the fact type, decided at design time, rather than a risk untangled under pressure from a store nobody has audited.</li><li><strong>Hidden cache cost.</strong> Memory changes every turn because the query changes. Placed carelessly in the prompt, it quietly multiplies the bill even while every individual answer looks correct. A cache invalidates from the first changed token onward, so memory injected high in the prompt throws away everything below it, tool definitions and history included, while the system prompt above it still hits. The aggregate hit rate stays healthy while the billed token count climbs. Order the prompt by how often each part changes and put memory last.</li><li><strong>Stale memory vs. live truth.</strong> A remembered fact and a fresh system check look identical in the context, since both are just text, and a model will sometimes trust the more confident sounding one even when it&#x27;s months old. Anything the user will act on, such as price, availability, status, or balance, must come from a live check made on the current turn, never from memory, no matter how confident the remembered version sounds.</li></ul><h2><strong>5. Where to start</strong></h2><p>Each step below takes days, not quarters, and together they turn memory into a measurable advantage.</p><ol role="list"><li>Map your fact types before writing the first record. Identity, preference, session, and transaction-derived facts each need a different retention rule, and deciding this at schema design costs an afternoon; retrofitting it means auditing a store nobody has looked at in a year.</li><li>Put the cost model in front of engineering before build, not after. The biggest line item is rarely the one people budget for, and the fixed, always-on costs are the ones that don&#x27;t show up until the first invoice.</li><li>Pilot memory on one bounded workflow with a measured baseline. &quot;With memory&quot; versus &quot;without&quot; should be something you can show, not just claim.</li></ol><p><strong>What this means for leaders: </strong>Start with a bounded workflow, define retention rules before storing data, and agree on the cost model before engineering begins. These decisions make the pilot measurable and give the team a practical path to scale.</p><h2><strong>6. The path forward</strong></h2><p>Every step between an agent pilot and a production system that remembers has a known path. The infrastructure is managed, the failure patterns are documented, and the key design decisions fit into a schema review and a clear cost model.</p><p>Loka has walked that path with AWS across regulated industries, from healthcare and life sciences to financial services. As an AWS Premier Tier Partner and 2024 AWS Innovation Partner of the Year, Loka has delivered 500+ GenAI and agentic projects since 2023, with half now in or moving to production.</p><p>Planning an agent pilot, or scaling one that already works? Talk to your AWS account team or reach out to Loka to map your memory design against the three steps above.</p><p><strong>What this means for leaders: </strong>Treat memory as part of the production plan from the start. A clear approach to cost, governance, and retrieval helps teams move from promising pilots to agents that are ready to scale.</p><h3><strong>Appendix: Evidence</strong></h3><p><em>Anonymized; measured internally.</em></p><p>The baseline, without memory, was a fixed four-step pipeline: build the prompt, generate the query, run it, summarize. It held no conversation state and reused no prior work. We measured six architecture variants against a benchmark set, then ran an extended set of 54 requests including three multi-turn conversations. Relative to that baseline, the memory-equipped agent reduced median response time by roughly 15% and removed every correctness defect the baseline produced. Response-time variability rose: the slowest requests got slower.<sup>12</sup></p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa2582a_b92c6976.png" loading="lazy"/></div></figure><p>Twelve conversational turns were then run with the reuse layer deliberately emptied, so any continuity had to come from memory alone. Follow-up questions that omitted their own subject, such as asking to filter results further or which entries recurred most often, resolved against the previous turn instead of making the user repeat themselves, and in the conversation where each question built on the last, response times fell at every turn, by more than half.. One result cuts the other way and is worth stating plainly: a question repeated word for word at the end of a session performed no better than the same question at the start. Remembering a conversation and reusing prior work are different capabilities.<sup>12</sup></p><p>The second engagement, a human-in-the-loop assessment agent, has a defined baseline (state previously held by the calling application, now made native to the platform), but results aren&#x27;t in yet. A quality baseline against a customer-supplied ground-truth set is a scoped deliverable there, not a completed measurement.<sup>13</sup></p><h3><strong>Sources</strong></h3><ul role="list"><li>Gartner, &quot;Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026,&quot; 26 August 2025. <a href="https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025">Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025</a></li><li>Gartner, Hype Cycle for Agentic AI, 2026. <a href="https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai">2026 Hype Cycle for Agentic AI | Gartner</a></li><li>McKinsey, State of AI Global Survey, 2026. <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">The State of AI: Global Survey 2026 | McKinsey</a></li><li>McKinsey, State of AI Global Survey, 2025. <a href="https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf">The state of AI in 2025: Agents, innovation, and transformation</a></li><li>Gartner, &quot;Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027,&quot; 25 June 2025. <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027">Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027</a></li><li>Hong, K.; Troynikov, A.; Huber, J. &quot;Context Rot: How Increasing Input Tokens Impacts LLM Performance.&quot; Chroma, July 2025. <a href="https://www.trychroma.com/research/context-rot">Context Rot: How Increasing Input Tokens Impacts LLM Performance | Chroma</a></li><li>Wu, D. et al. &quot;LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory.&quot; ICLR 2025, arXiv:2410.10813. <a href="https://arxiv.org/abs/2410.10813">[2410.10813] LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory</a></li><li>Huet, A.; Ben Houidi, Z.; Rossi, D. &quot;Episodic Memories Generation and Evaluation Benchmark for Large Language Models.&quot; ICLR 2025, arXiv:2501.13121. <a href="https://arxiv.org/abs/2501.13121">[2501.13121] Episodic Memories Generation and Evaluation Benchmark for Large Language Models</a></li><li>Maharana, A. et al. &quot;Evaluating Very Long-Term Conversational Memory of LLM Agents.&quot; ACL 2024, arXiv:2402.17753. <a href="https://arxiv.org/abs/2402.17753">[2402.17753] Evaluating Very Long-Term Conversational Memory of LLM Agents</a></li><li>He, Z. et al. &quot;MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks.&quot; arXiv:2602.16313, 18 February 2026. <a href="https://arxiv.org/abs/2602.16313">[2602.16313] MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks</a></li><li>&quot;<a href="https://stateofopensource.ai/">The State of Open Source AI</a>,&quot; v1.1, September 2026, <a href="http://stateofopensource.ai">stateofopensource.ai<br/><br/></a><em>Internal engagements, anonymized, not independently verifiable and provided for transparency about where this data originates:<br/></em></li></ul><ul start="12" role="list"><li>An internal Loka engagement: a natural-language analytics agent built against a large, sensitive operational dataset, including its memory-cost redesign and evaluation runs. The engagement was in active delivery, not yet fully in production, at the time of writing; figures are drawn from delivery and evaluation documentation.</li><li>An internal Loka engagement: an assessment agent that compares a professional&#x27;s work product against a reference standard, including a human-in-the-loop pause. Figures are drawn from the engagement&#x27;s design and assessment documentation; deployment status was not independently confirmed at the time </li></ul></div></div><div id="w-node-ce62b87d-cbf6-a9c2-cef0-0946e94581c0-4419f25a" class="blog-post-details"><div class="blog-post-meta-item"><div class="font-weight-medium text-color-blue">Agentic AI</div></div><div class="blog-post-meta-item"><div class="font-weight-medium text-color-blue">October 21, 2026</div></div><div class="blog-post-meta-item authors"><div class="text-inline">By </div><div class="text-inline w-condition-invisible">Loka Staff</div><div class="text-inline"><div class="text-inline w-dyn-list"><div role="list" class="blog-authors-list w-dyn-items"><div role="listitem" class="blog-author-inline w-dyn-item"><div class="text-inline">Andrej Brova</div><div class="text-inline">, </div><div class="text-inline">Advanced Machine Learning Engineer </div><div class="text-inline last"> AND </div></div><div role="listitem" class="blog-author-inline w-dyn-item"><div class="text-inline">Nina Cvetkovska </div><div class="text-inline">, </div><div class="text-inline">Machine Learning Engineer </div><div class="text-inline last"> AND </div></div><div role="listitem" class="blog-author-inline w-dyn-item"><div class="text-inline">Bojan Jakimovski</div><div class="text-inline">, </div><div class="text-inline">Machine Learning &amp; Applied Research Lead</div><div class="text-inline last"> AND </div></div><div role="listitem" class="blog-author-inline w-dyn-item"><div class="text-inline">Ivana Karalieva Petreska</div><div class="text-inline">, </div><div class="text-inline">Product Marketing Manager</div><div class="text-inline last"> AND </div></div><div role="listitem" class="blog-author-inline w-dyn-item"><div class="text-inline">Nora Shannon Johnson</div><div class="text-inline">, </div><div class="text-inline">Applied AI Architectat AWS</div><div class="text-inline last"> AND </div></div></div></div></div></div></div></div><div class="podcast-player-sticky w-condition-invisible"><div class="podcast-player-sticky-container"></div></div></div></div></article><section class="section post-authors"><div class="w-dyn-list"><div role="list" class="post-authors-list w-dyn-items"><div role="listitem" class="post-author-item w-dyn-item"><img src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b1a17a100a99ef6ec10c_andrej-b.png" loading="lazy" alt="Andrej Brova" sizes="100vw" srcset="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b1a17a100a99ef6ec10c_andrej-b-p-500.png 500w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b1a17a100a99ef6ec10c_andrej-b-p-800.png 800w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b1a17a100a99ef6ec10c_andrej-b-p-1080.png 1080w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b1a17a100a99ef6ec10c_andrej-b.png 1563w" class="post-author-img"/><h2 class="text-size-medium text-color-blue">Andrej Brova</h2><div class="w-richtext"><p>Andrej Brova is an Advanced Machine Learning Engineer at Loka, 2x AWS Certified engineer and a Claude Certified architect. He works at the intersection of Agentic AI, Generative AI, RAG systems, and Cloud-native ML on AWS, building solutions like AI-driven code generation agents and LLM-powered document review tools that help teams turn GenAI ideas into working, production-ready systems.</p></div></div><div role="listitem" class="post-author-item w-dyn-item"><img src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8bb3f5126f54891291a4b_nina-c.png" loading="lazy" alt="Nina Cvetkovska " sizes="100vw" srcset="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8bb3f5126f54891291a4b_nina-c-p-500.png 500w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8bb3f5126f54891291a4b_nina-c-p-800.png 800w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8bb3f5126f54891291a4b_nina-c-p-1080.png 1080w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8bb3f5126f54891291a4b_nina-c.png 1563w" class="post-author-img"/><h2 class="text-size-medium text-color-blue">Nina Cvetkovska </h2><div class="w-richtext"><p>Nina Cvetkovska is a Machine Learning Engineer at Loka, 3x AWS Certified engineer and a Claude Certified Architect. She specializes in Agentic AI, real-time voice systems, and RAG on AWS, and has built bilingual speech-to-speech voice agents, multi-agent QA automation pipelines, and biomedical research assistants, with a strong focus on rigorous evaluation that turns model behavior into measurable, data-driven decisions.</p></div></div><div role="listitem" class="post-author-item w-dyn-item"><img src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6a6889f53229c751e43af4f6_bojan-jakimovski.png" loading="lazy" alt="Bojan Jakimovski" class="post-author-img"/><h2 class="text-size-medium text-color-blue">Bojan Jakimovski</h2><div class="w-richtext"><p>Bojan Jakimovski is a Machine Learning and Applied Research Lead at Loka, AWS Ambassador, 9x AWS Certified engineer, and College Professor at Brainster Next. He works at the intersection of Applied AI, Agent Harnesses, Inference Infrastructure, MLOps, and Cloud-native AI Systems, helping teams move models and ideas from experiments into production.</p></div></div><div role="listitem" class="post-author-item w-dyn-item"><img src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b67a4997477c51ff3536_ivana-k-p.png" loading="lazy" alt="Ivana Karalieva Petreska" sizes="100vw" srcset="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b67a4997477c51ff3536_ivana-k-p-p-500.png 500w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b67a4997477c51ff3536_ivana-k-p-p-800.png 800w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b67a4997477c51ff3536_ivana-k-p-p-1080.png 1080w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b67a4997477c51ff3536_ivana-k-p.png 1563w" class="post-author-img"/><h2 class="text-size-medium text-color-blue">Ivana Karalieva Petreska</h2><div class="w-richtext"><p>Ivana Karalieva Petreska is a Product Marketing Manager at Loka and winner of Women in Tech Product Leadership Award. She works at the intersection of GTM strategy, AWS co-sell motions, and agentic AI helping Loka bring production-ready AI offerings to market across healthcare, financial services, and other industries.</p></div></div><div role="listitem" class="post-author-item w-dyn-item"><img src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b21a4b899e12955e71f8_nora-aws.JPG" loading="lazy" alt="Nora Shannon Johnson" sizes="100vw" srcset="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b21a4b899e12955e71f8_nora-aws-p-500.jpg 500w, https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b21a4b899e12955e71f8_nora-aws.JPG 602w" class="post-author-img"/><h2 class="text-size-medium text-color-blue">Nora Shannon Johnson</h2><div class="w-richtext"><p>Nora Shannon Johnson is a Applied AI Architect at AWS, where she builds generative AI systems that hold up in production — working hands-on with enterprise customers across the full agent stack, from tool integrations and context strategy to evals and observability. Previously, Nora worked as an Engineer and Consultant across DevOps, Financial Services, Industrial AI/ML, and Educational Technology in the United States, Latin America, and Europe.</p></div></div></div></div></section><section class="section more-posts"><div class="page-padding"><div data-w-id="51557ea4-3aeb-e61b-51b7-6649884621cd" class="headline-line-group"><div class="headline-line-inner"><div aria-hidden="true" class="headline-line-text _01 text-size-xlarge">Other articles</div><div class="headline-line-wrapper one-line"><div style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="headline-line"><div class="line-tip-line blue"></div><div class="line-tip-shape big blue w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg></div></div></div><div aria-hidden="true" class="headline-line-text _02 text-size-xlarge">you might like</div></div><h2 class="mobile-sr-only text-size-xlarge">Other articles you might like</h2></div></div><div class="originals-list-wrapper more w-dyn-list"><div role="list" class="original-list-more w-dyn-items"><div role="listitem" class="originals-list-card more w-dyn-item"><div class="originals-card-img-wrapper"><img loading="eager" alt="Our Company Has Helped More than 400 Customers Explore GenAI Adoption" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/660c7123bd78221754d596d2_bobby-genai-lessons-learned.webp" class="originals-card-img"/></div><div class="originals-card-details no-margin"><div><div class="originals-card-meta text-size-small uppercase text-color-blue"><div class="original-card-meta-text">Artificial Intelligence</div><div class="horizontal-line originals-meta"></div><div class="original-card-meta-text">4.4.24</div></div><h2 class="text-size-large text-size-m-huge">Our Company Has Helped More than 400 Customers Explore GenAI Adoption</h2></div><div class="actions-group align-bottom"><a href="/blog/my-company-has-helped-more-than-400-customers-explore-genai-adoption-heres-what-weve-learned" class="button w-inline-block"><div id="w-node-fe144d0d-9b91-7650-5453-14e97664dffb-4419f25a" class="button-label with-icon default"><div id="w-node-_6ef34edf-95d8-e448-7a9f-5d13d358c4fc-4419f25a" class="button-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 21h12a1 1 0 0 0 1-1V8l-5-5H5v17a1 1 0 0 0 1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 8H14V3m-6 9h4m-4 4h8" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Read The Article</div></div><div class="button-bg blue"><div class="button-label with-icon"><div id="w-node-_271d9da5-77b1-e246-1b77-fc8fef77f68e-4419f25a" class="button-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 21h12a1 1 0 0 0 1-1V8l-5-5H5v17a1 1 0 0 0 1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 8H14V3m-6 9h4m-4 4h8" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Read The Article</div></div></div></a></div></div><div class="case-studies-card-line-infinite"></div><div class="case-studies-card-line"></div></div><div role="listitem" class="originals-list-card more w-dyn-item"><div class="originals-card-img-wrapper"><img loading="eager" alt="Dive into DeepSeek" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/67ab9db15a2cb13713a99e1b_Deepseek%20Blog.png" class="originals-card-img"/></div><div class="originals-card-details no-margin"><div><div class="originals-card-meta text-size-small uppercase text-color-blue"><div class="original-card-meta-text">Artificial Intelligence</div><div class="horizontal-line originals-meta"></div><div class="original-card-meta-text">2.11.25</div></div><h2 class="text-size-large text-size-m-huge">Dive into DeepSeek</h2></div><div class="actions-group align-bottom"><a href="/blog/dive-into-deepseek" class="button w-inline-block"><div id="w-node-fe144d0d-9b91-7650-5453-14e97664dffb-4419f25a" class="button-label with-icon default"><div id="w-node-_6ef34edf-95d8-e448-7a9f-5d13d358c4fc-4419f25a" class="button-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 21h12a1 1 0 0 0 1-1V8l-5-5H5v17a1 1 0 0 0 1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 8H14V3m-6 9h4m-4 4h8" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Read The Article</div></div><div class="button-bg blue"><div class="button-label with-icon"><div id="w-node-_271d9da5-77b1-e246-1b77-fc8fef77f68e-4419f25a" class="button-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 21h12a1 1 0 0 0 1-1V8l-5-5H5v17a1 1 0 0 0 1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 8H14V3m-6 9h4m-4 4h8" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Read The Article</div></div></div></a></div></div><div class="case-studies-card-line-infinite"></div><div class="case-studies-card-line"></div></div><div role="listitem" class="originals-list-card more w-dyn-item"><div class="originals-card-img-wrapper"><img loading="eager" alt="Ghostbusters Is the Greatest Startup Movie Ever Made" src="https://cdn.prod.website-files.com/649228879157da0fb68c3bee/64c2e1e9cd500969e0a7bc52_ghost-notext-2.webp" class="originals-card-img"/></div><div class="originals-card-details no-margin"><div><div class="originals-card-meta text-size-small uppercase text-color-blue"><div class="original-card-meta-text">Startup Culture</div><div class="horizontal-line originals-meta"></div><div class="original-card-meta-text">12.15.22</div></div><h2 class="text-size-large text-size-m-huge">Ghostbusters Is the Greatest Startup Movie Ever Made</h2></div><div class="actions-group align-bottom"><a href="/blog/startupmovies" class="button w-inline-block"><div id="w-node-fe144d0d-9b91-7650-5453-14e97664dffb-4419f25a" class="button-label with-icon default"><div id="w-node-_6ef34edf-95d8-e448-7a9f-5d13d358c4fc-4419f25a" class="button-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 21h12a1 1 0 0 0 1-1V8l-5-5H5v17a1 1 0 0 0 1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 8H14V3m-6 9h4m-4 4h8" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Read The Article</div></div><div class="button-bg blue"><div class="button-label with-icon"><div id="w-node-_271d9da5-77b1-e246-1b77-fc8fef77f68e-4419f25a" class="button-icon w-embed"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 21h12a1 1 0 0 0 1-1V8l-5-5H5v17a1 1 0 0 0 1 1Z" stroke="currentColor" stroke-width="1.5"/><path d="M18.5 8H14V3m-6 9h4m-4 4h8" stroke="currentColor" stroke-width="1.5"/></svg></div><div>Read The Article</div></div></div></a></div></div><div class="case-studies-card-line-infinite"></div><div class="case-studies-card-line"></div></div></div></div></section><section class="section sindication-policy"><div class="page-padding"><div class="container"><div class="grid-12cols"><div id="w-node-_0300198e-a603-0065-78bc-93056b9c3420-4419f25a"><h2 class="text-size-small uppercase text-color-blue">Loka&#x27;s syndication policy</h2><div class="text-size-large font-weight-medium text-color-dark">Free and Easy</div></div><div id="w-node-_94407354-65bb-ce81-a5f4-a89628f634a8-4419f25a" class="w-richtext"><p>Put simply, we encourage free syndication. If you’re interested in sharing, posting or Tweeting our full articles, or even just a snippet, just reach out to medium@loka.com. We also ask that you attribute Loka, Inc. as the original source. And if you post on the web, please link back to the original content on Loka.com. Pretty straight forward stuff. And a good deal, right? Free content for a link back.</p><p>If you want to collaborate on something or have another idea for content, just <a href="mailto:daniel@loka.com">email me</a>. We’d love to join forces!</p></div></div></div></div></section><div id="w-node-_7e5abbe1-c41b-0b7a-639b-fbfb8ac71ec2-4419f25a" class="blog-post-embed w-embed"><style>
+  .w-richtext.blog-content :first-child {
+    margin-top: 0;
+  }
+  .w-richtext.blog-content :last-child {
+  	margin-bottom: 0;
+  }
+  
+	.w-richtext.blog-content figure.w-richtext-figure-type-image > div, 
+  .w-richtext.blog-content figure[data-rt-type="image"] > div {
+  	display: block;
+    max-width: none;
+  }
+  
+  .w-richtext.blog-content figure.w-richtext-figure-type-video{
+  	padding-bottom: 56.25% !important;
+	}  
+  .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-center,
+  .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-fullwidth,
+  .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-center img,
+  .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-fullwidth img,
+  .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-center,
+  .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-fullwidth,
+  .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-center iframe,
+  .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-fullwidth iframe {  
+    display: block !important;
+    width: 100%;
+    max-width: none !important;
+  }
+  .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-center,
+  .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-fullwidth,
+  .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-center,
+  .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-fullwidth {
+    margin: 2.5rem 0;
+  }
+  .w-richtext.blog-content figure.w-richtext-figure-type-image > figcaption,
+  .w-richtext.blog-content figure[data-rt-type="image"] > figcaption {
+    display: block;
+    font-size: .875rem;
+    text-transform: uppercase;
+  }
+  
+  .w-richtext.blog-content code {
+  	display: inline-block;
+    padding: 0 .5rem;
+    background-color: #DEE7F4;
+    color: #1877F2;
+    border-radius: 2px;
+    font-weight: 700;
+  }
+
+  .blog-post-meta-item.authors .blog-author-inline:last-child .last {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .originals-list-card.more:first-child {
+      -webkit-grid-column: span 2;
+      grid-column: span 2;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .w-richtext.blog-content figure.w-richtext-figure-type-image.w-richtext-align-fullwidth,
+    .w-richtext.blog-content figure.w-richtext-figure-type-video.w-richtext-align-fullwidth {
+      width: 85rem;
+      left: calc((-85rem + 40rem) / 2);
+    }
+    .blog-content blockquote {
+      position: relative;
+      display: block !important;
+      max-width: none;
+      width: 56rem;
+      left: calc((-56rem + 40rem) / 2);
+    }    
+  }
+</style></div><footer data-wf--footer--variant="base" data-w-id="35528313-0af9-83d4-6ed5-30c199666b5f" class="footer"><div class="page-padding"><div class="container full"><div class="grid-12cols grid-footer"><div id="w-node-_35528313-0af9-83d4-6ed5-30c199666b63-99666b5f" class="footer-addresses"><div class="footer-address _01"><h2 class="text-size-medium text-color-white">Silicon Valley Office</h2><p>350 2nd Street, Suite 8<br/>Los Altos, CA 94022</p></div></div><div id="w-node-_35528313-0af9-83d4-6ed5-30c199666b72-99666b5f" class="footer-links _01"><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b73-99666b5f" href="/" class="footer-link">Home</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b75-99666b5f" href="/services" class="footer-link">Services</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b77-99666b5f" href="/aws" class="footer-link">AWS/Cloud</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b79-99666b5f" href="/work" class="footer-link">Work</a><a id="w-node-c3203fdf-0f4e-32eb-b781-8ba18357b083-99666b5f" href="/about" class="footer-link">About</a><link rel="prefetch" href="/about"/></div><div id="w-node-_35528313-0af9-83d4-6ed5-30c199666b7b-99666b5f" class="footer-links _02"><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b7c-99666b5f" href="/labs" class="footer-link"><strong>LokaLabs</strong></a><a id="w-node-_0a339ebc-f2c6-9493-2e51-e1229145f69c-99666b5f" href="/aws/partneroftheyear" class="footer-link"><strong>AWS Awards</strong></a><a id="w-node-_0c437efa-01bb-ce7c-52bb-19dbbd135e76-99666b5f" href="/loka-innovators-award" class="footer-link"><strong>Loka Innovators Award</strong></a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b7e-99666b5f" href="/careers" class="footer-link">Careers</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b80-99666b5f" href="/contact" class="footer-link">Contact</a></div><div id="w-node-_35528313-0af9-83d4-6ed5-30c199666b82-99666b5f" class="footer-links _03"><h2 id="w-node-_35528313-0af9-83d4-6ed5-30c199666b83-99666b5f" class="footer-links-label">Originals</h2><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b85-99666b5f" href="/podcast" class="footer-link">Listen</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b87-99666b5f" href="/blog" class="footer-link">Read</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b89-99666b5f" href="/press" class="footer-link">Press</a><a id="w-node-_388fc5f4-d930-4f99-397e-a5112f77380b-99666b5f" href="/events" class="footer-link">Events</a></div><div id="w-node-_35528313-0af9-83d4-6ed5-30c199666b8b-99666b5f" class="footer-links _04"><h2 id="w-node-_35528313-0af9-83d4-6ed5-30c199666b8c-99666b5f" class="footer-links-label">Follow us</h2><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b8e-99666b5f" href="https://www.linkedin.com/company/loka" target="_blank" class="footer-link">LinkedIn</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b90-99666b5f" href="https://www.instagram.com/lifeatloka" target="_blank" class="footer-link">Instagram</a><a id="w-node-_35528313-0af9-83d4-6ed5-30c199666b92-99666b5f" href="https://medium.com/loka-engineering" target="_blank" class="footer-link">Medium</a><a href="https://dribbble.com/lokainc" id="w-node-_35528313-0af9-83d4-6ed5-30c199666b94-99666b5f" target="_blank" class="footer-link">Dribbble</a></div><div id="w-node-_36153c77-1ced-0668-dca9-12009f641e9e-99666b5f" class="footer-disclaimer"><div>Loka® Inc. All rights reserved. </div><a href="/privacy-policy" class="footer-link active">Privacy Policy. </a></div></div></div><div data-w-id="35528313-0af9-83d4-6ed5-30c199666b98" class="logo-footer"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1360 471" fill="none" class="logo-footer-img"><script xmlns=""></script><path d="M471.448 286.35C499.315 286.35 521.896 263.68 521.896 235.704C521.896 207.727 499.315 185.057 471.448 185.057C443.581 185.057 421 207.727 421 235.704C421 263.68 443.581 286.35 471.448 286.35Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M471.738 1C342.651 1 238 106.064 238 235.707C238 365.303 342.651 470.413 471.784 470.413C600.917 470.413 705.568 365.349 705.568 235.707C705.521 106.064 600.87 1 471.738 1ZM469.976 405.476C376.406 405.476 300.503 329.319 300.503 235.334C300.503 141.396 376.36 65.1929 469.976 65.1929C563.591 65.1929 639.448 141.349 639.448 235.334C639.448 329.319 563.545 405.476 469.976 405.476Z" fill="currentColor"></path><path d="M63.9405 83.0244H0V395.47H196.134V331.277H63.9405V83.0244Z" fill="currentColor"></path><path d="M827.101 83.0244H758.895V395.47H827.101V333.791L882.695 279.048L887.471 283.842L993.374 391.187H1082.17L1296.06 172.913V391.187H1360V83.0244H1299.63L1035.99 347.616L924.797 235.849L928.692 232.497L1078.64 83.0244H994.069L827.101 245.671V83.0244Z" fill="currentColor"></path><script xmlns=""></script><script xmlns=""></script></svg></div></div><div class="w-embed"><style>
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .pointer-events-auto {
+    pointer-events: auto;
+  }
+  html {
+    font-size: 14px;
+  }
+  @media screen and (min-width:480px) {
+    html {font-size: 14px;}
+  }
+  
+  @media screen and (min-width:992px) {
+    html {font-size: 1.2vw;}
+  }
+
+  @media screen and (min-width:1280px) {
+    html {font-size: 0.9vw;}
+  }
+  .testimonial-img-big {
+    mask-image: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6490a36dc4d4a5484b28225d_mask-image.svg);
+    mask-repeat: no-repeat;
+    mask-size: 350px;
+    mask-position: center;
+    -webkit-mask-image: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/6490a36dc4d4a5484b28225d_mask-image.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: center;  
+  }
+
+  .line-tip-shape > svg,
+  .shape-overlay > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .loka-modal-wrapper.videos {
+  	overflow: clip;
+  }
+
+  .sr-only {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+  @media screen and (min-width: 768px) {
+    .mobile-sr-only {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+  }
+
+  .input-field.dropdown {
+    -webkit-appearance: none;
+    background: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64a6c59f1b5d364194777840_dropdown-icon.svg) no-repeat right;
+  }
+
+	.rich-text > *:last-child {
+  	margin-bottom: 0;
+  }
+	.rich-text > *:first-child {
+  	margin-top: 0;
+  }
+
+  /* All paragraph elements inside Hubspot form */
+  .hs-form>p {
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+
+  /* Set margin right 0 for input wrapper */
+  .hs-form .input {
+    margin-right: 0 !important;
+  }
+
+  /* Max width of fieldset element inside form */
+  .hs-form>fieldset {
+    max-width: 100% !important;
+  }
+
+  /* Form Input */
+  .hs-input {
+    width: 100% !important;
+  }
+
+  /* Radio Inputs */
+  .hs-input[type=radio] {
+    width: auto !important;
+    margin-right: 0.5rem;
+    min-height: auto !important;
+  }
+
+  /* Dropdown */
+  select.hs-input {
+    -webkit-appearance: none;
+    background: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64a6c59f1b5d364194777840_dropdown-icon.svg) no-repeat right;
+  }
+
+  /* Checkbox Labels */
+  .hs-form-checkbox>label {
+    font-weight: 400 !important;
+  }
+
+  /* Error messages label margin */
+  .hs-error-msgs>label {
+    margin-bottom: 0px !important;
+  }
+
+
+  /*Custom Checkbox*/
+  .hs-input[type=checkbox] {
+    width: 1rem !important;
+    height: 1rem !important;
+    margin-right: 0.5rem !important;
+    min-height: auto !important;
+  }
+
+  .hs-input[type=checkbox]:focus {
+    box-shadow: 0 0 3px 1px #bdfd2e;
+  }
+
+  .hs-input[type=checkbox]:checked {
+    accent-color: #111;
+    outline: 2px solid #111;
+  }
+
+  .hs-form-booleancheckbox-display>span {
+    margin-left: 0 !important;
+  }
+
+  .form-columns-2 .hs-form-field {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  .submitted-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 27rem;
+    margin: 0 auto;
+  }
+  /* .submitted-message p:first-child {
+    display: block;
+    margin: 0 auto 2.5rem;
+    width: 100%;
+    max-width: 27rem;
+    padding-bottom: 62%;
+    background: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64ac57bef80ec4fd50d47600_contact-thankyou-icon.svg) no-repeat center;
+    background-size: contain;
+  } */
+  .submitted-message p strong {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+    color: #050517;
+    margin-bottom: 1.5rem;
+  }
+  /* .submitted-message p:last-child {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+  } */
+  .hs-form input[type="file"].hs-input {
+    border: 1px solid #9cc2f3;
+    border-radius: .5rem;
+    padding: 1rem 1rem 1rem 4rem;
+    background: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64a6c91839bc72af4d9999a9_upload-icon.svg) 16px 50% no-repeat;
+    background-size: auto;
+    line-height: 1.1;
+    cursor: pointer;
+  }
+
+  select.hs-input:invalid,
+  select.hs-input option[value=""] {
+    color: rgba(5, 5, 23, .5);
+  }
+  select.hs-input option {
+    color: rgba(5, 5, 23, 1);
+  }
+
+  .hs-fieldtype-booleancheckbox .inputs-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+  .hs-fieldtype-booleancheckbox .inputs-list .hs-input {
+    display: none;
+  }
+  .hs-fieldtype-booleancheckbox .inputs-list label span {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hs-fieldtype-booleancheckbox .inputs-list .hs-input + span:before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-top: -.5rem;
+    border-radius:.25rem;
+    border: 1px solid #9CC2F3;
+    cursor: pointer;
+  }
+  .hs-fieldtype-booleancheckbox .inputs-list .hs-input:checked + span:before {
+    background-color: #1877F2;
+    background-image: url(https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/64b5c057b7013903cf54b886_icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem;
+  }
+
+  .hs-button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+  }  
+  .hs-button {
+  	background-position: center right 1.5rem;
+  }
+  .dropdown-services-link-label {
+  	text-shadow: 0px 8rem #050517;
+  }
+  .nav-link-label {
+  	text-shadow: 0px 3rem currentColor;
+  }
+	@media screen and (max-width: 767px) {
+    .nav-link-label {
+      text-shadow: 0px 4rem currentColor;
+    }
+  }
+  
+  .rich-text.text-color-white strong {
+  	color: white;
+    font-weight: 700;
+  }
+</style>
+
+<div id="awwwards"><a href="https://www.awwwards.com/sites/loka" target="_blank"><svg width="53.08" height="171.358"><path class="js-color-bg" fill="black" d="M0 0h53.08v171.358H0z"></path><g class="js-color-text" fill="white"><path d="M20.047 153.665v-1.9h3.888v-4.093h-3.888v-1.9h10.231v1.9h-4.59v4.093h4.59v1.9zM29.898 142.236c-.331.565-.784.997-1.359 1.294s-1.222.446-1.944.446c-.721 0-1.369-.149-1.943-.446a3.316 3.316 0 0 1-1.36-1.294c-.331-.564-.497-1.232-.497-2.002s.166-1.438.497-2.002a3.316 3.316 0 0 1 1.36-1.294c.574-.297 1.223-.445 1.943-.445.723 0 1.369.148 1.944.445a3.307 3.307 0 0 1 1.359 1.294c.331.564.497 1.232.497 2.002s-.166 1.438-.497 2.002m-1.703-3.347c-.435-.33-.967-.496-1.601-.496-.633 0-1.166.166-1.601.496-.433.332-.649.78-.649 1.346 0 .564.217 1.013.649 1.345.435.331.968.497 1.601.497.634 0 1.166-.166 1.601-.497.435-.332.649-.78.649-1.345.001-.566-.214-1.014-.649-1.346M22.911 134.852v-1.813h1.186a3.335 3.335 0 0 1-.951-1.009 2.423 2.423 0 0 1-.352-1.271c0-.682.19-1.229.57-1.645.381-.413.932-.621 1.652-.621h5.262v1.812h-4.721c-.419 0-.727.096-.921.285-.195.19-.292.447-.292.769 0 .302.115.58.35.833.234.254.577.458 1.03.613.454.156.993.234 1.616.234h2.938v1.813h-7.367zM29.898 125.136a3.314 3.314 0 0 1-1.359 1.294c-.575.297-1.222.445-1.944.445-.721 0-1.369-.148-1.943-.445a3.322 3.322 0 0 1-1.36-1.294c-.331-.565-.497-1.232-.497-2.002 0-.771.166-1.438.497-2.003a3.313 3.313 0 0 1 1.36-1.293c.574-.297 1.223-.446 1.943-.446.723 0 1.369.149 1.944.446s1.028.728 1.359 1.293.497 1.232.497 2.003c.001.769-.166 1.436-.497 2.002m-1.703-3.347c-.435-.331-.967-.497-1.601-.497-.633 0-1.166.166-1.601.497-.433.331-.649.778-.649 1.345 0 .564.217 1.013.649 1.344.435.332.968.498 1.601.498.634 0 1.166-.166 1.601-.498.435-.331.649-.779.649-1.344.001-.567-.214-1.014-.649-1.345M22.911 117.75v-1.812h1.199c-.419-.265-.742-.586-.972-.966s-.345-.784-.345-1.213c0-.272.05-.569.146-.892l1.682.336a1.429 1.429 0 0 0-.205.76c0 .576.261 1.048.783 1.418.521.37 1.342.557 2.461.557h2.617v1.812h-7.366zM29.812 111.252c-.391.511-.857.851-1.403 1.016l-.776-1.446c.381-.138.68-.329.893-.577.215-.249.321-.544.321-.885a1.2 1.2 0 0 0-.168-.658c-.112-.175-.294-.263-.548-.263-.225 0-.406.105-.548.313-.142.21-.291.534-.446.973-.019.068-.058.17-.117.307-.224.565-.506 1.004-.848 1.315-.34.313-.779.467-1.314.467-.381 0-.727-.102-1.039-.306a2.185 2.185 0 0 1-.744-.84 2.554 2.554 0 0 1-.279-1.207c0-.497.105-.949.314-1.359.211-.408.506-.725.886-.949l.993 1.082c-.43.292-.644.686-.644 1.184a.84.84 0 0 0 .154.504.471.471 0 0 0 .401.212c.176 0 .338-.103.49-.307.15-.205.334-.604.547-1.199.205-.564.474-1.001.805-1.308.332-.308.756-.46 1.271-.46.721 0 1.299.229 1.732.687s.65 1.057.65 1.797c.001.759-.194 1.396-.583 1.907M35.481 17.006l-4.782 14.969h-3.266l-2.584-9.682-2.584 9.682h-3.268l-4.782-14.969h3.713l2.673 10.276 2.525-10.276h3.445l2.524 10.276 2.674-10.276zM37.978 27.163c1.426 0 2.496 1.068 2.496 2.495 0 1.425-1.07 2.495-2.496 2.495-1.425 0-2.494-1.07-2.494-2.495-.001-1.427 1.069-2.495 2.494-2.495"></path></g></svg></a></div>
+<style>
+#awwwards {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #awwwards {
+  	display: inline;
+    position: fixed; 
+    z-index: 999; 
+    transform: translateY(-50%); 
+    top: 50%;  
+    right: 0
+  }
+}
+</style></div></footer></main><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6490383845d4c0f51f929ca8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/js/loka-website.schunk.f2efb3c5440a81cf.js" type="text/javascript" integrity="sha384-VK02VJvMib7ytrF5M2joPWNtDQs366FZgEQ5B+Iwnjx0WBnwQXfootyziSYxdrmS" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/js/loka-website.schunk.5a47dfcaf72202e2.js" type="text/javascript" integrity="sha384-CZgSYguObR6TykkiGJS8SEZK/JdZytoYlNHT6csE0FHVNkRQD25FCv4+iQxLPgUh" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/6490383845d4c0f51f929ca8/js/loka-website.0acc1579.b04a41072bf58d6f.js" type="text/javascript" integrity="sha384-mauHQZJ9HxbqL9PsLggJdakScscyuaEA3wjh4ZkieDeoaGr/C7PF7U4WMV9TpMN8" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script><script type="text/javascript">gsap.registerPlugin(ScrollTrigger);</script><script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+
+    function initLenis() {
+
+      const lenis = new Lenis({resize: true});
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      // Grab all elements that have a "data-target" attribute
+      const scrollButtons = document.querySelectorAll('[data-target]');
+
+      // For each element, listen to a "click" event
+      scrollButtons.forEach(button => {
+        button.addEventListener('click', e => {
+          e.preventDefault();
+
+          // get the DOM element by the ID (data-target value)
+          var target = button.dataset.target,
+              $el = document.getElementById(target.replace('#', ''));
+
+          // Use lenis.scrollTo() to scroll the page to the right element
+          lenis.scrollTo($el, {
+            offset: 0, 
+            immediate: false,
+            duration: 1,
+            easing: (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2), // https://easings.net
+          });
+        });
+      });
+
+      requestAnimationFrame(raf); 
+    }
+
+    const html = document.querySelector('html');
+    if (Webflow.env('editor') === undefined) {
+      initLenis();
+      console.log('no editor');
+    }
+  });
+</script>
+
+<script>
+  $('body').on('click touchstart', function () {
+    const videoElements = document.querySelectorAll('.w-background-video video');
+    var i;
+    if (!videoElements.length) { return; }
+    for (i = 0; i < videoElements.length; ++i) {
+      if (videoElements[i].playing) {
+        // video is already playing so do nothing
+      } else {
+        videoElements[i].play();
+      }
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@2.9.2/dist/cookieconsent.js"></script>
+<script>
+// obtain cookieconsent plugin
+var cc = initCookieConsent();
+var cookie = '🍪';
+
+// run plugin with config object
+  /*
+cc.run({
+    mode: 'opt-out',
+    current_lang : 'en',
+    cookie_name: 'cc_loka_cookie',              // default: 'cc_cookie'
+    cookie_expiration : 365,                    // default: 182
+
+    autorun: true,
+    gui_options: {
+        consent_modal: {
+            layout: 'cloud',                      // box,cloud,bar
+            position: 'bottom right',           // bottom,middle,top + left,right,center
+            transition: 'slide'                 // zoom,slide
+        },      
+    },
+
+    onFirstAction: function(){
+        console.log('onFirstAction fired');
+    },
+
+    onAccept: function (cookie) {
+        console.log('onAccept fired ...');
+    },
+
+    onChange: function (cookie, changed_preferences) {
+        console.log('onChange fired ...');
+    },
+
+    languages: {
+        'en': {
+            consent_modal: {
+                title: '',
+                description: 'This website uses cookies to enhance user experience and to analyze performance and traffic on our website. No crumbs left on your device, promise 🍪',
+                primary_btn: {
+                    text: 'ACCEPT ALL',
+                    role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                },
+                secondary_btn: {
+                    text: 'SEE PRIVACY POLICY',
+                    role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                }
+            },
+          settings_modal: {
+                title: "",
+                save_settings_btn: 'Save settings',
+                accept_all_btn: 'Accept all',
+                reject_all_btn: 'Reject all',
+                close_btn_label: 'Close',
+                cookie_table_headers: [
+                    {col1: 'Name'},
+                    {col2: 'Domain'},
+                    {col3: 'Expiration'},
+                    {col4: 'Description'}
+                ],
+                blocks: [
+                    
+                ]
+            }
+            
+        }
+    }
+
+});
+  
+setTimeout(() => {
+    const secondaryButton = document.getElementById('c-s-bn');
+  if(secondaryButton) {
+    var newButton = secondaryButton.cloneNode(true);
+  	secondaryButton.parentNode.replaceChild(newButton, secondaryButton);
+    newButton.addEventListener('click', e => {
+      e.preventDefault();
+      window.location = "/privacy-policy";
+      return false;
+      
+    })
+    
+  }
+  }, 1000);
+  */
+</script><!-- [Attributes by True Media Player] Audio Player Plugin -->
+<script src="https://trueaudioplayer.b-cdn.net/true-audio-player@1.1.0.min.js"  type="text/javascript"></script>
+<script>
+  var mailto = 'mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL);
+  $('.social-share-link.email').attr('href', mailto);
+  // Authors logic
+  var authors = $('.blog-authors-list .blog-author-inline');
+  if (authors.length > 1) {
+    var last = $('.blog-authors-list .blog-author-inline:nth-last-child(2)'),
+        content = last.find('.last');
+
+    content.html('&nbsp;and&nbsp;');
+  }
+
+  // Assuming your rich text content is in a variable called 'content'
+  let blogContent = document.querySelector('.blog-content').innerHTML;
+  if (blogContent.includes('[CALLOUT]')) {
+    // Use a regular expression to match [CALLOUT]...[/CALLOUT] and replace it with a div
+    let newContent = blogContent.replace(/<p>\[CALLOUT\]<\/p>([\s\S]*?)<p>\[\/CALLOUT\]<\/p>/g, '<div class="blog-callout">$1</div>');
+    // Replace the old content with the new content
+    document.querySelector('.blog-content').innerHTML = newContent;  
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const width = window.outerWidth;
+
+    if (width > 991) {
+      initPlayerDesktop();
+    } else {
+      initPlayerMobile();
+    }
+    
+    if (document.querySelector('.blog-player-wrapper').classList.contains('w-condition-invisible')) {
+    return;
+    }
+
+    function initPlayerMobile() {
+      const elementToAppend = document.querySelector(".podcast-player");
+      const stickyEl = document.querySelector(".podcast-player-sticky-container");
+
+      stickyEl.appendChild(elementToAppend);
+    }
+
+    function initPlayerDesktop() {
+      const scrollTriggerElement = document.querySelector(".blog-player-wrapper");
+      const elementToAppend = document.querySelector(".podcast-player");
+      const stickyParent = document.querySelector('.podcast-player-sticky');
+      const stickyEl = document.querySelector(".podcast-player-sticky-container");
+      const staticEl = document.querySelector(".podcast-player-static");
+
+      const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (stickyEl.contains(elementToAppend)) {
+              staticEl.appendChild(elementToAppend);
+              stickyParent.classList.remove('is-active');
+            }
+          } else {
+            if (!stickyEl.contains(elementToAppend)) {
+              stickyEl.appendChild(elementToAppend);
+              stickyParent.classList.add('is-active');
+            }
+          }
+        });
+      });
+
+      observer.observe(scrollTriggerElement);
+    }
+  });
+</script></body></html>
