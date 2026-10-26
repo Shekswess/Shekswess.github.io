@@ -1,0 +1,106 @@
+{
+  "retrieved_on": "2026-10-26",
+  "posts": [
+    {
+      "url": "https://lokahq.github.io/tech-blog/celebrating-the-release-of-torchneuron/",
+      "snapshot": "torchneuron.html",
+      "snapshot_sha256": "185cc9897fd30740b6ee6acbce035a6e00bc8a41e2481f5d1a7908f2baa1f04e",
+      "post": "_posts/2026-10-13-celebrating-the-release-of-torchneuron.md",
+      "assets": [
+        {
+          "url": "https://lokahq.github.io/tech-blog/optimized/blog/celebrating-the-release-of-torchneuron.webp",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/celebrating-the-release-of-torchneuron.webp",
+          "sha256": "065b1e6f58f1dbfcd532620e2c010053533a5cecca07b2062b939b1a0d7d6d01"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/annapurna-labs-aws-summit-2025.webp",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/annapurna-labs-aws-summit-2025.webp",
+          "sha256": "8b204896292ec2ffe16f317acc2430a99556c2fb9f7c97c6785db0a27ae57393"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/aws-summit-2025-group.webp",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/aws-summit-2025-group.webp",
+          "sha256": "9d5bb9153ea37e166e2642185a42c4b792b9926ac120eea23a29231c94b7f587"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/native-pytorch-workflow.webp",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/native-pytorch-workflow.webp",
+          "sha256": "b2dcaf2826c91de4bf89bd76340a547482bcb6cd297416f5b0c43b3745da4731"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/tiago-sword-ai-summit-2026.webp",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/tiago-sword-ai-summit-2026.webp",
+          "sha256": "0d1f42ac712a85cef8a523847794e25d32b9928cf1a64358a31fc4a295201761"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/phase-2-leaderboard-2026-10-19.webp",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/phase-2-leaderboard-2026-10-19.webp",
+          "sha256": "0f0af6953cd8b6cf14a0452bf09de92e236bc48e7a0455406fcb95e115252628"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/annapurna-labs-aws-summit-2025.png",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/annapurna-labs-aws-summit-2025.png",
+          "sha256": "e60a8d9f6ec46a26dd8cda648e415e74e5b8f8329013f172ee22d6859a42cab3"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/aws-summit-2025-group.png",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/aws-summit-2025-group.png",
+          "sha256": "58b352297524402418cc91edb5837a47045d2441a81e01f72dcb135b4e7965de"
+        },
+        {
+          "url": "https://lokahq.github.io/tech-blog/blog/celebrating-the-release-of-torchneuron/phase-2-leaderboard-2026-10-19.png",
+          "path": "/assets/images/celebrating-the-release-of-torchneuron/phase-2-leaderboard-2026-10-19.png",
+          "sha256": "1f23efb65b3afd046347a6a673efa63917c653a1917664c6bf45c5f00da2af57"
+        }
+      ]
+    },
+    {
+      "url": "https://www.loka.com/blog/agentcore-memory-is-all-you-need",
+      "snapshot": "agentcore.html",
+      "snapshot_sha256": "439fd1f8e0017328090f19c1ab7040fec11bfe28a9230a3d6680b132458c274c",
+      "post": "_posts/2026-10-21-agentcore-memory-is-all-you-need.md",
+      "assets": [
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8d9c4f33e3d00c21581e6_agentcore-memory-blog-post.webp",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8d9c4f33e3d00c21581e6_agentcore-memory-blog-post.webp",
+          "sha256": "c8b5f31fdfc0159796eb747ed76ac549ad837df6811ad735a99de54f51f70614"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b433dfd2fbd7fc195340_706d0aff.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b433dfd2fbd7fc195340_706d0aff.png",
+          "sha256": "864eac6b2663a3a4185938f2b0e7f8dac1e72d513cd3854ce344675e77b2e43d"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25813_5ad44eb2.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b362ca3c4f20dfa25813_5ad44eb2.png",
+          "sha256": "bf356f81acf53f8443ec0c18de78928b266543d6d79e407729821077c86f9944"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25819_4b4d0cd4.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b362ca3c4f20dfa25819_4b4d0cd4.png",
+          "sha256": "a44174cd8a81f36099eeca3940a1fccfa7fc04b75da91e91e39c5e1d6140cd52"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa2581c_08c204ba.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b362ca3c4f20dfa2581c_08c204ba.png",
+          "sha256": "ee437c7235469892315087c1038824f61e4947de862057043f0ff69870d58cfa"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25820_996ad77d.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b362ca3c4f20dfa25820_996ad77d.png",
+          "sha256": "74bc57f5f1c9a91156aac92db5faf7a26ffdec37434eeaf5b8f8c18b6fa29fe3"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa25823_390e24e9.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b362ca3c4f20dfa25823_390e24e9.png",
+          "sha256": "40f2c4f9cc2b4cc04978f7789f5df95b26fcf3798a88aad8dbe5e97fc67e5308"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/649228879157da0fb68c3bee/6ad8b362ca3c4f20dfa2582a_b92c6976.png",
+          "path": "/assets/images/agentcore-memory-is-all-you-need/6ad8b362ca3c4f20dfa2582a_b92c6976.png",
+          "sha256": "decfc62e028790fe20e0062e9ec30d4ee34cbe5fe80886b10842d39fb34d756f"
+        }
+      ]
+    }
+  ]
+}
