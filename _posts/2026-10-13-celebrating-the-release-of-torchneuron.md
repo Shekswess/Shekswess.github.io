@@ -3,7 +3,7 @@ layout: "post"
 title: "Celebrating the release of TorchNeuron"
 description: "Bojan Jakimovski shares Loka's journey from BEVFusion on AWS silicon to native PyTorch with TorchNeuron, ESMC on Trainium2, and the AWS Trainium Frontier Competition."
 author: "shekswess"
-date: "2026-10-13 00:00:00 +0200"
+date: "2026-10-13 00:00:00 +0000"
 permalink: "/celebrating-the-release-of-torchneuron.html"
 categories: ["AWS", "PyTorch"]
 tags: ["TorchNeuron", "AWS Trainium", "PyTorch", "Annapurna Labs"]
